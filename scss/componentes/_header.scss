@@ -1,0 +1,547 @@
+@import './variables';
+
+.header {
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+    margin: 0.5em auto;
+    text-decoration: none;
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__logo {
+        position: relative;
+        left: 90vw;
+        background-image: url('../img/Kvote.png');
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* rotate: -90deg; */
+        width: 115px;
+        height: 115px;
+        border-radius: 100%;
+
+        &__circulo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background: conic-gradient(transparent 0deg, white 0deg);
+            border-radius: 100%;
+            font-family: "Aladin";
+
+            &__Titulo {
+                // text-decoration-style: none ;
+                margin: 0px;
+                text-align: center;
+                position: relative;
+                top: 3px;
+                opacity: 0;
+
+            }
+
+            &__Eslogan {
+                margin: 0px auto;
+                font-size: 0.7em;
+                text-align: center;
+                position: relative;
+                top: -5px;
+                width: 60%;
+                opacity: 0;
+                left: 1px;
+                color: black;
+            }
+
+            .animate--letras {
+                animation-name: aparicionLetras;
+                animation-timing-function: linear;
+                animation-duration: 2s;
+                animation-direction: normal;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            }
+        }
+
+        .animate--encoger {
+            animation-name: revelar;
+            animation-timing-function: linear;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+        }
+    }
+
+    .animate--girar {
+        animation-name: girar;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-direction: reverse;
+        animation-fill-mode: forwards;
+    }
+
+    &__contenerdor {
+        flex-grow: 1;
+        margin: 0 1em;
+        background-color: $rojo_primario;
+        color: $blanco_letra;
+        text-align: center;
+        font-size: 1.55rem;
+        /* padding: 0 5.80rem; */
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $fuente_logo;
+        border-radius: 0.313rem;
+        opacity: 0;
+
+    }
+
+    .animate--contenedor {
+        animation-name: aparicionLetras;
+        animation-timing-function: linear;
+        animation-duration: 2s;
+        animation-direction: normal;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+@keyframes aparicionLetras {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(360deg);
+        left: 1vw;
+    }
+
+    to {
+        transform: rotate(720deg);
+        left: 90vw;
+    }
+}
+
+
+
+@keyframes revelar {
+
+    0% {
+        background: conic-gradient(transparent 0deg, white 0deg);
+    }
+
+    1% {
+        background: conic-gradient(transparent 3.6deg, white 0deg);
+    }
+
+    2% {
+        background: conic-gradient(transparent 7.2deg, white 0deg);
+    }
+
+    3% {
+        background: conic-gradient(transparent 10.8deg, white 0deg);
+    }
+
+    4% {
+        background: conic-gradient(transparent 14.4deg, white 0deg);
+    }
+
+    5% {
+        background: conic-gradient(transparent 18deg, white 0deg);
+    }
+
+    6% {
+        background: conic-gradient(transparent 21.6deg, white 0deg);
+    }
+
+    7% {
+        background: conic-gradient(transparent 25.2deg, white 0deg);
+    }
+
+    8% {
+        background: conic-gradient(transparent 28.8deg, white 0deg);
+    }
+
+    9% {
+        background: conic-gradient(transparent 32.4deg, white 0deg);
+    }
+
+    10% {
+        background: conic-gradient(transparent 36deg, white 0deg);
+    }
+
+    11% {
+        background: conic-gradient(transparent 39.6deg, white 0deg);
+    }
+
+    12% {
+        background: conic-gradient(transparent 43.2deg, white 0deg);
+    }
+
+    13% {
+        background: conic-gradient(transparent 46.8deg, white 0deg);
+    }
+
+    14% {
+        background: conic-gradient(transparent 50.4deg, white 0deg);
+    }
+
+    15% {
+        background: conic-gradient(transparent 54deg, white 0deg);
+    }
+
+    16% {
+        background: conic-gradient(transparent 57.6deg, white 0deg);
+    }
+
+    17% {
+        background: conic-gradient(transparent 61.2deg, white 0deg);
+    }
+
+    18% {
+        background: conic-gradient(transparent 64.8deg, white 0deg);
+    }
+
+    19% {
+        background: conic-gradient(transparent 68.4deg, white 0deg);
+    }
+
+    20% {
+        background: conic-gradient(transparent 72deg, white 0deg);
+    }
+
+    21% {
+        background: conic-gradient(transparent 75.6deg, white 0deg);
+    }
+
+    22% {
+        background: conic-gradient(transparent 79.2deg, white 0deg);
+    }
+
+    23% {
+        background: conic-gradient(transparent 82.8deg, white 0deg);
+    }
+
+    24% {
+        background: conic-gradient(transparent 86.4deg, white 0deg);
+    }
+
+    25% {
+        background: conic-gradient(transparent 90deg, white 0deg);
+    }
+
+
+    26% {
+        background: conic-gradient(transparent 90deg, white 0deg);
+    }
+
+    27% {
+        background: conic-gradient(transparent 93.6deg, white 0deg);
+    }
+
+    28% {
+        background: conic-gradient(transparent 97.2deg, white 0deg);
+    }
+
+    29% {
+        background: conic-gradient(transparent 100.8deg, white 0deg);
+    }
+
+    30% {
+        background: conic-gradient(transparent 104.4deg, white 0deg);
+    }
+
+    31% {
+        background: conic-gradient(transparent 108deg, white 0deg);
+    }
+
+    32% {
+        background: conic-gradient(transparent 111.6deg, white 0deg);
+    }
+
+    33% {
+        background: conic-gradient(transparent 115.2deg, white 0deg);
+    }
+
+    34% {
+        background: conic-gradient(transparent 118.8deg, white 0deg);
+    }
+
+    35% {
+        background: conic-gradient(transparent 122.4deg, white 0deg);
+    }
+
+    36% {
+        background: conic-gradient(transparent 126deg, white 0deg);
+    }
+
+    37% {
+        background: conic-gradient(transparent 129.6deg, white 0deg);
+    }
+
+    38% {
+        background: conic-gradient(transparent 133.2deg, white 0deg);
+    }
+
+    39% {
+        background: conic-gradient(transparent 136.8deg, white 0deg);
+    }
+
+    40% {
+        background: conic-gradient(transparent 140.4deg, white 0deg);
+    }
+
+    41% {
+        background: conic-gradient(transparent 144deg, white 0deg);
+    }
+
+    42% {
+        background: conic-gradient(transparent 147.6deg, white 0deg);
+    }
+
+    43% {
+        background: conic-gradient(transparent 151.2deg, white 0deg);
+    }
+
+    44% {
+        background: conic-gradient(transparent 154.8deg, white 0deg);
+    }
+
+    45% {
+        background: conic-gradient(transparent 158.4deg, white 0deg);
+    }
+
+    46% {
+        background: conic-gradient(transparent 162deg, white 0deg);
+    }
+
+    47% {
+        background: conic-gradient(transparent 165.6deg, white 0deg);
+    }
+
+    48% {
+        background: conic-gradient(transparent 169.2deg, white 0deg);
+    }
+
+    49% {
+        background: conic-gradient(transparent 172.8deg, white 0deg);
+    }
+
+    50% {
+        background: conic-gradient(transparent 180deg, white 0deg);
+    }
+
+
+    51% {
+        background: conic-gradient(transparent 180deg, white 0deg);
+    }
+
+    52% {
+        background: conic-gradient(transparent 183.6deg, white 0deg);
+    }
+
+    53% {
+        background: conic-gradient(transparent 187.2deg, white 0deg);
+    }
+
+    54% {
+        background: conic-gradient(transparent 190.8deg, white 0deg);
+    }
+
+    55% {
+        background: conic-gradient(transparent 194.4deg, white 0deg);
+    }
+
+    56% {
+        background: conic-gradient(transparent 198deg, white 0deg);
+    }
+
+    57% {
+        background: conic-gradient(transparent 201.6deg, white 0deg);
+    }
+
+    58% {
+        background: conic-gradient(transparent 205.2deg, white 0deg);
+    }
+
+    59% {
+        background: conic-gradient(transparent 208.8deg, white 0deg);
+    }
+
+    60% {
+        background: conic-gradient(transparent 212.4deg, white 0deg);
+    }
+
+    61% {
+        background: conic-gradient(transparent 216deg, white 0deg);
+    }
+
+    62% {
+        background: conic-gradient(transparent 219.6deg, white 0deg);
+    }
+
+    63% {
+        background: conic-gradient(transparent 223.2deg, white 0deg);
+    }
+
+    64% {
+        background: conic-gradient(transparent 226.8deg, white 0deg);
+    }
+
+    65% {
+        background: conic-gradient(transparent 230.4deg, white 0deg);
+    }
+
+    66% {
+        background: conic-gradient(transparent 234deg, white 0deg);
+    }
+
+    67% {
+        background: conic-gradient(transparent 237.6deg, white 0deg);
+    }
+
+    68% {
+        background: conic-gradient(transparent 241.2deg, white 0deg);
+    }
+
+    69% {
+        background: conic-gradient(transparent 244.8deg, white 0deg);
+    }
+
+    70% {
+        background: conic-gradient(transparent 248.4deg, white 0deg);
+    }
+
+    71% {
+        background: conic-gradient(transparent 252deg, white 0deg);
+    }
+
+    72% {
+        background: conic-gradient(transparent 255.6deg, white 0deg);
+    }
+
+    73% {
+        background: conic-gradient(transparent 259.2deg, white 0deg);
+    }
+
+    74% {
+        background: conic-gradient(transparent 262.8deg, white 0deg);
+    }
+
+    75% {
+        background: conic-gradient(transparent 270deg, white 0deg);
+    }
+
+    76% {
+        background: conic-gradient(transparent 270deg, white 0deg);
+    }
+
+    77% {
+        background: conic-gradient(transparent 273.6deg, white 0deg);
+    }
+
+    78% {
+        background: conic-gradient(transparent 277.2deg, white 0deg);
+    }
+
+    79% {
+        background: conic-gradient(transparent 280.8deg, white 0deg);
+    }
+
+    80% {
+        background: conic-gradient(transparent 284.4deg, white 0deg);
+    }
+
+    81% {
+        background: conic-gradient(transparent 288deg, white 0deg);
+    }
+
+    82% {
+        background: conic-gradient(transparent 291.6deg, white 0deg);
+    }
+
+    83% {
+        background: conic-gradient(transparent 295.2deg, white 0deg);
+    }
+
+    84% {
+        background: conic-gradient(transparent 298.8deg, white 0deg);
+    }
+
+    85% {
+        background: conic-gradient(transparent 302.4deg, white 0deg);
+    }
+
+    86% {
+        background: conic-gradient(transparent 306deg, white 0deg);
+    }
+
+    87% {
+        background: conic-gradient(transparent 309.6deg, white 0deg);
+    }
+
+    88% {
+        background: conic-gradient(transparent 313.2deg, white 0deg);
+    }
+
+    89% {
+        background: conic-gradient(transparent 316.8deg, white 0deg);
+    }
+
+    90% {
+        background: conic-gradient(transparent 320.4deg, white 0deg);
+    }
+
+    91% {
+        background: conic-gradient(transparent 324deg, white 0deg);
+    }
+
+    92% {
+        background: conic-gradient(transparent 327.6deg, white 0deg);
+    }
+
+    93% {
+        background: conic-gradient(transparent 331.2deg, white 0deg);
+    }
+
+    94% {
+        background: conic-gradient(transparent 334.8deg, white 0deg);
+    }
+
+    95% {
+        background: conic-gradient(transparent 338.4deg, white 0deg);
+    }
+
+    96% {
+        background: conic-gradient(transparent 342deg, white 0deg);
+    }
+
+    97% {
+        background: conic-gradient(transparent 345.6deg, white 0deg);
+    }
+
+    98% {
+        background: conic-gradient(transparent 349.2deg, white 0deg);
+    }
+
+    99% {
+        background: conic-gradient(transparent 352.8deg, white 0deg);
+    }
+
+    100% {
+        background: conic-gradient(transparent 360deg, white 0deg);
+    }
+}

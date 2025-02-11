@@ -1,0 +1,110 @@
+// Número de imágenes 
+$numero-imagenes: 6;
+
+// Calculamos el tamaño del contenedor
+$size: $numero-imagenes * 100%;
+$transiciones: 100 / $numero-imagenes;
+
+.main__sliderFrame {
+    position: relative;
+    grid-row: 1;
+    grid-column: 1/3;
+    width: 95vw;
+    height: 60vh;
+    margin: 0rem auto;
+    overflow: hidden;
+    border-radius: 6px;
+
+    .next {
+        background-image: url("../img/next.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // background-color: ;
+        position: absolute;
+        // top: 50%;
+        color: white;
+        right: 0;
+        z-index: 1;
+        width: 4rem;
+        height: 100%;
+    }
+    
+    .before {
+        background-image: url("../img/before.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        // background-color: ;
+        position: absolute;
+        // top: 50%;
+        color: white;
+        left: 0;
+        z-index: 1;
+        width: 5rem;
+        height: 100%;
+
+    }
+
+
+    .next:hover,
+    .before:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        backdrop-filter: blur(10px);
+        background-size: contain;
+        height: 100%;
+        
+    }
+    ul {
+        margin: 0;
+        display: flex;
+        padding: 0;
+        width: $size; // Ajusta dinámicamente según el número de imágenes
+        height: 100%;
+        // height: 70vh;
+        //     animation-name: slide;
+        //     animation-duration: 30s;
+        //     animation-timing-function: ease-in-out;
+        //     animation-iteration-count: infinite;
+        //     animation-direction: alternate;
+        // }
+
+        li {
+            position: relative;
+
+
+
+            width: 100%;
+            list-style: none;
+
+            img {
+                width: 100%;
+                border-radius: 6px;
+            }
+
+            map {
+                cursor: pointer;
+            }
+        }
+    }
+
+    // Recalcula el tamaño del contenedor y el porcentaje de transición
+    // @keyframes slide {
+    //     @for $i from 0 through $numero-imagenes - 1 {
+    //         $porcentaje: $i * (100 / $numero-imagenes);
+    //         $position: $i * -100%;
+
+    //         #{$porcentaje}% {
+    //             margin-left: $position;
+    //         }
+
+    //         #{$porcentaje + 5}% {
+    //             margin-left: $position;
+    //         }
+    //     }
+    //     $position: ($numero-imagenes - 1) * -100%;
+    //     100% {
+    //         margin-left: $position;
+    //     }
+}
