@@ -1,23 +1,63 @@
 @import './variables';
 
 .nav {
-    margin: 1em auto;
+    // margin: 1em auto;
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 94vw;
+    justify-content: space-around;
+    align-items: flex-end;
+    // width: 90%;
     font-family: $fuente_general;
     position: relative;
-    height: 2.5rem;
+    // height: 2.5rem;
+    // order: 2;
+    // padding: 1rem;
+
+    &__button {
+        background-color: $rojo_primario;
+        list-style: none;
+        background-color: $rojo_primario;
+        color: $blanco_letra;
+        text-align: center;
+        padding: 0.3% 3%;
+        // border-radius: 0.313rem;
+        font-weight: bold;
+        // box-shadow: 0.313rem 0.313rem 0.625rem -0.313rem $shadow_nav;
+        text-decoration: none;
+        flex-shrink: 1;
+
+        &:hover {
+            background-color: $boton_hover;
+            cursor: pointer;
+            // transform: scale(1.1);
+        }
+    }
+
+    &__carro {
+
+        width: 2rem;
+        height: 2rem;
+        // border-radius: 50%;
+        a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            &:hover {
+                transform: scale(1.1);
+                background-image: url(('../img/carroHover.png'));
+            }
+
+            background-image: url(('../img/carro.png'));
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
 
     &__login {
         width: 2rem;
-        height: 100%;
+        height: 2rem;
         border-radius: 50%;
-
-        // &::after {
-        //     content: "Cuenta";
-        // }
 
         a {
             height: 100%;
@@ -47,26 +87,6 @@
 
     }
 
-    &__button {
-
-        list-style: none;
-        background-color: $rojo_primario;
-        color: $blanco_letra;
-        text-align: center;
-        padding: 0.3% 3%;
-        border-radius: 0.313rem;
-        font-weight: bold;
-        box-shadow: 0.313rem 0.313rem 0.625rem -0.313rem $shadow_nav;
-        text-decoration: none;
-        flex-shrink: 1;
-
-        &:hover {
-            background-color: $boton_hover;
-            cursor: pointer;
-            transform: scale(1.1);
-        }
-    }
-
     .search {
         // margin: auto 0;
         flex-shrink: 5;
@@ -74,7 +94,8 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        label{
+
+        label {
             background-image: url("../img/lupa.png");
             background-repeat: no-repeat;
             background-size: cover;
@@ -82,6 +103,7 @@
             width: 15%;
             cursor: pointer;
         }
+
         input {
             background-color: white;
             border-radius: 0.438rem;
@@ -96,4 +118,8 @@
             }
         }
     }
+}
+
+@keyframes subirNivel {
+    
 }

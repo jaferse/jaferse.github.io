@@ -2,7 +2,7 @@ let logo = document.querySelector('.header__logo');
 let logo__circulo = document.querySelector('.header__logo__circulo');
 let logo__Titulo = document.querySelector('.header__logo__circulo__Titulo');
 let logo__Eslogan = document.querySelector('.header__logo__circulo__Eslogan');
-let header__contenerdor = document.querySelector('.header__contenerdor');
+let header__contenerdor = document.querySelector('.header__contenerdor__cita');
 let ContainerSpinner = document.querySelector('.Container');
 
 /**

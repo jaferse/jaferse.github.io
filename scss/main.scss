@@ -7,7 +7,9 @@
 @import './componentes/spinner';
 @import './componentes/sobreNosotros';
 
-
+*{
+    box-sizing: border-box;
+}
 body {
     background-image: url('../img/textura.png');
 

@@ -1,28 +1,28 @@
 @import './variables';
 
 .header {
-    width: 99vw;
+    width: 96vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 0.5em auto;
     text-decoration: none;
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
+    justify-content: space-between;
+
 
     &__logo {
+        min-width: 7rem;
+        max-width: 7rem;
+        flex: 1;
+        text-decoration: none;
+        color: black;
         position: relative;
-        left: 90vw;
         background-image: url('../img/Kvote.png');
-
         background-repeat: no-repeat;
         background-size: cover;
-        /* rotate: -90deg; */
-        width: 115px;
-        height: 115px;
+        aspect-ratio: 1/1;
         border-radius: 100%;
+        order: 0;
 
         &__circulo {
             display: flex;
@@ -35,7 +35,6 @@
             font-family: "Aladin";
 
             &__Titulo {
-                // text-decoration-style: none ;
                 margin: 0px;
                 text-align: center;
                 position: relative;
@@ -84,20 +83,28 @@
     }
 
     &__contenerdor {
-        flex-grow: 1;
-        margin: 0 1em;
-        background-color: $rojo_primario;
-        color: $blanco_letra;
-        text-align: center;
-        font-size: 1.55rem;
-        /* padding: 0 5.80rem; */
-        width: 90%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         justify-content: center;
-        font-family: $fuente_logo;
-        border-radius: 0.313rem;
-        opacity: 0;
+        
+        // align-content: space-between;
+        flex-grow: 1;
+        background-color: $rojo_primario;
+        height: 100%;
+        min-height: 7rem;
+
+        &__cita {
+            color: $blanco_letra;
+            text-align: center;
+            font-size: 1.55rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $fuente_logo;
+            border-radius: 0.313rem;
+            opacity: 0;
+            // order: 1;
+        }
 
     }
 
@@ -126,7 +133,7 @@
 @keyframes girar {
     from {
         transform: rotate(360deg);
-        left: 1vw;
+        left: 0vw;
     }
 
     to {

@@ -12,17 +12,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/normalice.css">
     <link rel="stylesheet" href="./css/main.css">
-<!-- Hotjar Tracking Code for Kvote -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:5301119,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <!-- Hotjar Tracking Code for Kvote -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 5301119, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
 </head>
 
 <body>
@@ -32,52 +32,60 @@
         </div>
     </div>
     <header class="header">
-        <a href="./index.html">
-            <div class="header__logo">
-                <div class="header__logo__circulo">
-                    <h1 class="header__logo__circulo__Titulo">Kvote</h1>
-                    <p class="header__logo__circulo__Eslogan">Un Universo
-                        De Historias
-                        épicas</p>
-                </div>
+        <a class="header__logo" href="/index.html">
+            <div class="header__logo__circulo">
+                <h1 class="header__logo__circulo__Titulo">Kvote</h1>
+                <p class="header__logo__circulo__Eslogan">Un Universo
+                    De Historias
+                    épicas</p>
             </div>
         </a>
         <div class="header__contenerdor">
-            “Como siempre: lo urgente no deja tiempo para lo importante ” Mafalda
+            <h1 class="header__contenerdor__cita">
+                “Como siempre: lo urgente no deja tiempo para lo importante ” Mafalda
+            </h1>
+            <nav class="nav">
+                <!-- <a href="./index.html" class="nav__button">
+                    <li>Inicio</li>
+                </a> -->
+                <a href="#" class="nav__button">
+                    Novedades
+                </a>
+                <a href="#" class="nav__button">
+                    Comic
+                </a>
+                <a href="#" class="nav__button">
+                    Libros
+                </a>
+                <a href="#" class="nav__button">
+                    Merchandising
+                </a>
+                <!-- <a href="#" class="nav__button">
+                    Indie
+                </a> -->
+                <a href="/html/sombreNosotros.html" class="nav__button">
+                    Nosotros
+                </a>
+                <!-- <a href="./html/sign_in.html" class="nav__button">
+                    <li></li>
+                </a> -->
+                <div class="nav__login">
+                    <a href="/html/sign_in.html">
+                        <!-- <img src="./img/batlogin2.png" alt=""> -->
+                    </a>
+                </div>
+                <div class="nav__carro">
+                    <a href="#">
+                        <!-- <img src="./img/batlogin2.png" alt=""> -->
+                    </a>
+                </div>
+                <div class="search">
+                    <label for="buscar"></label><input type="text" placeholder="Buscar" id="buscar">
+                </div>
+            </nav>
         </div>
     </header>
 
-    <nav class="nav">
-        <!-- <a href="./index.html" class="nav__button">
-            <li>Inicio</li>
-        </a> -->
-        <a href="#" class="nav__button">
-            Novedades
-        </a>
-        <a href="#" class="nav__button">
-            Americano
-        </a>
-        <a href="#" class="nav__button">
-            Europeo
-        </a>
-        <a href="#" class="nav__button">
-            Manga
-        </a>
-        <a href="#" class="nav__button">
-            Indie
-        </a>
-        <!-- <a href="./html/sign_in.html" class="nav__button">
-            <li></li>
-        </a> -->
-        <div class="nav__login">
-            <a href="./html/sign_in.html">
-                <!-- <img src="./img/batlogin2.png" alt=""> -->
-            </a>
-        </div>
-        <div class="search">
-            <label for="buscar"></label><input type="text" placeholder="Buscar" id="buscar">
-        </div>
-    </nav>
     <main class="main">
         <article class="main__sliderFrame">
             <ul>
@@ -85,29 +93,19 @@
                     <img src="./img/carruselProvidence.jpg" alt="">
                 </li>
                 <li>
-
                     <img src="./img/carruselTheWalkingDead.jpg" alt="">
-
                 </li>
                 <li>
-
                     <img src="./img/carruselSpiderman.jpg" alt="">
-
                 </li>
                 <li>
-
                     <img src="./img/carruselbatman.jpg" alt="">
-
                 </li>
                 <li>
-
                     <img src="./img/carruselWonderWoman.jpg" alt="">
-
                 </li>
                 <li>
-
                     <img src="./img/carrruselKilling.png" alt="">
-
                 </li>
                 <!-- <button class="next">Adelante</button> -->
             </ul>
@@ -163,72 +161,49 @@
     <footer class="footer">
         <section class="footer__ayuda">
             <h2>Ayuda</h2>
-        
-                <a href="#">
-                    ¿Donde Está Mi Pedido?
-                </a>
-            
-        
-                <a href="#">
-                    Devoluciones
-                </a>
-            
-        
-                <a href="#">
-                    Métodos De Pago
-                </a>
-            
+
+            <a href="#">
+                ¿Donde Está Mi Pedido?
+            </a>
+
+
+            <a href="#">
+                Devoluciones
+            </a>
+
+
+            <a href="#">
+                Métodos De Pago
+            </a>
+
         </section>
         <section class="footer__nosotros">
-            <h2>Sobre Nosotros</h2>
-        
-                <a href="./html/sombreNosotros.html">
-                    ¿Quienes Somos?
-                </a>
-            
-        
-                <a href="#">
-                    Aviso Legal
-                </a>
-            
-        
-                <a href="#">
-                    Preguntas Frecuentes
-                </a>
-            
-        
-                <a href="#">
-                    Política De Privacidad
-                </a>
-            
-        
-                <a href="#">
-                    Condiciones Generales De Uso
-                </a>
-            
-        
-                <a href="#">
-                    Derecho De Desistimiento
-                </a>
-            
+            <h2>Contacto</h2>
+            <article class="footer__nosotros__contacto">
+                <a class="mail" href="mailto:correofalso2@gmail.com">correofalso2@gmail.com</a>
+                <a class="phone" href="tel:+34666666666">666666666</a>
+            </article>
         </section>
         <section class="footer__redes">
             <h2>Redes Sociales</h2>
-            <a href="https://www.facebook.com/">
-                <img src="./img/facebook-removebg-preview.png" alt="Icono de Facebook">
-            </a>
-            <a href="https://www.instagram.com/">
-                <img src="./img/insta.png" alt="Icono de Instagram">
-            </a>
-            <a href="https://bsky.app/">
-                <img src="./img/bluesky.png" alt="Icono de bluesky">
-            </a>
-            <a href="https://www.youtube.com/">
-                <img src="./img/youtube.PNG" alt="Icono de Youtube">
-            </a>
-            <a href="https://www.tiktok.com/">
-                <img src="./img/tiktok.webp" alt="Icono de TikTok">
-            </a>
+            <article class="footer__redes__contenedor">
+
+                <a href="https://www.facebook.com/">
+                    <img src="/img/facebookIcon.png" alt="Icono de Facebook" class="facebook">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img class="instagram" src="/img/instaIcon.webp" alt="Icono de Instagram">
+                </a>
+                <a href="https://bsky.app/">
+                    <img src="/img/blueskyIcon.png" alt="Icono de bluesky" class="bluesky">
+                </a>
+                <a href="https://www.youtube.com/">
+                    <img src="/img/youtube.PNG" alt="Icono de Youtube" class="youtube">
+                </a>
+                <a href="https://www.tiktok.com/">
+                    <img src="/img/tiktokIcon.png" alt="Icono de TikTok" class="tiktok">
+                </a>
+            </article>
         </section>
     </footer>
     <script src="./js/animacionLogo.js"></script>
