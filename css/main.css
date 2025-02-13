@@ -39,10 +39,30 @@
   font-weight: bold;
   text-decoration: none;
   flex-shrink: 1;
+  position: relative;
 }
-.header .nav__button:hover {
-  background-color: hsl(350, 100%, 46%);
-  cursor: pointer;
+.header .nav__button i {
+  font-style: normal;
+  z-index: 2;
+}
+.header .nav__button:hover > i {
+  animation-name: transicionLetras;
+  animation-timing-function: linear;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+.header .nav__button:hover:before {
+  animation: slide2 0.5s forwards;
+}
+.header .nav__button:before {
+  z-index: 0;
+  background: hsl(350, 100%, 50%);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  top: -100%;
 }
 .header .nav__login {
   display: flex;
@@ -105,6 +125,25 @@
   background-color: #FCFAEE;
 }
 
+@keyframes slide2 {
+  0% {
+    left: 0%;
+    top: -100%;
+  }
+  100% {
+    left: 0%;
+    top: 0%;
+  }
+}
+@keyframes transicionLetras {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    color: #FCFAEE;
+    transform: scale(1.2);
+  }
+}
 .footer {
   background-color: rgb(40, 39, 39);
   color: #FCFAEE;
@@ -170,6 +209,9 @@
 .footer__ayuda {
   display: flex;
   flex-direction: column;
+}
+.footer__ayuda a {
+  padding: 0.5rem 0;
 }
 .footer__ayuda a:hover {
   text-decoration: underline;

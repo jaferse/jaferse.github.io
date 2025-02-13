@@ -45,11 +45,33 @@
             font-weight: bold;
             text-decoration: none;
             flex-shrink: 1;
-
-
-            &:hover {
-                background-color: $boton_hover;
-                cursor: pointer;
+            position: relative;
+            i{
+                font-style: normal;
+                z-index: 2;
+                
+            }
+            &:hover>i{
+                animation-name: transicionLetras;
+                animation-timing-function: linear;
+                animation-duration: 0.5s;
+                animation-fill-mode: forwards;
+            }
+            &:hover:before {
+                // background-color: $boton_hover;
+                // cursor: pointer;
+                animation: slide2 0.5s forwards;
+            }
+            &:before {
+                z-index: 0;
+                background: $nav_hover;
+                // opacity: 0.3;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0%;
+                top: -100%;
             }
         }
 
@@ -85,7 +107,6 @@
                     transform: scale(1.1);
                     background-image: url(('/img/batlogin2.png'));
                 }
-
                 background-image: url(('/img/batlogin1.png'));
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -127,4 +148,24 @@
         }
     }
 
+}
+@keyframes slide2 {
+    0% {
+        left: 0%;
+        top: -100%;
+    }
+    
+    100% {
+        left: 0%;
+        top: 0%;
+    }
+}
+@keyframes transicionLetras{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        color: $blanco_letra;
+        transform: scale(1.2);
+    }
 }
