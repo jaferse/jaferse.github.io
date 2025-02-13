@@ -1,7 +1,6 @@
 @import './variables';
 
 .footer {
-
     background-color: $fondo_footer;
     color: $blanco_letra;
     width: 96vw;
@@ -20,12 +19,15 @@
 
     h2 {
         text-align: center;
-
+        text-decoration: underline;
     }
 
     a {
         text-decoration: none;
         color: $blanco_letra;
+        font-family: $fuente_secundaria;
+        font-size: 0.8rem;
+        padding: 0.2rem 0;
     }
 
     &>section {
@@ -44,7 +46,9 @@
         &__contacto {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-around;
+
+            height: 100%;
 
             a {
                 height: 100%;
@@ -73,6 +77,11 @@
 
             a.mail::before {
                 background-image: url("../img/mailIcon.png");
+            }
+
+            a.direcion::before {
+                background-image: url("../img/direcionIcon.png");
+
             }
         }
     }
@@ -148,7 +157,7 @@
             }
 
             a:has(.youtube) {
-                --color: linear-gradient(84deg, rgba(213,29,19,1) 33%, rgba(250,34,22,1) 71%);
+                --color: linear-gradient(84deg, rgba(213, 29, 19, 1) 33%, rgba(250, 34, 22, 1) 71%);
             }
 
             a:has(.facebook) {
@@ -156,7 +165,7 @@
             }
 
             a:has(.tiktok) {
-                --color: linear-gradient(77deg, rgba(252,12,83,1) 30%, rgba(3,240,234,1) 75%);
+                --color: linear-gradient(77deg, rgba(252, 12, 83, 1) 30%, rgba(3, 240, 234, 1) 75%);
             }
 
         }

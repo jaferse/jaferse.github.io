@@ -1,429 +1,110 @@
 @charset "UTF-8";
 .header {
-  width: 96vw;
+  width: 100%;
+  height: 4rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0.5em auto;
+  margin: auto;
   text-decoration: none;
   justify-content: space-between;
+  background-color: #B8001F;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
 }
 .header__logo {
-  min-width: 7rem;
-  max-width: 7rem;
-  flex: 1;
-  text-decoration: none;
-  color: black;
-  position: relative;
-  background-image: url("../img/Kvote.png");
+  background-image: url("/img/Kvote.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 50%;
   aspect-ratio: 1/1;
-  border-radius: 100%;
-  order: 0;
+  margin: 0.5rem 1rem;
 }
-.header__logo__circulo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background: conic-gradient(transparent 0deg, white 0deg);
-  border-radius: 100%;
-  font-family: "Aladin";
+.header__logo:hover {
+  transform: scale(1.1);
 }
-.header__logo__circulo__Titulo {
-  margin: 0px;
-  text-align: center;
-  position: relative;
-  top: 3px;
-  opacity: 0;
-}
-.header__logo__circulo__Eslogan {
-  margin: 0px auto;
-  font-size: 0.7em;
-  text-align: center;
-  position: relative;
-  top: -5px;
-  width: 60%;
-  opacity: 0;
-  left: 1px;
-  color: black;
-}
-.header__logo__circulo .animate--letras {
-  animation-name: aparicionLetras;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-}
-.header__logo .animate--encoger {
-  animation-name: revelar;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-}
-.header .animate--girar {
-  animation-name: girar;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-direction: reverse;
-  animation-fill-mode: forwards;
-}
-.header__contenerdor {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.header .nav {
   flex-grow: 1;
-  background-color: #B8001F;
-  height: 100%;
-  min-height: 7rem;
+  display: flex;
+  align-items: stretch;
+  font-family: "Kotta One", serif;
+  position: relative;
 }
-.header__contenerdor__cita {
-  color: #FCFAEE;
-  text-align: center;
-  font-size: 1.55rem;
+.header .nav__button {
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: "Aladin", serif;
-  border-radius: 0.313rem;
-  opacity: 0;
+  background-color: #B8001F;
+  list-style: none;
+  color: #FCFAEE;
+  text-align: center;
+  padding: 0.3% 3%;
+  font-weight: bold;
+  text-decoration: none;
+  flex-shrink: 1;
 }
-.header .animate--contenedor {
-  animation-name: aparicionLetras;
-  animation-timing-function: linear;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+.header .nav__button:hover {
+  background-color: hsl(350, 100%, 46%);
+  cursor: pointer;
+}
+.header .nav__login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+.header .nav__login .carro {
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/img/carro.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .nav__login .carro:hover {
+  transform: scale(1.1);
+  background-image: url("/img/carroHover.png");
+}
+.header .nav__login .login {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-image: url("/img/batlogin1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .nav__login .login:hover {
+  transform: scale(1.1);
+  background-image: url("/img/batlogin2.png");
+}
+.header .nav__login .search {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header .nav__login .search label {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background-image: url("/img/lupa.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header .nav__login .search input {
+  background-color: white;
+  border-radius: 0.438rem;
+}
+.header .nav__login .search input::-moz-placeholder {
+  color: black;
+}
+.header .nav__login .search input::placeholder {
+  color: black;
+}
+.header .nav__login .search input:focus {
+  background-color: #FCFAEE;
 }
 
-@keyframes aparicionLetras {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes girar {
-  from {
-    transform: rotate(360deg);
-    left: 0vw;
-  }
-  to {
-    transform: rotate(720deg);
-    left: 90vw;
-  }
-}
-@keyframes revelar {
-  0% {
-    background: conic-gradient(transparent 0deg, white 0deg);
-  }
-  1% {
-    background: conic-gradient(transparent 3.6deg, white 0deg);
-  }
-  2% {
-    background: conic-gradient(transparent 7.2deg, white 0deg);
-  }
-  3% {
-    background: conic-gradient(transparent 10.8deg, white 0deg);
-  }
-  4% {
-    background: conic-gradient(transparent 14.4deg, white 0deg);
-  }
-  5% {
-    background: conic-gradient(transparent 18deg, white 0deg);
-  }
-  6% {
-    background: conic-gradient(transparent 21.6deg, white 0deg);
-  }
-  7% {
-    background: conic-gradient(transparent 25.2deg, white 0deg);
-  }
-  8% {
-    background: conic-gradient(transparent 28.8deg, white 0deg);
-  }
-  9% {
-    background: conic-gradient(transparent 32.4deg, white 0deg);
-  }
-  10% {
-    background: conic-gradient(transparent 36deg, white 0deg);
-  }
-  11% {
-    background: conic-gradient(transparent 39.6deg, white 0deg);
-  }
-  12% {
-    background: conic-gradient(transparent 43.2deg, white 0deg);
-  }
-  13% {
-    background: conic-gradient(transparent 46.8deg, white 0deg);
-  }
-  14% {
-    background: conic-gradient(transparent 50.4deg, white 0deg);
-  }
-  15% {
-    background: conic-gradient(transparent 54deg, white 0deg);
-  }
-  16% {
-    background: conic-gradient(transparent 57.6deg, white 0deg);
-  }
-  17% {
-    background: conic-gradient(transparent 61.2deg, white 0deg);
-  }
-  18% {
-    background: conic-gradient(transparent 64.8deg, white 0deg);
-  }
-  19% {
-    background: conic-gradient(transparent 68.4deg, white 0deg);
-  }
-  20% {
-    background: conic-gradient(transparent 72deg, white 0deg);
-  }
-  21% {
-    background: conic-gradient(transparent 75.6deg, white 0deg);
-  }
-  22% {
-    background: conic-gradient(transparent 79.2deg, white 0deg);
-  }
-  23% {
-    background: conic-gradient(transparent 82.8deg, white 0deg);
-  }
-  24% {
-    background: conic-gradient(transparent 86.4deg, white 0deg);
-  }
-  25% {
-    background: conic-gradient(transparent 90deg, white 0deg);
-  }
-  26% {
-    background: conic-gradient(transparent 90deg, white 0deg);
-  }
-  27% {
-    background: conic-gradient(transparent 93.6deg, white 0deg);
-  }
-  28% {
-    background: conic-gradient(transparent 97.2deg, white 0deg);
-  }
-  29% {
-    background: conic-gradient(transparent 100.8deg, white 0deg);
-  }
-  30% {
-    background: conic-gradient(transparent 104.4deg, white 0deg);
-  }
-  31% {
-    background: conic-gradient(transparent 108deg, white 0deg);
-  }
-  32% {
-    background: conic-gradient(transparent 111.6deg, white 0deg);
-  }
-  33% {
-    background: conic-gradient(transparent 115.2deg, white 0deg);
-  }
-  34% {
-    background: conic-gradient(transparent 118.8deg, white 0deg);
-  }
-  35% {
-    background: conic-gradient(transparent 122.4deg, white 0deg);
-  }
-  36% {
-    background: conic-gradient(transparent 126deg, white 0deg);
-  }
-  37% {
-    background: conic-gradient(transparent 129.6deg, white 0deg);
-  }
-  38% {
-    background: conic-gradient(transparent 133.2deg, white 0deg);
-  }
-  39% {
-    background: conic-gradient(transparent 136.8deg, white 0deg);
-  }
-  40% {
-    background: conic-gradient(transparent 140.4deg, white 0deg);
-  }
-  41% {
-    background: conic-gradient(transparent 144deg, white 0deg);
-  }
-  42% {
-    background: conic-gradient(transparent 147.6deg, white 0deg);
-  }
-  43% {
-    background: conic-gradient(transparent 151.2deg, white 0deg);
-  }
-  44% {
-    background: conic-gradient(transparent 154.8deg, white 0deg);
-  }
-  45% {
-    background: conic-gradient(transparent 158.4deg, white 0deg);
-  }
-  46% {
-    background: conic-gradient(transparent 162deg, white 0deg);
-  }
-  47% {
-    background: conic-gradient(transparent 165.6deg, white 0deg);
-  }
-  48% {
-    background: conic-gradient(transparent 169.2deg, white 0deg);
-  }
-  49% {
-    background: conic-gradient(transparent 172.8deg, white 0deg);
-  }
-  50% {
-    background: conic-gradient(transparent 180deg, white 0deg);
-  }
-  51% {
-    background: conic-gradient(transparent 180deg, white 0deg);
-  }
-  52% {
-    background: conic-gradient(transparent 183.6deg, white 0deg);
-  }
-  53% {
-    background: conic-gradient(transparent 187.2deg, white 0deg);
-  }
-  54% {
-    background: conic-gradient(transparent 190.8deg, white 0deg);
-  }
-  55% {
-    background: conic-gradient(transparent 194.4deg, white 0deg);
-  }
-  56% {
-    background: conic-gradient(transparent 198deg, white 0deg);
-  }
-  57% {
-    background: conic-gradient(transparent 201.6deg, white 0deg);
-  }
-  58% {
-    background: conic-gradient(transparent 205.2deg, white 0deg);
-  }
-  59% {
-    background: conic-gradient(transparent 208.8deg, white 0deg);
-  }
-  60% {
-    background: conic-gradient(transparent 212.4deg, white 0deg);
-  }
-  61% {
-    background: conic-gradient(transparent 216deg, white 0deg);
-  }
-  62% {
-    background: conic-gradient(transparent 219.6deg, white 0deg);
-  }
-  63% {
-    background: conic-gradient(transparent 223.2deg, white 0deg);
-  }
-  64% {
-    background: conic-gradient(transparent 226.8deg, white 0deg);
-  }
-  65% {
-    background: conic-gradient(transparent 230.4deg, white 0deg);
-  }
-  66% {
-    background: conic-gradient(transparent 234deg, white 0deg);
-  }
-  67% {
-    background: conic-gradient(transparent 237.6deg, white 0deg);
-  }
-  68% {
-    background: conic-gradient(transparent 241.2deg, white 0deg);
-  }
-  69% {
-    background: conic-gradient(transparent 244.8deg, white 0deg);
-  }
-  70% {
-    background: conic-gradient(transparent 248.4deg, white 0deg);
-  }
-  71% {
-    background: conic-gradient(transparent 252deg, white 0deg);
-  }
-  72% {
-    background: conic-gradient(transparent 255.6deg, white 0deg);
-  }
-  73% {
-    background: conic-gradient(transparent 259.2deg, white 0deg);
-  }
-  74% {
-    background: conic-gradient(transparent 262.8deg, white 0deg);
-  }
-  75% {
-    background: conic-gradient(transparent 270deg, white 0deg);
-  }
-  76% {
-    background: conic-gradient(transparent 270deg, white 0deg);
-  }
-  77% {
-    background: conic-gradient(transparent 273.6deg, white 0deg);
-  }
-  78% {
-    background: conic-gradient(transparent 277.2deg, white 0deg);
-  }
-  79% {
-    background: conic-gradient(transparent 280.8deg, white 0deg);
-  }
-  80% {
-    background: conic-gradient(transparent 284.4deg, white 0deg);
-  }
-  81% {
-    background: conic-gradient(transparent 288deg, white 0deg);
-  }
-  82% {
-    background: conic-gradient(transparent 291.6deg, white 0deg);
-  }
-  83% {
-    background: conic-gradient(transparent 295.2deg, white 0deg);
-  }
-  84% {
-    background: conic-gradient(transparent 298.8deg, white 0deg);
-  }
-  85% {
-    background: conic-gradient(transparent 302.4deg, white 0deg);
-  }
-  86% {
-    background: conic-gradient(transparent 306deg, white 0deg);
-  }
-  87% {
-    background: conic-gradient(transparent 309.6deg, white 0deg);
-  }
-  88% {
-    background: conic-gradient(transparent 313.2deg, white 0deg);
-  }
-  89% {
-    background: conic-gradient(transparent 316.8deg, white 0deg);
-  }
-  90% {
-    background: conic-gradient(transparent 320.4deg, white 0deg);
-  }
-  91% {
-    background: conic-gradient(transparent 324deg, white 0deg);
-  }
-  92% {
-    background: conic-gradient(transparent 327.6deg, white 0deg);
-  }
-  93% {
-    background: conic-gradient(transparent 331.2deg, white 0deg);
-  }
-  94% {
-    background: conic-gradient(transparent 334.8deg, white 0deg);
-  }
-  95% {
-    background: conic-gradient(transparent 338.4deg, white 0deg);
-  }
-  96% {
-    background: conic-gradient(transparent 342deg, white 0deg);
-  }
-  97% {
-    background: conic-gradient(transparent 345.6deg, white 0deg);
-  }
-  98% {
-    background: conic-gradient(transparent 349.2deg, white 0deg);
-  }
-  99% {
-    background: conic-gradient(transparent 352.8deg, white 0deg);
-  }
-  100% {
-    background: conic-gradient(transparent 360deg, white 0deg);
-  }
-}
 .footer {
   background-color: rgb(40, 39, 39);
   color: #FCFAEE;
@@ -437,10 +118,14 @@
 }
 .footer h2 {
   text-align: center;
+  text-decoration: underline;
 }
 .footer a {
   text-decoration: none;
   color: #FCFAEE;
+  font-family: "Montserrat", serif;
+  font-size: 0.8rem;
+  padding: 0.2rem 0;
 }
 .footer > section {
   margin-bottom: 1rem;
@@ -454,7 +139,8 @@
 .footer__nosotros__contacto {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 100%;
 }
 .footer__nosotros__contacto a {
   height: 100%;
@@ -477,6 +163,9 @@
 }
 .footer__nosotros__contacto a.mail::before {
   background-image: url("../img/mailIcon.png");
+}
+.footer__nosotros__contacto a.direcion::before {
+  background-image: url("../img/direcionIcon.png");
 }
 .footer__ayuda {
   display: flex;
@@ -529,13 +218,13 @@
   --color: linear-gradient(45deg, rgba(84, 182, 255, 1) 0%, rgba(66, 165, 255, 1) 38%, rgba(36, 149, 253, 1) 69%, rgba(36, 149, 253, 1) 100%) ;
 }
 .footer__redes__contenedor a:has(.youtube) {
-  --color: linear-gradient(84deg, rgba(213,29,19,1) 33%, rgba(250,34,22,1) 71%);
+  --color: linear-gradient(84deg, rgba(213, 29, 19, 1) 33%, rgba(250, 34, 22, 1) 71%);
 }
 .footer__redes__contenedor a:has(.facebook) {
   --color: #0077b5;
 }
 .footer__redes__contenedor a:has(.tiktok) {
-  --color: linear-gradient(77deg, rgba(252,12,83,1) 30%, rgba(3,240,234,1) 75%);
+  --color: linear-gradient(77deg, rgba(252, 12, 83, 1) 30%, rgba(3, 240, 234, 1) 75%);
 }
 
 @keyframes slide {
@@ -548,94 +237,6 @@
     top: -15%;
   }
 }
-.nav {
-  flex-grow: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  font-family: "Kotta One", serif;
-  position: relative;
-}
-.nav__button {
-  background-color: #B8001F;
-  list-style: none;
-  background-color: #B8001F;
-  color: #FCFAEE;
-  text-align: center;
-  padding: 0.3% 3%;
-  font-weight: bold;
-  text-decoration: none;
-  flex-shrink: 1;
-}
-.nav__button:hover {
-  background-color: hsl(350, 100%, 46%);
-  cursor: pointer;
-}
-.nav__carro {
-  width: 2rem;
-  height: 2rem;
-}
-.nav__carro a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-image: url("../img/carro.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.nav__carro a:hover {
-  transform: scale(1.1);
-  background-image: url("../img/carroHover.png");
-}
-.nav__login {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-}
-.nav__login a {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-image: url("../img/batlogin1.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.nav__login a:hover {
-  transform: scale(1.1);
-  background-image: url("../img/batlogin2.png");
-}
-.nav .search {
-  flex-shrink: 5;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-}
-.nav .search label {
-  background-image: url("../img/lupa.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 15%;
-  cursor: pointer;
-}
-.nav .search input {
-  background-color: white;
-  border-radius: 0.438rem;
-  width: 85%;
-}
-.nav .search input::-moz-placeholder {
-  color: black;
-}
-.nav .search input::placeholder {
-  color: black;
-}
-.nav .search input:focus {
-  background-color: #FCFAEE;
-}
-
-@keyframes subirNivel {}
 .main__sliderFrame {
   position: relative;
   grid-row: 1;
@@ -996,8 +597,16 @@
   width: 96vw;
   font-family: "Kotta One", serif;
   font-size: larger;
-  margin: 0 auto;
+  margin: 1rem auto;
   text-align: justify;
+  font-family: "Montserrat", serif;
+}
+.nosotros h1,
+.nosotros h2 {
+  font-family: "Kotta One", serif;
+}
+.nosotros p, .nosotros li {
+  font-size: 1rem;
 }
 .nosotros .welcome {
   display: flex;
@@ -1043,14 +652,14 @@
 }
 .nosotros__historia__text, .nosotros__mision__text, .nosotros__talleres__text, .nosotros__editorial__text {
   width: 55%;
-  margin: 1rem;
+  margin: 1rem 4rem;
 }
 .nosotros__historia__img, .nosotros__mision__img, .nosotros__talleres__img, .nosotros__editorial__img {
-  width: 40%;
+  width: 35%;
   aspect-ratio: 1/1;
   border-radius: 50%;
   overflow: hidden;
-  margin: 1rem;
+  margin: 1rem 4rem;
 }
 .nosotros__historia__img img, .nosotros__mision__img img, .nosotros__talleres__img img, .nosotros__editorial__img img {
   width: 100%;
@@ -1096,33 +705,33 @@
   width: 100%;
   text-align: center;
 }
-.nosotros__talleres__colaboradores > div:nth-child(2) {
+.nosotros__talleres__colaboradores > div:nth-child(2) > picture {
   background-image: url("../img/PacoRocaCasa.jpg");
   background-position: center;
   background-size: cover;
 }
-.nosotros__talleres__colaboradores > div:nth-child(3) {
+.nosotros__talleres__colaboradores > div:nth-child(3) > picture {
   background-image: url("../img/MariaMedemComic.jpg");
   background-position: center;
   background-size: cover;
 }
-.nosotros__talleres__colaboradores > div:nth-child(4) {
+.nosotros__talleres__colaboradores > div:nth-child(4) > picture {
   background-image: url("../img/AnaPenyasBien.jpg");
   background-position: center;
   background-size: cover;
 }
-.nosotros__talleres__colaboradores > div:nth-child(5) {
+.nosotros__talleres__colaboradores > div:nth-child(5) > picture {
   background-image: url("../img/juanjoGarridoBack.jpg");
   background-position: center;
   background-size: cover;
 }
 .nosotros__talleres__colaboradores__img {
-  width: 20%;
+  width: 25%;
   position: relative;
   border-radius: 50%;
-  aspect-ratio: 1/1;
-  border: 2px solid black;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 .nosotros__talleres__colaboradores__img h3 {
   position: absolute;
@@ -1140,26 +749,29 @@
   background: #696969;
 }
 .nosotros__talleres__colaboradores__img picture {
-  width: 100%;
+  border: 2px solid black;
+  width: 80%;
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
+  border-radius: 50%;
 }
 .nosotros__talleres__colaboradores__img picture img {
   width: 100%;
   aspect-ratio: 1/1;
-  border-radius: 50%;
-  overflow: hidden;
   z-index: 2;
 }
 .nosotros__talleres__colaboradores__img picture:hover > img {
+  width: 100%;
+  aspect-ratio: 1/1;
   animation-name: desvanecerImg;
   animation-timing-function: linear;
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 .nosotros__talleres__colaboradores h4 {
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 
@@ -1193,4 +805,8 @@
 
 body {
   background-image: url("../img/textura.png");
+}
+
+p {
+  font-family: "Montserrat", serif;
 }/*# sourceMappingURL=main.css.map */

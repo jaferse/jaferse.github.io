@@ -1,6 +1,5 @@
 @import './componentes/header';
 @import './componentes/footer';
-@import './componentes/nav';
 @import './componentes/carrusel';
 @import './componentes/main.scss';
 @import './componentes/registro';
@@ -12,5 +11,7 @@
 }
 body {
     background-image: url('../img/textura.png');
-
+}
+p{
+    font-family: $fuente_secundaria;
 }
