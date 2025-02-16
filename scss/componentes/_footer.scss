@@ -35,7 +35,7 @@
     }
 
     &__nosotros {
-
+        width: 50%;
         // height: 3.75rem;
         width: 65%;
         display: flex;
@@ -87,6 +87,7 @@
     }
 
     &__ayuda {
+        width: 20%;
         display: flex;
         flex-direction: column;
 
@@ -100,7 +101,7 @@
     }
 
     &__redes {
-
+        width: 30%;
         &__contenedor {
             display: flex;
             flex-direction: row;

@@ -4,148 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalice.css">
-    <link rel="stylesheet" href="../css/main.css">
     <title>Registro</title>
+    <link rel="icon" type="image/x-icon" href="/img/Kvote.ico">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Aladin&family=Fleur+De+Leah&family=Italianno&family=Kotta+One&family=Noto+Sans+Thai:wght@100..900&family=Playwrite+AU+VIC+Guides&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalice.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/normalice.css">
+    <link rel="stylesheet" href="/css/main.css">
 </head>
 
 <body>
-    <div class="Container">
-        <div class="Container__spinner">
-            <div class="Container__spinner__img"></div>
+    <div class="ContainerGlobal">
+
+        <div class="Container">
+            <div class="Container__spinner">
+                <div class="Container__spinner__img"></div>
+            </div>
         </div>
-    </div>
-    <header class="header">
-        <a class="header__logo" href="/index.html"></a>
-        <nav class="nav">
-            <a href="#" class="nav__button">
-                Novedades
-            </a>
-            <a href="#" class="nav__button">
-                Comic
-            </a>
-            <a href="#" class="nav__button">
-                Libros
-            </a>
-            <a href="#" class="nav__button">
-                Merchandising
-            </a>
-            <a href="/html/sombreNosotros.html" class="nav__button">
-                Nosotros
-            </a>
-            <div class="nav__login">
-                <a href="/html/sign_in.html" class="login"></a>
-                <a class="carro" href="#"></a>
-                <div class="search">
-                    <label for="buscar"></label><input type="text" placeholder="Buscar" id="buscar">
+        <header class="header">
+            <a class="header__logo" href="/index.html"></a>
+            <nav class="nav">
+                <a href="#" class="nav__button">
+                    <i>Novedades</i>
+                </a>
+                <a href="#" class="nav__button">
+                    <i>Comic</i>
+                </a>
+                <a href="#" class="nav__button">
+                    <i> Libros</i>
+                </a>
+                <a href="#" class="nav__button">
+                    <i>Merchandising</i>
+                </a>
+                <a href="/html/sombreNosotros.html" class="nav__button">
+                    <i>Nosotros</i>
+                </a>
+                <div class="nav__login">
+                    <a href="/html/sign_in.html" class="login"></a>
+                    <a class="carro" href="#"></a>
+                    <div class="search">
+                        <label for="buscar"></label><input type="text" placeholder="Buscar" id="buscar">
+                    </div>
                 </div>
-            </div>
+            </nav>
+        </header>
+        <nav class="breadcrumb">
+            <a class="breadcrumb__home" href="/index.html">
+                <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
+            </a>
+            <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
+            <a class="breadcrumb__home" href="/html/sign_in.html">
+                <img src="/img/form.png" alt="Icono de casa">
+            </a>
+
         </nav>
-    </header>
+        <main class="registro">
+            <section class="registro__contenedor">
 
-    <main class="registro">
-        <section class="registro__contenedor">
-
-            <h2 class="registro__title">Rellene el formulario</h2>
-            <div class="registro__img">
+                <h2 class="registro__title">Rellene el formulario</h2>
+                <!-- <div class="registro__img">
                 <img src="../img/formularioImg.jpg" alt="">
-            </div>
-            <form class="registro__formulario">
+            </div> -->
+                <form class="registro__formulario">
 
-                <div class="registro__formulario__group">
-                    <label for="userName">Nombre Usuario: </label> <input type="text" id="userName" placeholder="Nombre Usuario" required>
-                </div>
-                <div class="registro__formulario__group">
-                    <label for="nombre">Nombre: </label> <input type="text" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="registro__formulario__group">
-                    <label for="apellido1">Primer Apellido: </label> <input type="text" id="apellido1" placeholder="Primer Apellido" required>
-                </div>
-                <div class="registro__formulario__group">
-                    <label for="apellido2">Segundo Apellido: </label> <input type="text" id="apellido2" placeholder="Segundo Apellido">
-                </div>
-                <div class="registro__formulario__group">
-                    <label for="email">Correo Electrónico: </label> <input type="email" id="email" placeholder="Correo Electrónico">
-                </div>
-                <div class="registro__formulario__group">
-                    <label for="password">Contraseña: </label> <input type="password" id="password" placeholder="Contraseña">
-                </div>
-                <div class="registro__formulario__group">
-                    <label for="password2">Confirme Contraseña: </label> <input type="password" id="password2" placeholder="Confirme Contraseña">
-                </div>
-                <div class="registro__formulario__group">
-                    <input type="submit" name="enviar" value="Registrarse" id="botonRegistrar">
-                </div>
+                    <div class="registro__formulario__group">
+                        <label for="userName">Nombre Usuario </label> <input type="text" id="userName"
+                            placeholder="Nombre Usuario" required>
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="nombre">Nombre </label> <input type="text" id="nombre" placeholder="Nombre"
+                            required>
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="apellido1">Primer Apellido </label> <input type="text" id="apellido1"
+                            placeholder="Primer Apellido" required>
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="apellido2">Segundo Apellido </label> <input type="text" id="apellido2"
+                            placeholder="Segundo Apellido">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="email">Correo Electrónico </label> <input type="email" id="email"
+                            placeholder="Correo Electrónico">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="password">Contraseña </label> <input type="password" id="password"
+                            placeholder="Contraseña">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="password2">Confirme Contraseña </label> <input type="password" id="password2"
+                            placeholder="Confirme Contraseña">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="birth">Fecha nacimiento</label><input type="date" id="birth"
+                            placeholder="Fecha Nacimiento">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="tarjeta">Nº Tarjeta de Credito</label>
+                        <input type="text" id="tarjeta" placeholder="xxxx-xxxx-xxxx-xxxx">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="caducidad">Caducidad</label>
+                        <input type="text" id="caducidad" placeholder="MM/AA">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="CVV">CVV</label>
+                        <input type="text" id="CVV" maxlength="3" placeholder="xxx">
+                    </div>
+                    <div class="registro__formulario__group">
+                        <label for="generoFavorito">Género Favorito: </label>
+                        <select name="generoFavorito" id="generoFavorito">
+                            <option value="">Seleccione un género</option>
+                            <option value="Americano">Americano</option>
+                            <option value="Europeo">Europeo</option>
+                            <option value="Manga">Manga</option>
+                            <option value="Indie">Indie</option>
+                            <option value="Novela">Novela</option>
+                            <option value="Otro">Otros</option>
+                        </select>
+                    </div>
+                    <div class="registro__formulario__group">
+                        <input type="submit" name="enviar" value="Registrarse" id="botonRegistrar">
+                    </div>
 
-            </form>
-            <div class="progress-container">
-                <svg class="progress-circle" width="120" height="120" viewBox="0 0 120 120">
-                    <circle class="circle-background" cx="60" cy="60" r="54" stroke="#e6e6e6" stroke-width="12"
-                        fill="none" />
-                    <circle class="circle-progress" cx="60" cy="60" r="54" stroke="#B8001F" stroke-width="12"
-                        fill="none" stroke-dasharray="339.292" stroke-dashoffset="339.292" />
-                </svg>
-                <div class="progress-text"></div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer">
-        <section class="footer__ayuda">
-            <h2>Ayuda</h2>
-            <a href="#">
-                Localizar Pedido
-            </a>
+                </form>
+                <div class="progress-container">
+                    <svg class="progress-circle" width="120" height="120" viewBox="0 0 120 120">
+                        <circle class="circle-background" cx="60" cy="60" r="54" stroke="#e6e6e6" stroke-width="12"
+                            fill="none" />
+                        <circle class="circle-progress" cx="60" cy="60" r="54" stroke="#B8001F" stroke-width="12"
+                            fill="none" stroke-dasharray="339.292" stroke-dashoffset="339.292" />
+                    </svg>
+                    <div class="progress-text"></div>
+                </div>
+            </section>
+        </main>
 
-            <a href="#">
-                Devoluciones
-            </a>
-
-            <a href="#">
-                Métodos De Pago
-            </a>
-
-        </section>
-        <section class="footer__nosotros">
-            <h2>Contacto</h2>
-            <article class="footer__nosotros__contacto">
-                <a class="mail" href="mailto:kvoteshop@gmail.com">kvoteshop@gmail.com</a>
-                <a class="phone" href="tel:+34666666666">666666666</a>
-                <a class="direcion" href="https://maps.app.goo.gl/EM2W4Sv6VTWwjDb87">Plaza Mayor 10, 13001 Ciudad
-                    Real</a>
-            </article>
-        </section>
-        <section class="footer__redes">
-            <h2>Redes Sociales</h2>
-            <article class="footer__redes__contenedor">
-
-                <a href="https://www.facebook.com/">
-                    <img src="/img/facebookIcon.png" alt="Icono de Facebook" class="facebook">
+        <footer class="footer">
+            <section class="footer__ayuda">
+                <h2>Ayuda</h2>
+                <a href="#">
+                    Localizar Pedido
                 </a>
-                <a href="https://www.instagram.com/">
-                    <img class="instagram" src="/img/instaIcon.webp" alt="Icono de Instagram">
+
+                <a href="#">
+                    Devoluciones
                 </a>
-                <a href="https://bsky.app/">
-                    <img src="/img/blueskyIcon.png" alt="Icono de bluesky" class="bluesky">
+
+                <a href="#">
+                    Métodos De Pago
                 </a>
-                <a href="https://www.youtube.com/">
-                    <img src="/img/youtube.PNG" alt="Icono de Youtube" class="youtube">
-                </a>
-                <a href="https://www.tiktok.com/">
-                    <img src="/img/tiktokIcon.png" alt="Icono de TikTok" class="tiktok">
-                </a>
-            </article>
-        </section>
-    </footer>
+
+            </section>
+            <section class="footer__nosotros">
+                <h2>Contacto</h2>
+                <article class="footer__nosotros__contacto">
+                    <a class="mail" href="mailto:kvoteshop@gmail.com">kvoteshop@gmail.com</a>
+                    <a class="phone" href="tel:+34666666666">666666666</a>
+                    <a class="direcion" href="https://maps.app.goo.gl/EM2W4Sv6VTWwjDb87">Plaza Mayor 10, 13001 Ciudad
+                        Real</a>
+                </article>
+            </section>
+            <section class="footer__redes">
+                <h2>Redes Sociales</h2>
+                <article class="footer__redes__contenedor">
+
+                    <a href="https://www.facebook.com/">
+                        <img src="/img/facebookIcon.png" alt="Icono de Facebook" class="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <img class="instagram" src="/img/instaIcon.webp" alt="Icono de Instagram">
+                    </a>
+                    <a href="https://bsky.app/">
+                        <img src="/img/blueskyIcon.png" alt="Icono de bluesky" class="bluesky">
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <img src="/img/youtube.PNG" alt="Icono de Youtube" class="youtube">
+                    </a>
+                    <a href="https://www.tiktok.com/">
+                        <img src="/img/tiktokIcon.png" alt="Icono de TikTok" class="tiktok">
+                    </a>
+                </article>
+            </section>
+        </footer>
+    </div>
+
     <script src="../js/animacionLogo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/just-validate@latest/dist/just-validate.production.min.js"></script>
     <script src="../js/validacionFormulario.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7-beta.19/jquery.inputmask.min.js"></script>
 </body>
 
 </html>

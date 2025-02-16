@@ -1,19 +1,27 @@
+.ContainerGlobal{
+    background-image: url('/img/colage.jfif')
+}
+
 .registro {
 
 
     width: 80%;
     margin: 2em auto;
     font-family: $fuente_secundaria;
+    position: relative;
+    
     &__contenedor {
+        
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-content: center;
         align-items: center;
         background-color: white;
         border: 2px solid $rojo_primario;
         box-shadow: $box_shadow;
-        border-radius: 6px;
+        border-radius: 16px;
+        width: 60%;
 
         .progress-container {
             position: relative;
@@ -56,6 +64,7 @@
         background-color: $rojo_primario;
         font-family: $fuente_general;
         color: $blanco_letra;
+        border-radius: 10px 10px 0 0;
     }
 
     &__img {
@@ -74,7 +83,7 @@
     }
 
     &__formulario {
-        width: 65%;
+        width: 100%;
         color: black;
         text-align: center;
         display: flex;
@@ -83,7 +92,7 @@
 
         &__group {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: space-between;
             flex-wrap: wrap;
             margin: 1rem 5rem;
@@ -111,8 +120,9 @@
                 color: green;
             }
 
-            input {
-                height: 1rem;
+            input, select {
+                height: 2rem;
+                border-radius: 6px;
                 border-style: solid;
                 color: black;
             }
@@ -120,7 +130,7 @@
             input:focus {
                 // border-style: dotted;
                 border-color: $azulFocus;
-                border-radius: 3px;
+                border-radius: 6px;
                 outline: 1.5px solid $azulFocus;
             }
 
@@ -128,7 +138,7 @@
                 background-color: $rojo_primario;
                 color: $blanco_letra;
                 border: none;
-                border-radius: 6px;
+                border-radius: 16px;
                 padding: 0.5rem 1rem;
                 height: 2rem;
                 font-family: $fuente_general;
@@ -145,5 +155,47 @@
         }
     }
 
+
+    .confirmacion {
+        position: absolute;
+        top: 20%;
+        border-radius: 16px;
+        background-color: white;
+        border: 2px solid $rojo_primario;
+        box-shadow: $box_shadow;
+        &__contenedor {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            h2 {
+                width: 100%;
+                height: 100%;
+                margin-top: 0px;
+                padding: 0.8rem 0px;
+                text-align: center;
+                background-color: $rojo_primario;
+                font-family: $fuente_general;
+                color: $blanco_letra;
+                border-radius: 10px 10px 0 0;
+            }
+
+            ul {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                li {
+                    margin-left: 1rem;
+                    margin: 1rem;
+                }
+            }
+
+        }
+
+
+    }
 
 }

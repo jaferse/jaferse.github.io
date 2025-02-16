@@ -12,7 +12,8 @@ function updateProgress(value, total) {
     text.textContent = `${value}/${total}`;
 }
 
-
+const cuadroDialogo = document.createElement('dialog');
+const registro = document.querySelector('.registro');
 const justValidate = new JustValidate('.registro__formulario');
 const formulario = document.querySelector('.registro__formulario');
 console.log(formulario);
@@ -38,17 +39,42 @@ for (const element of formulario.elements) {
                 // console.log(element.previousElementSibling);
 
             }
-            const claseVerificacion = document.querySelectorAll('.just-validate-success-field');
 
-            console.log(claseVerificacion.length);
+            if (element.id == 'caducidad') {
+                //Si solo tiene 4 digitos agregamos "/" y revalidamos el campo
+                if (element.value.length == 4) {
+                    element.value = element.value.slice(0, 2) + "/" + element.value.slice(2, 4);
+                    justValidate.revalidateField(`#${element.id}`);
+                }
+                //Si tiene mas de 5 digitos lo cortamos
+                if (element.value.length >= 6) {
+                    element.value = element.value.substring(0, 5);
+                }
+                //Si tiene 5 difitos le ponemos "/"
+                if (element.value.length == 5) {
+                    console.log("entro 5");
+
+                    element.value = element.value.slice(0, 2) + "/" + element.value.slice(3);
+                }
+
+                justValidate.revalidateField(`#${element.id}`);
+            }
+
+            const claseVerificacion = document.querySelectorAll('.just-validate-success-field');
+            // console.log(claseVerificacion.length);
 
             updateProgress(claseVerificacion.length, (formulario.elements.length - 1))
-            console.log(contador);
+            // console.log(contador);
 
         });
-        element.addEventListener("input", () => {
-
+        element.addEventListener("input", (e) => {
             justValidate.revalidateField(`#${element.id}`);
+            if (element.id == 'tarjeta') {
+                //Si tiene mas de 16 digitos lo cortamos
+                if (element.value.length >= 19) {
+                    element.value = element.value.substring(0, 19);
+                }
+            }
         });
 
     }
@@ -220,10 +246,8 @@ justValidate.addField('#userName',
             validator: (value, fields) => {
                 return value === fields['#password'].elem.value;
             },
-            errorMessage:"Las contraseñas no coinciden",
+            errorMessage: "Las contraseñas no coinciden",
         }
-       
-
 
     ],
     {
@@ -231,41 +255,218 @@ justValidate.addField('#userName',
         successMessage: 'Contraseña valida',
     }
 
-).onSuccess((e) => { //En caso de que sea correcto cada uno de los campos envia el formulario
-    // formulario.submit();
-    // window.location.reload()
-    // formulario.reset();
-    e.preventDefault();
-    formulario.submit();
-});
+).addField('#birth',
+    [
+        {
+            rule: 'required',
+            errorMessage: 'La fecha de nacimiento debe ser rellenada',
+        },
+        {
+            validator: (value) => {
+                let introducida = new Date(value);
+                let fechaLimite = new Date();
+                fechaLimite.setFullYear(fechaLimite.getFullYear() - 18);
+                // console.log(introducida + " - " + fechaLimite);
+                return (introducida) <= fechaLimite;
+            },
+            errorMessage: "Debes ser mayor de edad para poder registrarte",
+        }
+    ],
+    {
+        successMessage: 'Fecha correcta',
+    }
+
+
+
+).addField('#tarjeta',
+
+    [
+        {
+            rule: 'required',
+            errorMessage: 'Número de tarjeta obligatoria',
+        },
+        {
+            rule: 'maxLength',
+            value: 19,
+            errorMessage: 'Debe tener 16 caracteres',
+        },
+        {
+            rule: 'customRegexp',
+            value: /^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$/,
+            errorMessage: 'Formato de tarjeta incorrecto',
+        }
+    ],
+    {
+        successMessage: 'Número tarjeta valido',
+    }
+
+
+).addField('#caducidad',
+
+    [
+        {
+            rule: 'required',
+            errorMessage: 'Caducidad obligatoria',
+        },
+        {
+            rule: 'maxLength',
+            value: 5,
+            errorMessage: 'Debe tener formato MM/AA',
+        },
+        {
+            rule: 'minLength',
+            value: 5,
+            errorMessage: 'Debe tener formato MM/AA'
+        },
+        {
+            rule: 'customRegexp',
+            value: /^(0[1-9]|1[0-2])\/([0-9]{2})$/,
+            errorMessage: 'Debe tener formato MM/AA',
+        },
+        {
+            validator: (value) => {
+                let hoy = new Date();
+                valido = false;
+                // console.log(value.substring(0,2)," == ", (hoy.getMonth().toString()),(parseInt(value.substring(0,2)) >= parseInt(hoy.getMonth())+1));
+                //Si el año es mayor la fecha es correcta
+                if (value.substring(3) > ((hoy.getFullYear().toString()).substring(2))) {
+                    // console.log("Año correcto");
+
+                    valido = true;
+
+                }
+                //Si el año es igual y el mes es mayor o igual 
+                else if ((value.substring(3) == ((hoy.getFullYear().toString()).substring(2))) && (parseInt(value.substring(0, 2)) >= parseInt(hoy.getMonth()) + 1)) {
+                    console.log("mes correcto");
+                    valido = true;
+
+                } else {
+                    console.log("Año Incorrecto");
+
+                }
+                return valido;
+            },
+            errorMessage: "Tarjeta caducada",
+        }
+    ],
+    {
+        successMessage: 'Caducidad correcta',
+    }
+
+
+).addField('#CVV',
+    [
+        {
+            rule: 'required',
+            errorMessage: 'CVV obligatoria',
+        },
+        {
+            rule: 'maxLength',
+            value: 3,
+            errorMessage: 'Debe tener 3 caracteres',
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+            errorMessage: 'Debe tener 3 caracteres'
+        },
+        {
+            rule: 'number',
+            errorMessage: 'Debe ser un numero',
+        }
+    ],
+    {
+        successMessage: 'CVV correcto',
+    }
+
+
+).addField('#generoFavorito',
+    [
+        {
+            rule: 'required',
+            errorMessage: 'Elige un genero favorito',
+        }
+    ]
+
+)
+    // .onSuccess((e) => { //En caso de que sea correcto cada uno de los campos envia el formulario
+    //     // formulario.submit();
+    //     // window.location.reload()
+    //     // formulario.reset();
+    //     e.preventDefault();
+    //     // formulario.submit();
+    // })
+    ;
 
 
 formulario.addEventListener('submit', (e) => {
 
-    //just-validate-success-label borrar todos
-
     e.preventDefault();
+    console.log(e.target);
+
 
     justValidate.revalidate().then((isValid) => {
         if (isValid) {
-            console.log("Formulario enviado correctamente.");
-            // e.submit();
-            formulario.submit();
+            // console.log("Formulario enviado correctamente.");
+            // // e.submit();
+            // formulario.submit();
+            const inputs = e.target.querySelectorAll('input');
+            const opcion = document.querySelector('#generoFavorito');
+            cuadroDialogo.classList.add('confirmacion');
+            let contenidoHTML =
+                `<div class="confirmacion__contenedor">
+            <h2>Confirmas tus datos</h2>
+            <ul>`;
+
+            inputs.forEach(element => {
+
+                // console.log(element.value);
+                // console.log(element.previousElementSibling.textContent);
+                if (element.type !== 'submit') {
+
+                    contenidoHTML += `<li>${element.previousElementSibling.textContent}: ${element.value}</li>`;
+                }
+
+            });
+            contenidoHTML += ` <li>Genero Favorito: ${opcion.value}</li>
+            </ul>
+            <button class="dialog__confirmar">Confirmar</button>
+                <button class="dialog__volver">Volver atras</button>
+                </div>`;
+                cuadroDialogo.innerHTML= contenidoHTML;
+            registro.appendChild(cuadroDialogo);
+
+            cuadroDialogo.style.display = "block";
+
+
+
         } else {
             console.log("Formulario no válido, corrige los errores.");
         }
     });
 
-
     const mensajesVerificacion = document.querySelectorAll('.just-validate-success-label');
     const claseVerificacion = document.querySelectorAll('.just-validate-success-field');
+
     //Borramos todos los textos de verificación
     mensajesVerificacion.forEach(mensaje => {
         mensaje.remove();
     });
+
     //Borramos todas las clases de verificacion de los texto
     claseVerificacion.forEach(clase => {
         clase.classList.remove('just-validate-success-field');
 
     });
+});
+
+cuadroDialogo.addEventListener('click', (e) => {
+    if (e.target.closest(".dialog__confirmar")) {
+
+        formulario.submit();
+    }
+    if (e.target.closest(".dialog__volver")) {
+        cuadroDialogo.style.display = "none";
+        cuadroDialogo.innerHTML = "";
+    }
 });
