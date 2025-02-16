@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kvote Tienda de Comics</title>
+    <title>Comics</title>
     <link rel="icon" type="image/x-icon" href="/img/Kvote.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +14,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/normalice.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/css/normalice.css">
+    <link rel="stylesheet" href="/css/main.css">
     <!-- Hotjar Tracking Code for Kvote -->
     <script>
         (function (h, o, t, j, a, r) {
@@ -40,7 +41,7 @@
             <a href="#" class="nav__button">
                 <i>Novedades</i>
             </a>
-            <a href="/html/comic.html" class="nav__button">
+            <a href="/html/comics.html" class="nav__button">
                 <i>Comic</i>
             </a>
             <a href="/html/novela.html" class="nav__button">
@@ -66,70 +67,40 @@
         <a class="breadcrumb__home" href="/index.html">
             <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
         </a>
+        <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
+        <a class="breadcrumb__home" href="/html/novela.html">
+            <img src="/img/libroIcon.png" alt="Icono de casa">
+        </a>
     </nav>
-    <main class="main">
-        <article class="main__sliderFrame">
-            <ul>
-                <li>
-                    <img src="./img/carruselProvidence.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./img/carruselTheWalkingDead.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./img/carruselSpiderman.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./img/carruselbatman.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./img/carruselWonderWoman.jpg" alt="">
-                </li>
-                <li>
-                    <img src="./img/carrruselKilling.png" alt="">
-                </li>
-            </ul>
-        </article>
 
-        <article class="main__bestSellers">
-            <h2 class="main__bestSellers__title">Los más vendidos de Enero</h2>
+    <main class="containerProductos">
+        <!-- <section class="containerProductos__producto">
+            <div class="containerProductos__producto__img">
+                <img src="/img/portadas/1.jpg" alt="">
+            </div>
+            <div class="containerProductos__producto__info">
+                <h2 class="containerProductos__producto__info__titulo">Persépolis</h2>
+                <hr>
+                <p class="containerProductos__producto__info__autor">Marjane Satrapi</p>
+                <p class="containerProductos__producto__info__precio">30,50</p>
+                <button class="verMas">Ver más</button>
+                <div class="containerProductos__producto__info__adicional">
+                    <p class="containerProductos__producto__info__adicional__Formato">
+                        Tapa blanda
+                    </p>
+                    <p class="containerProductos__producto__info__adicional__Tipo">
+                        Novela grafica
 
-            <section class="main__bestSellers__portadas">
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="./img/PortadaEisner_2019_2.jpg" alt="Imagen de portada de Blackbird">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">Blackbird</a></h3>
+                    </p>
+                    <p class="containerProductos__producto__info__adicional__Paginas">
+                        600
+                    </p>
+                    <p class="containerProductos__producto__info__adicional__ISBN">
+                        987-98-10-78945-1
+                    </p>
                 </div>
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="./img/PortadaEisner_2024_1.jpg" alt="Imagen de portada de  Demon Wars">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">Deamon Wars</a></h3>
-                </div>
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="./img/PortadaEisner_2023_1.jpg" alt="Imagen de portada de Nightwing">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">Nightwing</a></h3>
-                </div>
-            </section>
-        </article>
-        <article class="main__news">
-            <h2 class="main__news__title">Lo nuevo de Si Spurrier y Matías Bergara</h2>
-            <section class="main__news__img">
-                <img src="./img/news_magpies2.jpg" alt="">
-            </section>
-            <section class="main__news__text">
-                <p>DSTLRY, la editorial de moda que está a punto de llegar a nuestro país de la mano de Norma con la
-                    publicación de Somna, anuncia todo un pelotazo de equipo creativo, para variar. En este caso se
-                    trata de Simon Spurrier y Matías Bergara, los autores responsables de dos impresionantes obras que
-                    se publicaron en España hace poco, CODA y Step By Bloody Step.<br>
-                    <span><a href="">Ver más</a></span>
-                </p>
-            </section>
-
-        </article>
+            </div>
+        </section> -->
     </main>
     <footer class="footer">
         <section class="footer__ayuda">
@@ -179,7 +150,8 @@
         </section>
     </footer>
     <script src="/js/animacionLogo.js"></script>
-    <script src="/js/carrusel.js"></script>
+    <!-- <script src="/js/carrusel.js"></script> -->
+    <script src="/js/productos.js"></script>
 </body>
 
 </html>
