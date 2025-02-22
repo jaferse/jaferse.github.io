@@ -37,22 +37,28 @@
     </div>
     <header class="header">
         <a class="header__logo" href="/index.html"></a>
+        <div class="menuHamburguesa">
+            <img src="/img/hamburgerIcon.svg" alt="Icono de hamburguesa">
+        </div>
         <nav class="nav">
-            <a href="#" class="nav__button">
-                <i>Novedades</i>
-            </a>
-            <a href="/html/comic.html" class="nav__button">
-                <i>Comic</i>
-            </a>
-            <a href="/html/novela.html" class="nav__button">
-                <i> Libros</i>
-            </a>
-            <a href="#" class="nav__button">
-                <i>Merchandising</i>
-            </a>
-            <a href="/html/sombreNosotros.html" class="nav__button">
-                <i>Nosotros</i>
-            </a>
+            <div class="nav__menu">
+
+                <a href="#" class="nav__menu__button">
+                    <i>Novedades</i>
+                </a>
+                <a href="/html/comic.html" class="nav__menu__button">
+                    <i>Comic</i>
+                </a>
+                <a href="/html/novela.html" class="nav__menu__button">
+                    <i> Libros</i>
+                </a>
+                <a href="#" class="nav__menu__button">
+                    <i>Merchandising</i>
+                </a>
+                <a href="/html/sombreNosotros.html" class="nav__menu__button">
+                    <i>Nosotros</i>
+                </a>
+            </div>
             <div class="nav__login">
                 <a href="/html/sign_in.html" class="login"></a>
                 <a class="carro" href="#"></a>
@@ -62,7 +68,6 @@
             </div>
         </nav>
     </header>
-
     <nav class="breadcrumb">
         <a class="breadcrumb__home" href="/index.html">
             <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
@@ -150,8 +155,11 @@
         </section>
     </footer>
     <script src="/js/animacionLogo.js"></script>
+    <script type="module" src="/js/listaProductos.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/hamburguer.js"></script>
     <!-- <script src="/js/carrusel.js"></script> -->
-    <script src="/js/productos.js"></script>
+    <script type="module" src="/js/productos.js"></script>
 </body>
 
 </html>

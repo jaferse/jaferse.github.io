@@ -21,6 +21,16 @@
 .header__logo:hover {
   transform: scale(1.1);
 }
+.header .menuHamburguesa {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  margin: auto 1rem;
+}
+.header .menuHamburguesa img {
+  width: 100%;
+  height: 100%;
+}
 .header .nav {
   flex-grow: 1;
   display: flex;
@@ -28,7 +38,12 @@
   font-family: "Kotta One", serif;
   position: relative;
 }
-.header .nav__button {
+.header .nav__menu {
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+.header .nav__menu__button {
   display: flex;
   align-items: center;
   background-color: #B8001F;
@@ -41,20 +56,20 @@
   flex-shrink: 1;
   position: relative;
 }
-.header .nav__button i {
+.header .nav__menu__button i {
   font-style: normal;
   z-index: 2;
 }
-.header .nav__button:hover > i {
+.header .nav__menu__button:hover > i {
   animation-name: transicionLetras;
   animation-timing-function: linear;
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
-.header .nav__button:hover:before {
+.header .nav__menu__button:hover:before {
   animation: slide2 0.5s forwards;
 }
-.header .nav__button:before {
+.header .nav__menu__button:before {
   z-index: 0;
   background: hsl(350, 100%, 50%);
   content: "";
@@ -142,6 +157,98 @@
   100% {
     color: #FCFAEE;
     transform: scale(1.2);
+  }
+}
+@media screen and (max-width: 992px) {
+  input {
+    display: none;
+    position: absolute;
+    right: 5px;
+    top: 5rem;
+  }
+  .header {
+    width: 100%;
+  }
+  .header__logo {
+    margin: 0.5rem 0.3rem;
+  }
+  .header .nav {
+    opacity: 1;
+    font-size: 1rem;
+  }
+  .header .nav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-shrink: 0;
+  }
+  .header .nav__menu__button {
+    padding: 0.3% 1.5%;
+  }
+  .header .nav__login {
+    justify-content: space-evenly;
+    margin-left: 0.5rem;
+    flex: 0;
+  }
+  .header .nav__login .carro {
+    margin: 0rem 0.5rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header .menuHamburguesa {
+    display: block;
+    cursor: pointer;
+  }
+  .header .nav {
+    align-items: center;
+    justify-content: center;
+  }
+  .header .nav__menu {
+    z-index: 5;
+    width: 50%;
+    position: absolute;
+    flex-direction: column;
+    top: 4.2rem;
+    left: -400px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .header .nav__menu__button {
+    padding: 2rem;
+  }
+  .header .nav__menu__button:hover {
+    background-color: hsl(350, 100%, 50%);
+  }
+  .header .nav__menu__button::before {
+    content: none;
+  }
+  .header .nav__login {
+    justify-content: space-around;
+  }
+  .header .nav.open {
+    animation: slideIn 0.3s forwards;
+  }
+}
+/*  Animación de entrada */
+@keyframes slideIn {
+  0% {
+    left: -300px;
+    opacity: 0;
+  }
+  100% {
+    left: -100px;
+    opacity: 1;
+  }
+}
+/*  Animación de salida */
+@keyframes slideOut {
+  0% {
+    left: -100px;
+    opacity: 1;
+  }
+  100% {
+    left: -300px;
+    opacity: 0;
   }
 }
 .footer {
@@ -1197,8 +1304,19 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
   background-image: url("../img/textura.png");
+  overflow-x: hidden;
 }
 
 p {

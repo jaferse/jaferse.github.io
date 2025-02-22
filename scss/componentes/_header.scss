@@ -10,7 +10,8 @@
     justify-content: space-between;
     background-color: $rojo_primario;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
-    ;
+
+
 
     &__logo {
         background-image: url('/img/Kvote.png');
@@ -25,7 +26,20 @@
         }
     }
 
+    .menuHamburguesa {
+        display: none;
+        width: 2rem;
+        height: 2rem;
+        margin: auto 1rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
     .nav {
+
         // width: 100%;
         flex-grow: 1;
         display: flex;
@@ -34,44 +48,54 @@
         font-family: $fuente_general;
         position: relative;
 
-        &__button {
+        &__menu {
             display: flex;
-            align-items: center;
-            background-color: $rojo_primario;
-            list-style: none;
-            color: $blanco_letra;
-            text-align: center;
-            padding: 0.3% 3%;
-            font-weight: bold;
-            text-decoration: none;
-            flex-shrink: 1;
-            position: relative;
-            i{
-                font-style: normal;
-                z-index: 2;
-                
-            }
-            &:hover>i{
-                animation-name: transicionLetras;
-                animation-timing-function: linear;
-                animation-duration: 0.5s;
-                animation-fill-mode: forwards;
-            }
-            &:hover:before {
-                // background-color: $boton_hover;
-                // cursor: pointer;
-                animation: slide2 0.5s forwards;
-            }
-            &:before {
-                z-index: 0;
-                background: $nav_hover;
-                // opacity: 0.3;
-                content: "";
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 0%;
-                top: -100%;
+            justify-content: space-between;
+            flex: 1;
+
+            &__button {
+                display: flex;
+                align-items: center;
+                background-color: $rojo_primario;
+                list-style: none;
+                color: $blanco_letra;
+                text-align: center;
+                padding: 0.3% 3%;
+                font-weight: bold;
+                text-decoration: none;
+                flex-shrink: 1;
+                position: relative;
+
+                i {
+                    font-style: normal;
+                    z-index: 2;
+
+                }
+
+                &:hover>i {
+                    animation-name: transicionLetras;
+                    animation-timing-function: linear;
+                    animation-duration: 0.5s;
+                    animation-fill-mode: forwards;
+                }
+
+                &:hover:before {
+                    // background-color: $boton_hover;
+                    // cursor: pointer;
+                    animation: slide2 0.5s forwards;
+                }
+
+                &:before {
+                    z-index: 0;
+                    background: $nav_hover;
+                    // opacity: 0.3;
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0%;
+                    top: -100%;
+                }
             }
         }
 
@@ -107,6 +131,7 @@
                     transform: scale(1.1);
                     background-image: url(('/img/batlogin2.png'));
                 }
+
                 background-image: url(('/img/batlogin1.png'));
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -120,6 +145,7 @@
                 height: 100%;
                 display: flex;
                 align-items: center;
+
                 label {
                     display: inline-block;
                     width: 1.5rem;
@@ -149,23 +175,153 @@
     }
 
 }
+
 @keyframes slide2 {
     0% {
         left: 0%;
         top: -100%;
     }
-    
+
     100% {
         left: 0%;
         top: 0%;
     }
 }
-@keyframes transicionLetras{
-    0%{
+
+@keyframes transicionLetras {
+    0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         color: $blanco_letra;
         transform: scale(1.2);
+    }
+}
+
+
+
+@media screen and (max-width: 992px) {
+    input {
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 5rem;
+    }
+
+    .header {
+        width: 100%;
+
+        &__logo {
+            margin: 0.5rem 0.3rem;
+        }
+
+        .nav {
+            opacity: 1;
+            font-size: 1rem;
+
+            &__menu {
+                // width: 100%;
+                // flex-grow: 1;
+                display: flex;
+                justify-content: space-between;
+                // justify-content: stretch;
+                align-items: stretch;
+
+                &__button {
+                    padding: 0.3% 1.5%;
+                }
+
+                flex-shrink: 0;
+            }
+
+            &__login {
+                // flex-grow: 1;
+                // flex-shrink: 1;
+                justify-content: space-evenly;
+                // width: 4rem;
+                margin-left: 0.5rem;
+                flex: 0;
+                .carro {
+                    margin: 0rem 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        .menuHamburguesa {
+            display: block;
+            cursor: pointer;
+        }
+
+        .nav {
+            align-items: center;
+            justify-content: center;
+
+            &__menu {
+                z-index: 5;
+                // display: none;
+                width: 50%;
+                position: absolute;
+                flex-direction: column;
+                top: 4.2rem;
+                // height: 4rem;
+                left: -400px;
+                border-radius: 16px;
+                overflow: hidden;
+                // animation-name: ;
+
+                &__button {
+                    padding: 2rem;
+
+                    &:hover {
+                        // animation-name: none;
+                        background-color: $nav_hover;
+
+                    }
+
+                    &::before {
+                        content: none;
+                    }
+                }
+            }
+
+            &__login {
+                justify-content: space-around;
+            }
+        }
+
+        .nav.open {
+            animation: slideIn 0.3s forwards;
+        }
+    }
+}
+
+/*  Animación de entrada */
+@keyframes slideIn {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+
+    100% {
+        left: -100px;
+        opacity: 1;
+    }
+}
+
+/*  Animación de salida */
+@keyframes slideOut {
+    0% {
+        left: -100px;
+        opacity: 1;
+    }
+
+    100% {
+        left: -300px;
+        opacity: 0;
     }
 }
