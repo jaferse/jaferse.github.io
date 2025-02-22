@@ -543,6 +543,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: start;
   flex-wrap: wrap;
   margin: 1rem 5rem;
   min-height: 2rem;
@@ -568,6 +569,7 @@
   border-radius: 6px;
   border-style: solid;
   color: black;
+  width: 100%;
 }
 .registro__formulario__group input:focus {
   border-color: #0062D5;
@@ -990,6 +992,205 @@
 .containerProductos__producto__info__adicional__ISBN::before {
   content: "ISBN: ";
   font-weight: 600;
+}
+
+.ContainerProducto {
+  margin: 1rem auto;
+  width: 96vw;
+  background-color: white;
+  border: 2px solid #B8001F;
+  box-shadow: 0.313rem 0.313rem 0.625rem -0.313rem rgb(0, 0, 0);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.ContainerProducto .Producto {
+  margin: 1rem auto;
+  width: 90%;
+  display: flex;
+  gap: 2rem;
+}
+.ContainerProducto .Producto__img {
+  height: 26rem;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.ContainerProducto .Producto__img img {
+  width: 100%;
+  height: 100%;
+}
+.ContainerProducto .Producto__info {
+  padding: 0 1rem;
+  width: 100%;
+}
+.ContainerProducto .Producto__info__titulo {
+  font-size: 2rem;
+  margin: 0;
+}
+.ContainerProducto .Producto__info__autor {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+.ContainerProducto .Producto__info__sinopsis {
+  display: flex;
+  flex-direction: column;
+}
+.ContainerProducto .Producto__info__sinopsis::before {
+  content: "Descripción";
+  font-weight: 700;
+}
+.ContainerProducto .Producto__info__caracteristicas {
+  margin: 0;
+}
+.ContainerProducto .Producto__info__caracteristicas ul {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+}
+.ContainerProducto .Producto__info__caracteristicas ul li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__caracteristicas__publicacion::before {
+  content: "Publicación ";
+  font-weight: 700;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__caracteristicas__publicacion::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/img/fechaIcon.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.ContainerProducto .Producto__info__caracteristicas__paginas::before {
+  content: "Páginas ";
+  font-weight: 700;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__caracteristicas__paginas::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/img/paginasIcon.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.ContainerProducto .Producto__info__caracteristicas__tipo::before {
+  content: "Categoría ";
+  font-weight: 700;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__caracteristicas__tipo::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/img/bookIcon.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.ContainerProducto .Producto__info__caracteristicas__subtipo::before {
+  content: "Género";
+  font-weight: 700;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__caracteristicas__subtipo::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/img//generoIcon.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.ContainerProducto .Producto__info__caracteristicas__formato::before {
+  content: "Formato ";
+  font-weight: 700;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__caracteristicas__formato::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/img/formatoIcon.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.ContainerProducto .Producto__info__caracteristicas__editorial::before {
+  content: "Editorial";
+  font-weight: 700;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__caracteristicas__editorial::after {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background-image: url("/img/editorialIcon.svg");
+  background-size: cover;
+  margin: 0 auto;
+}
+.ContainerProducto .Producto__info__precioComprar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ContainerProducto .Producto__info__precioComprar__precio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.ContainerProducto .Producto__info__precioComprar__precio > span {
+  margin: 0 0.2rem;
+}
+.ContainerProducto .Producto__info__precioComprar__precio__actual {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+}
+.ContainerProducto .Producto__info__precioComprar__precio__actual::after {
+  content: "€";
+  color: rgb(0, 0, 0);
+}
+.ContainerProducto .Producto__info__precioComprar__precio__anterior {
+  font-size: 0.8rem;
+  color: rgb(148, 144, 144);
+  text-decoration: line-through;
+  width: 100%;
+  text-align: center;
+}
+.ContainerProducto .Producto__info__precioComprar__precio__anterior::after {
+  content: "PVP";
+}
+.ContainerProducto .Producto__info__precioComprar__precio__anterior::before {
+  content: "Precio recomendado: ";
+}
+.ContainerProducto .Producto__info__precioComprar__precio__descuento {
+  color: red;
+  font-size: 1rem;
+}
+.ContainerProducto .Producto__info__precioComprar__boton {
+  width: 8rem;
+  height: 2rem;
+  background-color: #00b83d;
+  color: white;
+  border: 2px solid gray;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ContainerProducto .Producto__info__precioComprar__boton:hover {
+  transform: scale(1.1);
 }
 
 * {

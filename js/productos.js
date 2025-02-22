@@ -15,7 +15,9 @@ let listaProductos = [
         año_publicacion: 1605,
         sinopsis: "La historia de un hidalgo que se vuelve caballero andante.",
         precio: 25.99,
-        stock: 10
+        stock: 10,
+        paginas: 300,
+        paginas: 1200
     },
     {
         isbn: "9780060883287",
@@ -31,7 +33,9 @@ let listaProductos = [
         año_publicacion: 1967,
         sinopsis: "La saga de la familia Buendía en el mítico Macondo.",
         precio: 19.99,
-        stock: 15
+        stock: 15,
+        paginas: 300,
+        paginas: 1200
     },
     {
         isbn: "9780451524935",
@@ -47,7 +51,9 @@ let listaProductos = [
         año_publicacion: 1949,
         sinopsis: "Una sociedad totalitaria bajo la vigilancia del Gran Hermano.",
         precio: 14.99,
-        stock: 20
+        stock: 20,
+        paginas: 300,
+        paginas: 1200
     },
     {
         isbn: "9780061120084",
@@ -63,7 +69,9 @@ let listaProductos = [
         año_publicacion: 1960,
         sinopsis: "Una reflexión sobre la justicia racial en el sur de Estados Unidos.",
         precio: 22.99,
-        stock: 12
+        stock: 12,
+        paginas: 300,
+        paginas: 1200
     },
     {
         isbn: "9780141439518",
@@ -79,7 +87,9 @@ let listaProductos = [
         año_publicacion: 1813,
         sinopsis: "El encuentro y desencuentro entre Elizabeth Bennet y Mr. Darcy.",
         precio: 12.99,
-        stock: 18
+        stock: 18,
+        paginas: 300,
+        paginas: 1200
     },
     {
         isbn: "9780743273565",
@@ -95,7 +105,9 @@ let listaProductos = [
         año_publicacion: 1925,
         sinopsis: "La trágica historia de Jay Gatsby y su obsesión por Daisy Buchanan.",
         precio: 18.99,
-        stock: 14
+        stock: 14,
+        paginas: 300,
+        paginas: 400
     },
     {
         isbn: "9780140449136",
@@ -111,7 +123,9 @@ let listaProductos = [
         año_publicacion: 1866,
         sinopsis: "La lucha interna de Raskólnikov tras cometer un crimen.",
         precio: 17.99,
-        stock: 16
+        stock: 16,
+        paginas: 300,
+        paginas: 400
     },
     {
         isbn: "9780156012195",
@@ -127,7 +141,9 @@ let listaProductos = [
         año_publicacion: 1943,
         sinopsis: "Una fábula poética que explora la naturaleza humana a través de los ojos de un niño.",
         precio: 15.99,
-        stock: 20
+        stock: 20,
+        paginas: 300,
+        paginas: 400
     },
     {
         isbn: "9780553213690",
@@ -143,7 +159,9 @@ let listaProductos = [
         año_publicacion: 1915,
         sinopsis: "La transformación surrealista de Gregor Samsa en un insecto gigante.",
         precio: 13.99,
-        stock: 15
+        stock: 15,
+        paginas: 300,
+        paginas: 400
     },
     {
         isbn: "9781451673319",
@@ -159,7 +177,9 @@ let listaProductos = [
         año_publicacion: 1953,
         sinopsis: "Una sociedad donde los libros están prohibidos y los 'bomberos' queman la literatura.",
         precio: 16.99,
-        stock: 10
+        stock: 10,
+        paginas: 300,
+        paginas: 400
     },
     {
         isbn: "9780192833983",
@@ -175,7 +195,9 @@ let listaProductos = [
         año_publicacion: 1877,
         sinopsis: "La trágica historia de amor y sociedad en la Rusia zarista.",
         precio: 21.99,
-        stock: 12
+        stock: 12,
+        paginas: 300,
+        paginas: 400
     },
     {
         isbn: "9780140449129",
@@ -191,7 +213,9 @@ let listaProductos = [
         año_publicacion: 1856,
         sinopsis: "La historia de una mujer atrapada en las limitaciones de la vida provinciana.",
         precio: 16.99,
-        stock: 10
+        stock: 10,
+        paginas: 300,
+        paginas: 400
     },
     {
         isbn: "9788491050393",
@@ -207,7 +231,8 @@ let listaProductos = [
         año_publicacion: 1963,
         sinopsis: "Una novela que rompe con las estructuras tradicionales de la narrativa.",
         precio: 19.99,
-        stock: 8
+        stock: 8,
+        paginas: 300
     },
     {
         isbn: "9788408172174",
@@ -223,7 +248,8 @@ let listaProductos = [
         año_publicacion: 2001,
         sinopsis: "Un joven descubre un libro olvidado y se ve envuelto en un misterio literario.",
         precio: 22.50,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9780156001311",
@@ -239,7 +265,8 @@ let listaProductos = [
         año_publicacion: 1980,
         sinopsis: "Una investigación monástica que desvela secretos en una abadía medieval.",
         precio: 20.99,
-        stock: 14
+        stock: 14,
+        paginas: 300
     },
     {
         isbn: "9788497592206",
@@ -255,7 +282,8 @@ let listaProductos = [
         año_publicacion: 1982,
         sinopsis: "Una saga familiar marcada por la presencia de lo sobrenatural y la política.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780307389732",
@@ -271,7 +299,8 @@ let listaProductos = [
         año_publicacion: 1985,
         sinopsis: "Una historia de amor que perdura a lo largo de décadas en el Caribe.",
         precio: 24.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780618574940",
@@ -287,7 +316,8 @@ let listaProductos = [
         año_publicacion: 1937,
         sinopsis: "La aventura de Bilbo Bolsón en una tierra llena de criaturas mágicas.",
         precio: 20.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9780618391110",
@@ -303,7 +333,8 @@ let listaProductos = [
         año_publicacion: 1977,
         sinopsis: "La mitología de la Tierra Media contada a través de epopeyas antiguas.",
         precio: 24.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788408065891",
@@ -319,7 +350,8 @@ let listaProductos = [
         año_publicacion: 1979,
         sinopsis: "Un joven se adentra en un libro mágico que cobra vida y amenaza su mundo.",
         precio: 19.50,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9780316769488",
@@ -335,7 +367,8 @@ let listaProductos = [
         año_publicacion: 1951,
         sinopsis: "La rebelión adolescente de Holden Caulfield en la ciudad de Nueva York.",
         precio: 17.99,
-        stock: 14
+        stock: 14,
+        paginas: 300
     },
     {
         isbn: "9780451526342",
@@ -351,7 +384,8 @@ let listaProductos = [
         año_publicacion: 1945,
         sinopsis: "Una fábula política donde los animales se rebelan contra sus dueños.",
         precio: 15.99,
-        stock: 16
+        stock: 16,
+        paginas: 300
     },
     {
         isbn: "9780743297332",
@@ -367,7 +401,8 @@ let listaProductos = [
         año_publicacion: 1926,
         sinopsis: "Una generación perdida busca sentido en la posguerra en Europa.",
         precio: 18.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9788478880568",
@@ -383,7 +418,8 @@ let listaProductos = [
         año_publicacion: 1951,
         sinopsis: "Retrato de la vida en el Madrid de la posguerra a través de múltiples historias.",
         precio: 16.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780553213508",
@@ -400,6 +436,8 @@ let listaProductos = [
         sinopsis: "Las memorias ficticias del emperador romano Adriano, contadas con introspección y sabiduría.",
         precio: 22.50,
         stock: 8
+        ,
+        paginas: 300
     },
     {
         isbn: "9780307387899",
@@ -415,7 +453,8 @@ let listaProductos = [
         año_publicacion: 2006,
         sinopsis: "Un padre y su hijo luchan por sobrevivir en un mundo devastado.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780807014295",
@@ -431,7 +470,8 @@ let listaProductos = [
         año_publicacion: 1946,
         sinopsis: "Un relato sobre la búsqueda de significado en medio de las atrocidades de un campo de concentración.",
         precio: 18.50,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9788491050471",
@@ -447,7 +487,8 @@ let listaProductos = [
         año_publicacion: 1940,
         sinopsis: "Una mezcla de realidad y ficción en una isla misteriosa donde la tecnología desafía la vida.",
         precio: 16.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788491050488",
@@ -463,7 +504,8 @@ let listaProductos = [
         año_publicacion: 1948,
         sinopsis: "La obsesión de un pintor que lo lleva a cometer un crimen.",
         precio: 15.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788491050495",
@@ -479,7 +521,8 @@ let listaProductos = [
         año_publicacion: 1948,
         sinopsis: "Una meditación sobre la muerte y el paso del tiempo en un ambiente melancólico.",
         precio: 17.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604501",
@@ -495,7 +538,8 @@ let listaProductos = [
         año_publicacion: 1959,
         sinopsis: "Una exploración profunda de la condición humana y la búsqueda del conocimiento.",
         precio: 19.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9788437604518",
@@ -511,7 +555,8 @@ let listaProductos = [
         año_publicacion: 1884,
         sinopsis: "La historia de una mujer atrapada en un matrimonio sin amor en la España del siglo XIX.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604347",
@@ -527,7 +572,8 @@ let listaProductos = [
         año_publicacion: 1950,
         sinopsis: "Un análisis de la identidad y la cultura mexicana a través de sus costumbres y tradiciones.",
         precio: 18.50,
-        stock: 14
+        stock: 14,
+        paginas: 300
     },
     {
         isbn: "9788437604354",
@@ -543,7 +589,8 @@ let listaProductos = [
         año_publicacion: 1962,
         sinopsis: "Una historia misteriosa y sobrenatural que envuelve al lector en un halo de enigma.",
         precio: 16.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604361",
@@ -559,7 +606,8 @@ let listaProductos = [
         año_publicacion: 1955,
         sinopsis: "Un viaje al pueblo de Comala, donde la vida y la muerte se entrelazan en un relato mítico.",
         precio: 17.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604378",
@@ -575,7 +623,8 @@ let listaProductos = [
         año_publicacion: 1962,
         sinopsis: "La reflexión final de un hombre poderoso sobre su vida llena de contradicciones y errores.",
         precio: 19.50,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9788437604385",
@@ -591,7 +640,8 @@ let listaProductos = [
         año_publicacion: 1963,
         sinopsis: "Una cruda mirada a la vida en un colegio militar en Lima.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604392",
@@ -607,7 +657,8 @@ let listaProductos = [
         año_publicacion: 1998,
         sinopsis: "Un viaje literario a través de la vida de jóvenes poetas en México.",
         precio: 17.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604408",
@@ -623,7 +674,8 @@ let listaProductos = [
         año_publicacion: 1983,
         sinopsis: "Una historia de amor y desamor ambientada en la melancólica capital portuguesa.",
         precio: 16.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604415",
@@ -639,7 +691,8 @@ let listaProductos = [
         año_publicacion: 2008,
         sinopsis: "Un escritor se ve envuelto en una conspiración que trasciende la realidad.",
         precio: 18.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604422",
@@ -655,7 +708,8 @@ let listaProductos = [
         año_publicacion: 2000,
         sinopsis: "Un misterio oculto detrás de la vida aparentemente normal de una familia.",
         precio: 17.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604439",
@@ -671,7 +725,8 @@ let listaProductos = [
         año_publicacion: 2008,
         sinopsis: "La vida de dos personajes aparentemente distintos que se conectan en la profundidad de la existencia.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604446",
@@ -687,7 +742,8 @@ let listaProductos = [
         año_publicacion: 2005,
         sinopsis: "Un antiguo manuscrito desvela secretos que pueden cambiar el curso de la historia.",
         precio: 17.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604453",
@@ -703,7 +759,8 @@ let listaProductos = [
         año_publicacion: 1976,
         sinopsis: "La relación entre dos prisioneros que se unen en medio de la desesperación.",
         precio: 16.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604460",
@@ -719,7 +776,8 @@ let listaProductos = [
         año_publicacion: 1941,
         sinopsis: "Una narrativa laberíntica donde el tiempo y las posibilidades se entrelazan.",
         precio: 16.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604477",
@@ -735,7 +793,8 @@ let listaProductos = [
         año_publicacion: 2000,
         sinopsis: "La caída de un dictador y las consecuencias en una nación.",
         precio: 19.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604484",
@@ -751,7 +810,8 @@ let listaProductos = [
         año_publicacion: 1976,
         sinopsis: "Un retrato de la sociedad mexicana a través de historias entrelazadas.",
         precio: 17.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604491",
@@ -767,7 +827,8 @@ let listaProductos = [
         año_publicacion: 1985,
         sinopsis: "Una obra que explora la vida interior de una mujer a través de su cuaderno personal.",
         precio: 16.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604507",
@@ -783,7 +844,8 @@ let listaProductos = [
         año_publicacion: 1988,
         sinopsis: "Una mezcla de realismo y fantasía que explora la identidad femenina.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604514",
@@ -799,7 +861,8 @@ let listaProductos = [
         año_publicacion: 1995,
         sinopsis: "Un misterio que se oculta tras la fachada de una casa aparentemente normal.",
         precio: 16.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604521",
@@ -815,7 +878,8 @@ let listaProductos = [
         año_publicacion: 2002,
         sinopsis: "La nostalgia y el dolor de recordar un pasado inalterable.",
         precio: 17.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604538",
@@ -831,7 +895,8 @@ let listaProductos = [
         año_publicacion: 2004,
         sinopsis: "Un relato de suspenso donde la oscuridad esconde secretos letales.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604545",
@@ -847,7 +912,8 @@ let listaProductos = [
         año_publicacion: 1990,
         sinopsis: "Una travesía por paisajes imponentes y desafíos personales.",
         precio: 17.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604552",
@@ -863,7 +929,8 @@ let listaProductos = [
         año_publicacion: 1998,
         sinopsis: "Una historia de amor prohibido en un escenario histórico lleno de pasión.",
         precio: 18.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604559",
@@ -879,7 +946,8 @@ let listaProductos = [
         año_publicacion: 2001,
         sinopsis: "Relatos de un viajero que explora los rincones más remotos del mundo.",
         precio: 17.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604576",
@@ -895,7 +963,8 @@ let listaProductos = [
         año_publicacion: 1999,
         sinopsis: "La caída de grandes imperios contada a través de relatos épicos.",
         precio: 19.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604583",
@@ -911,7 +980,8 @@ let listaProductos = [
         año_publicacion: 2003,
         sinopsis: "Una narrativa mágica sobre la protección de los sueños de la humanidad.",
         precio: 18.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604590",
@@ -927,7 +997,8 @@ let listaProductos = [
         año_publicacion: 2005,
         sinopsis: "Una profunda reflexión sobre el significado de la existencia y el abismo interior.",
         precio: 17.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604606",
@@ -943,7 +1014,8 @@ let listaProductos = [
         año_publicacion: 2007,
         sinopsis: "Una prosa lírica que evoca la esencia de la naturaleza y la memoria.",
         precio: 16.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604613",
@@ -959,7 +1031,8 @@ let listaProductos = [
         año_publicacion: 2009,
         sinopsis: "Relatos que conectan generaciones a través de la memoria y la historia.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604620",
@@ -975,7 +1048,8 @@ let listaProductos = [
         año_publicacion: 2010,
         sinopsis: "Una travesía por un mundo donde lo sobrenatural y lo real se funden en la oscuridad.",
         precio: 19.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604637",
@@ -991,7 +1065,8 @@ let listaProductos = [
         año_publicacion: 2011,
         sinopsis: "Una reflexión sobre las oportunidades perdidas y el inexorable paso del tiempo.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604644",
@@ -1007,7 +1082,8 @@ let listaProductos = [
         año_publicacion: 2012,
         sinopsis: "Un relato de suspense donde la línea entre la realidad y la fantasía se desvanece.",
         precio: 19.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604651",
@@ -1023,7 +1099,8 @@ let listaProductos = [
         año_publicacion: 2013,
         sinopsis: "Una obra lírica que explora el diálogo entre el alma y el universo.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604668",
@@ -1039,7 +1116,8 @@ let listaProductos = [
         año_publicacion: 2014,
         sinopsis: "Una inmersión en los rincones oscuros de la mente humana y sus secretos.",
         precio: 19.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604675",
@@ -1055,7 +1133,8 @@ let listaProductos = [
         año_publicacion: 2015,
         sinopsis: "Una narrativa que invita a creer en un futuro mejor a pesar de las adversidades.",
         precio: 18.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604682",
@@ -1071,7 +1150,8 @@ let listaProductos = [
         año_publicacion: 2016,
         sinopsis: "Un viaje nostálgico a través de los recuerdos y el paso del tiempo.",
         precio: 19.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604699",
@@ -1087,7 +1167,8 @@ let listaProductos = [
         año_publicacion: 2017,
         sinopsis: "Una búsqueda incansable de la verdad en medio de la oscuridad social.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604705",
@@ -1103,7 +1184,8 @@ let listaProductos = [
         año_publicacion: 2025,
         sinopsis: "El destino se cierne sobre la vida de quienes intentan escapar de su propia sombra.",
         precio: 23.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604712",
@@ -1119,7 +1201,8 @@ let listaProductos = [
         año_publicacion: 2020,
         sinopsis: "Una obra lírica que celebra la belleza y el misterio de la naturaleza.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604729",
@@ -1135,7 +1218,8 @@ let listaProductos = [
         año_publicacion: 2021,
         sinopsis: "Una historia conmovedora sobre la búsqueda de la identidad a través de la música.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604736",
@@ -1151,7 +1235,8 @@ let listaProductos = [
         año_publicacion: 2022,
         sinopsis: "Una reflexión sobre la fugacidad de la vida y la eternidad del instante.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604733",
@@ -1167,7 +1252,8 @@ let listaProductos = [
         año_publicacion: 2023,
         sinopsis: "Una narrativa introspectiva que explora los secretos guardados en el interior de cada ser.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604740",
@@ -1183,7 +1269,8 @@ let listaProductos = [
         año_publicacion: 2024,
         sinopsis: "Un misterio que se refleja en la dualidad entre lo que se muestra y lo oculto.",
         precio: 22.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604747",
@@ -1199,7 +1286,8 @@ let listaProductos = [
         año_publicacion: 2024,
         sinopsis: "Una apasionante travesía por los recovecos del amor y el deseo prohibido.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604754",
@@ -1215,7 +1303,8 @@ let listaProductos = [
         año_publicacion: 2025,
         sinopsis: "El relato final de un destino marcado por secretos y redenciones tardías.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9788437604761",
@@ -1231,7 +1320,8 @@ let listaProductos = [
         año_publicacion: 2025,
         sinopsis: "La última epopeya que narra la caída de héroes y la llegada de una nueva era.",
         precio: 23.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     // CÓMICS (100 objetos)
     {
@@ -1248,7 +1338,8 @@ let listaProductos = [
         año_publicacion: 1987,
         sinopsis: "La reinvención de los orígenes de Batman, mostrando su primer año de lucha contra el crimen.",
         precio: 16.99,
-        stock: 25
+        stock: 25,
+        paginas: 300
     },
     {
         isbn: "9780785121787", // ISBN inventado
@@ -1264,7 +1355,8 @@ let listaProductos = [
         año_publicacion: 2006,
         sinopsis: "Un conflicto épico entre héroes que divide al universo Marvel.",
         precio: 18.99,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9780930289232", // ISBN inventado
@@ -1280,7 +1372,8 @@ let listaProductos = [
         año_publicacion: 1987,
         sinopsis: "Un análisis oscuro y complejo de los superhéroes en un mundo en crisis.",
         precio: 20.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9780394747231",
@@ -1296,7 +1389,8 @@ let listaProductos = [
         año_publicacion: 1991,
         sinopsis: "Una representación gráfica de las atrocidades del Holocausto, usando animales como metáforas.",
         precio: 19.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9780785132551", // ISBN inventado
@@ -1312,7 +1406,8 @@ let listaProductos = [
         año_publicacion: 1990,
         sinopsis: "Las primeras aventuras del hombre araña en la ciudad de Nueva York.",
         precio: 17.99,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9780785137100", // ISBN inventado
@@ -1328,7 +1423,8 @@ let listaProductos = [
         año_publicacion: 1981,
         sinopsis: "Una historia que mezcla viajes en el tiempo con la lucha por la supervivencia de los mutantes.",
         precio: 18.50,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781401205433", // ISBN inventado
@@ -1344,7 +1440,8 @@ let listaProductos = [
         año_publicacion: 1986,
         sinopsis: "La reinterpretación del origen y las aventuras de Superman en la era moderna.",
         precio: 17.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781401208410", // ISBN inventado
@@ -1360,7 +1457,8 @@ let listaProductos = [
         año_publicacion: 1988,
         sinopsis: "La historia de un misterioso vigilante que lucha contra un gobierno totalitario.",
         precio: 18.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780930289798", // ISBN inventado
@@ -1376,7 +1474,8 @@ let listaProductos = [
         año_publicacion: 1991,
         sinopsis: "Historias oscuras de crimen y redención en una ciudad sin ley.",
         precio: 17.50,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9781569712000", // ISBN inventado
@@ -1392,7 +1491,8 @@ let listaProductos = [
         año_publicacion: 1982,
         sinopsis: "Una obra maestra del manga que combina acción, política y ciencia ficción en un futuro distópico.",
         precio: 19.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319013", // ISBN inventado
@@ -1408,7 +1508,8 @@ let listaProductos = [
         año_publicacion: 1989,
         sinopsis: "Las épicas batallas de Goku y sus amigos en la defensa del universo.",
         precio: 18.99,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9781569319006", // ISBN inventado
@@ -1424,7 +1525,8 @@ let listaProductos = [
         año_publicacion: 1999,
         sinopsis: "La historia de un joven ninja que sueña con convertirse en el líder de su aldea.",
         precio: 17.50,
-        stock: 18
+        stock: 18,
+        paginas: 300
     },
     {
         isbn: "9784088730568", // ISBN inventado
@@ -1440,7 +1542,8 @@ let listaProductos = [
         año_publicacion: 1997,
         sinopsis: "Las aventuras de Monkey D. Luffy y su tripulación en busca del tesoro legendario.",
         precio: 18.99,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9788437604804", // ISBN inventado
@@ -1456,7 +1559,8 @@ let listaProductos = [
         año_publicacion: 2009,
         sinopsis: "La lucha desesperada de la humanidad contra criaturas gigantes que amenazan su existencia.",
         precio: 19.99,
-        stock: 25
+        stock: 25,
+        paginas: 300
     },
     {
         isbn: "9781421572271", // ISBN inventado
@@ -1472,7 +1576,8 @@ let listaProductos = [
         año_publicacion: 2014,
         sinopsis: "En un mundo donde casi todos poseen superpoderes, un joven sin habilidades lucha por ser un héroe.",
         precio: 18.50,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9781401226754", // ISBN inventado
@@ -1488,7 +1593,8 @@ let listaProductos = [
         año_publicacion: 1989,
         sinopsis: "Una oscura epopeya de venganza y lucha en un mundo medieval brutal.",
         precio: 20.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319266", // ISBN inventado
@@ -1504,7 +1610,8 @@ let listaProductos = [
         año_publicacion: 2001,
         sinopsis: "Dos hermanos buscan la redención y la verdad tras un experimento fallido de alquimia.",
         precio: 19.50,
-        stock: 18
+        stock: 18,
+        paginas: 300
     },
     {
         isbn: "9781569319263", // ISBN inventado
@@ -1520,7 +1627,8 @@ let listaProductos = [
         año_publicacion: 2003,
         sinopsis: "Un estudiante obtiene un cuaderno con el poder de matar y se embarca en una lucha moral.",
         precio: 18.99,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9781569319270", // ISBN inventado
@@ -1536,7 +1644,8 @@ let listaProductos = [
         año_publicacion: 2012,
         sinopsis: "Un héroe invencible busca un oponente digno en un mundo lleno de monstruos.",
         precio: 18.50,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9780785134098", // ISBN inventado
@@ -1552,7 +1661,8 @@ let listaProductos = [
         año_publicacion: 2016,
         sinopsis: "El reinado y las batallas del rey de Wakanda, un ícono del poder africano.",
         precio: 19.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781582401166", // ISBN inventado
@@ -1568,7 +1678,8 @@ let listaProductos = [
         año_publicacion: 2003,
         sinopsis: "La lucha por la supervivencia en un mundo post-apocalíptico infestado de zombis.",
         precio: 20.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9781607060939", // ISBN inventado
@@ -1584,7 +1695,8 @@ let listaProductos = [
         año_publicacion: 2012,
         sinopsis: "Una épica de ciencia ficción y fantasía en medio de una guerra intergaláctica.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401232659", // ISBN inventado
@@ -1600,7 +1712,8 @@ let listaProductos = [
         año_publicacion: 1993,
         sinopsis: "El demonio rojo lucha contra fuerzas sobrenaturales para proteger la humanidad.",
         precio: 18.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781401225758", // ISBN inventado
@@ -1616,7 +1729,8 @@ let listaProductos = [
         año_publicacion: 1989,
         sinopsis: "Una mezcla de mitología y realidad donde los sueños tienen poder.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781563893423", // ISBN inventado
@@ -1632,7 +1746,8 @@ let listaProductos = [
         año_publicacion: 1986,
         sinopsis: "Un Batman envejecido regresa para enfrentarse a una sociedad corrupta.",
         precio: 22.50,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9780857687428", // ISBN inventado
@@ -1648,7 +1763,8 @@ let listaProductos = [
         año_publicacion: 2008,
         sinopsis: "Un adolescente común se convierte en un vigilante sin poderes, pero con mucha determinación.",
         precio: 19.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781607062879", // ISBN inventado
@@ -1664,7 +1780,8 @@ let listaProductos = [
         año_publicacion: 2003,
         sinopsis: "La historia de un joven superhéroe que descubre la dura realidad de la responsabilidad.",
         precio: 20.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9781401221430", // ISBN inventado
@@ -1680,7 +1797,8 @@ let listaProductos = [
         año_publicacion: 1995,
         sinopsis: "Un predicador con habilidades sobrenaturales se embarca en una misión de fe y venganza.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401223564", // ISBN inventado
@@ -1696,7 +1814,8 @@ let listaProductos = [
         año_publicacion: 2002,
         sinopsis: "Personajes de cuentos y leyendas cobran vida en el mundo moderno.",
         precio: 19.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401224310", // ISBN inventado
@@ -1712,7 +1831,8 @@ let listaProductos = [
         año_publicacion: 2002,
         sinopsis: "La historia del último hombre en la Tierra tras una misteriosa plaga.",
         precio: 20.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401270072", // ISBN inventado
@@ -1728,7 +1848,8 @@ let listaProductos = [
         año_publicacion: 2007,
         sinopsis: "Una familia disfuncional de superhéroes lucha contra amenazas apocalípticas.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780785138043", // ISBN inventado
@@ -1744,7 +1865,8 @@ let listaProductos = [
         año_publicacion: 2014,
         sinopsis: "La inspiradora historia de Kamala Khan, una adolescente que asume el manto de heroína.",
         precio: 19.50,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9780785138067", // ISBN inventado
@@ -1760,7 +1882,8 @@ let listaProductos = [
         año_publicacion: 1997,
         sinopsis: "El anti-héroe mercenario con un humor irreverente y violento.",
         precio: 18.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9780785138074", // ISBN inventado
@@ -1776,7 +1899,8 @@ let listaProductos = [
         año_publicacion: 2015,
         sinopsis: "La historia de Gwen Stacy en un universo alternativo donde ella es Spider-Woman.",
         precio: 19.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9781401235795", // ISBN inventado
@@ -1792,7 +1916,8 @@ let listaProductos = [
         año_publicacion: 2009,
         sinopsis: "El regreso del velocista escarlata y su lucha por restaurar el orden en la ciudad.",
         precio: 20.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401220635", // ISBN inventado
@@ -1808,7 +1933,8 @@ let listaProductos = [
         año_publicacion: 2004,
         sinopsis: "El renacer del héroe de los anillos y la exploración de un universo lleno de poder.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221549", // ISBN inventado
@@ -1824,7 +1950,8 @@ let listaProductos = [
         año_publicacion: 2016,
         sinopsis: "Los orígenes de la icónica amazona en una narrativa que redefine su mitología.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221556", // ISBN inventado
@@ -1840,7 +1967,8 @@ let listaProductos = [
         año_publicacion: 1999,
         sinopsis: "El adolescente Billy Batson se transforma en el poderoso Shazam con un solo truco.",
         precio: 19.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9780785138098", // ISBN inventado
@@ -1856,7 +1984,8 @@ let listaProductos = [
         año_publicacion: 2005,
         sinopsis: "Una conspiración que pone en jaque la identidad y lealtad del primer héroe americano.",
         precio: 20.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780785138104", // ISBN inventado
@@ -1872,7 +2001,8 @@ let listaProductos = [
         año_publicacion: 2005,
         sinopsis: "La transformación de Tony Stark a través de una tecnología revolucionaria y peligrosa.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780785138111", // ISBN inventado
@@ -1888,7 +2018,8 @@ let listaProductos = [
         año_publicacion: 2012,
         sinopsis: "La lucha del dios del trueno contra fuerzas cósmicas y su búsqueda por la redención.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780785138128", // ISBN inventado
@@ -1904,7 +2035,8 @@ let listaProductos = [
         año_publicacion: 2007,
         sinopsis: "El hechicero enfrenta desafíos sobrenaturales para proteger su legado y a sus aliados.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780785138135", // ISBN inventado
@@ -1920,7 +2052,8 @@ let listaProductos = [
         año_publicacion: 2013,
         sinopsis: "La transformación de la villana en una antiheroína con un toque caótico.",
         precio: 19.50,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9780785138142", // ISBN inventado
@@ -1936,7 +2069,8 @@ let listaProductos = [
         año_publicacion: 2003,
         sinopsis: "Una visión alternativa donde Superman es criado en la Unión Soviética.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9780785138159", // ISBN inventado
@@ -1952,7 +2086,8 @@ let listaProductos = [
         año_publicacion: 1988,
         sinopsis: "Una oscura exploración de la psicología del Joker y su relación con Batman.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401218604", // ISBN inventado
@@ -1968,7 +2103,8 @@ let listaProductos = [
         año_publicacion: 1996,
         sinopsis: "Un misterio que se desarrolla a lo largo de un año de celebraciones y crímenes en Gotham.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221234", // ISBN inventado
@@ -1984,7 +2120,8 @@ let listaProductos = [
         año_publicacion: 2011,
         sinopsis: "El nacimiento de la liga de la justicia y la unión de sus héroes icónicos.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221241", // ISBN inventado
@@ -2000,7 +2137,8 @@ let listaProductos = [
         año_publicacion: 1996,
         sinopsis: "Un futuro donde los antiguos héroes deben enfrentarse a una nueva generación de vigilantes.",
         precio: 22.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221258", // ISBN inventado
@@ -2016,7 +2154,8 @@ let listaProductos = [
         año_publicacion: 1995,
         sinopsis: "Historias humanas en un universo de superhéroes, donde lo cotidiano se mezcla con lo extraordinario.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781569319124", // ISBN inventado
@@ -2032,7 +2171,8 @@ let listaProductos = [
         año_publicacion: 1991,
         sinopsis: "Una épica aventura en un mundo fantástico lleno de humor y peligros inesperados.",
         precio: 20.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9780987466132", // ISBN inventado
@@ -2048,7 +2188,8 @@ let listaProductos = [
         año_publicacion: 2004,
         sinopsis: "La lucha de un joven por conquistar el corazón de su amada enfrentándose a sus ex novios.",
         precio: 19.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221265", // ISBN inventado
@@ -2064,7 +2205,8 @@ let listaProductos = [
         año_publicacion: 2008,
         sinopsis: "Una familia descubre llaves mágicas que abren puertas a mundos secretos y oscuros.",
         precio: 20.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781569319131", // ISBN inventado
@@ -2080,7 +2222,8 @@ let listaProductos = [
         año_publicacion: 1983,
         sinopsis: "En un mundo post-apocalíptico, un guerrero lucha por la justicia con un estilo letal.",
         precio: 19.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319148", // ISBN inventado
@@ -2096,7 +2239,8 @@ let listaProductos = [
         año_publicacion: 1994,
         sinopsis: "La redención de un asesino convertido en vagabundo que protege a los inocentes en el Japón Meiji.",
         precio: 18.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319155", // ISBN inventado
@@ -2112,7 +2256,8 @@ let listaProductos = [
         año_publicacion: 1991,
         sinopsis: "Una joven descubre su destino como la salvadora del universo en forma de guerrera mágica.",
         precio: 18.50,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9781569319162", // ISBN inventado
@@ -2128,7 +2273,8 @@ let listaProductos = [
         año_publicacion: 1996,
         sinopsis: "La aventura de una niña que debe capturar cartas mágicas que escapan a su control.",
         precio: 18.99,
-        stock: 18
+        stock: 18,
+        paginas: 300
     },
     {
         isbn: "9781569319179", // ISBN inventado
@@ -2144,7 +2290,8 @@ let listaProductos = [
         año_publicacion: 1998,
         sinopsis: "Duelo tras duelo en un mundo donde las cartas determinan el destino.",
         precio: 18.50,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9781569319186", // ISBN inventado
@@ -2160,7 +2307,8 @@ let listaProductos = [
         año_publicacion: 1986,
         sinopsis: "Guerreros místicos luchan para proteger a la diosa Atenea en épicas batallas celestiales.",
         precio: 19.99,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319193", // ISBN inventado
@@ -2176,7 +2324,8 @@ let listaProductos = [
         año_publicacion: 1994,
         sinopsis: "Un joven detective atrapado en el cuerpo de un niño resuelve misterios complicados.",
         precio: 18.50,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319209", // ISBN inventado
@@ -2192,7 +2341,8 @@ let listaProductos = [
         año_publicacion: 2006,
         sinopsis: "Un gremio de magos se embarca en aventuras llenas de magia y amistad.",
         precio: 18.99,
-        stock: 18
+        stock: 18,
+        paginas: 300
     },
     {
         isbn: "9781569319216", // ISBN inventado
@@ -2208,7 +2358,8 @@ let listaProductos = [
         año_publicacion: 2001,
         sinopsis: "Un adolescente adquiere poderes de segador de almas y se enfrenta a seres del más allá.",
         precio: 18.50,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9781569319223", // ISBN inventado
@@ -2224,7 +2375,8 @@ let listaProductos = [
         año_publicacion: 1998,
         sinopsis: "La aventura de un joven que busca convertirse en el mejor cazador del mundo.",
         precio: 19.99,
-        stock: 18
+        stock: 18,
+        paginas: 300
     },
     {
         isbn: "9781569319230", // ISBN inventado
@@ -2240,7 +2392,8 @@ let listaProductos = [
         año_publicacion: 1995,
         sinopsis: "Un grupo de adolescentes pilotea mechas para combatir criaturas en un futuro apocalíptico.",
         precio: 20.50,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319247", // ISBN inventado
@@ -2256,7 +2409,8 @@ let listaProductos = [
         año_publicacion: 2000,
         sinopsis: "Un thriller de ciencia ficción donde personas comunes se enfrentan a criaturas alienígenas.",
         precio: 19.99,
-        stock: 12
+        stock: 12,
+        paginas: 300
     },
     {
         isbn: "9781569319254", // ISBN inventado
@@ -2272,7 +2426,8 @@ let listaProductos = [
         año_publicacion: 1988,
         sinopsis: "Un estudiante se enfrenta a una invasión silenciosa de parásitos que se apoderan de la humanidad.",
         precio: 18.50,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319261", // ISBN inventado
@@ -2288,7 +2443,8 @@ let listaProductos = [
         año_publicacion: 2005,
         sinopsis: "La crónica violenta de vikingos y la búsqueda de un paraíso perdido en tierras lejanas.",
         precio: 20.50,
-        stock: 15
+        stock: 15,
+        paginas: 300
     },
     {
         isbn: "9781569319278", // ISBN inventado
@@ -2304,7 +2460,8 @@ let listaProductos = [
         año_publicacion: 2017,
         sinopsis: "En un mundo petrificado, la ciencia se convierte en la herramienta para reconstruir la civilización.",
         precio: 19.99,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9781569319285", // ISBN inventado
@@ -2320,7 +2477,8 @@ let listaProductos = [
         año_publicacion: 2018,
         sinopsis: "Una historia de horror y acción donde un joven se fusiona con una motosierra para luchar contra demonios.",
         precio: 20.50,
-        stock: 18
+        stock: 18,
+        paginas: 300
     },
     {
         isbn: "9781569319292", // ISBN inventado
@@ -2336,7 +2494,8 @@ let listaProductos = [
         año_publicacion: 2018,
         sinopsis: "Estudiantes de magia luchan contra maldiciones en una batalla entre lo espiritual y lo humano.",
         precio: 19.99,
-        stock: 20
+        stock: 20,
+        paginas: 300
     },
     {
         isbn: "9780316519963", // ISBN inventado
@@ -2352,7 +2511,8 @@ let listaProductos = [
         año_publicacion: 2006,
         sinopsis: "Una mirada oscura y satírica a los superhéroes y su corrupción interna.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221272", // ISBN inventado
@@ -2368,7 +2528,8 @@ let listaProductos = [
         año_publicacion: 1997,
         sinopsis: "El periodista Spider Jerusalem investiga una ciudad futurista llena de decadencia y corrupción.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221289", // ISBN inventado
@@ -2384,7 +2545,8 @@ let listaProductos = [
         año_publicacion: 1988,
         sinopsis: "Las crónicas del enigmático John Constantine y sus encuentros con lo sobrenatural.",
         precio: 20.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221296", // ISBN inventado
@@ -2400,7 +2562,8 @@ let listaProductos = [
         año_publicacion: 1983,
         sinopsis: "La fusión entre la criatura del pantano y la naturaleza, explorando temas ecológicos y místicos.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221302", // ISBN inventado
@@ -2416,7 +2579,8 @@ let listaProductos = [
         año_publicacion: 1992,
         sinopsis: "Un superhéroe imponente se enfrenta a enemigos tanto humanos como sobrenaturales.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221319", // ISBN inventado
@@ -2432,7 +2596,8 @@ let listaProductos = [
         año_publicacion: 1992,
         sinopsis: "Un ex-soldado regresa del infierno para luchar contra fuerzas oscuras y salvar lo que una vez fue suyo.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221326", // ISBN inventado
@@ -2448,7 +2613,8 @@ let listaProductos = [
         año_publicacion: 1998,
         sinopsis: "Un grupo de investigadores explora los secretos ocultos tras los mitos del mundo.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221333", // ISBN inventado
@@ -2464,7 +2630,8 @@ let listaProductos = [
         año_publicacion: 2010,
         sinopsis: "Una nueva interpretación del mito vampírico ambientada en la América moderna.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221340", // ISBN inventado
@@ -2480,7 +2647,8 @@ let listaProductos = [
         año_publicacion: 2009,
         sinopsis: "Un detective con un inusual sentido del gusto resuelve crímenes en un mundo lleno de comida y misterio.",
         precio: 20.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221357", // ISBN inventado
@@ -2496,7 +2664,8 @@ let listaProductos = [
         año_publicacion: 2009,
         sinopsis: "La caída de un superhéroe venerado y la revelación de su lado oscuro.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221364", // ISBN inventado
@@ -2512,7 +2681,8 @@ let listaProductos = [
         año_publicacion: 1999,
         sinopsis: "Un guerrero del futuro viaja en el tiempo para alterar el destino del universo.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221371", // ISBN inventado
@@ -2528,7 +2698,8 @@ let listaProductos = [
         año_publicacion: 1994,
         sinopsis: "Un grupo de rebeldes lucha contra un sistema oculto que manipula la realidad.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221388", // ISBN inventado
@@ -2544,7 +2715,8 @@ let listaProductos = [
         año_publicacion: 2002,
         sinopsis: "Una antigua tradición y un juramento sagrado se ponen a prueba en esta historia de honor y sacrificio.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221395", // ISBN inventado
@@ -2560,7 +2732,8 @@ let listaProductos = [
         año_publicacion: 1986,
         sinopsis: "Un héroe del futuro utiliza la tecnología para buscar fama y fortuna en el presente.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221401", // ISBN inventado
@@ -2576,7 +2749,8 @@ let listaProductos = [
         año_publicacion: 1988,
         sinopsis: "Un superhéroe que descubre la conexión profunda entre la vida animal y la humana.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221418", // ISBN inventado
@@ -2592,7 +2766,8 @@ let listaProductos = [
         año_publicacion: 2000,
         sinopsis: "Un joven con poderes eléctricos se enfrenta a desafíos en su barrio y más allá.",
         precio: 20.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221425", // ISBN inventado
@@ -2608,7 +2783,8 @@ let listaProductos = [
         año_publicacion: 2006,
         sinopsis: "La historia de un héroe con tecnología alienígena que lucha contra el crimen.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221432", // ISBN inventado
@@ -2624,7 +2800,8 @@ let listaProductos = [
         año_publicacion: 2000,
         sinopsis: "El regreso del velocista escarlata y su lucha por restaurar el orden en la ciudad.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221449", // ISBN inventado
@@ -2640,7 +2817,8 @@ let listaProductos = [
         año_publicacion: 2002,
         sinopsis: "Un nuevo villano amenaza a Batman y desvela secretos de su pasado en esta trama intensa.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221456", // ISBN inventado
@@ -2656,7 +2834,8 @@ let listaProductos = [
         año_publicacion: 1985,
         sinopsis: "Una historia emotiva donde Superman enfrenta sus deseos más profundos en un sueño realista.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221463", // ISBN inventado
@@ -2672,7 +2851,8 @@ let listaProductos = [
         año_publicacion: 1987,
         sinopsis: "Una reinterpretación oscura del arquero vigilante en una trama de acción y venganza.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221470", // ISBN inventado
@@ -2688,7 +2868,8 @@ let listaProductos = [
         año_publicacion: 1996,
         sinopsis: "Las andanzas oscuras del mago y detective de lo paranormal, John Constantine.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221487", // ISBN inventado
@@ -2704,7 +2885,8 @@ let listaProductos = [
         año_publicacion: 1997,
         sinopsis: "Una serie que explora la vida y conflictos internos de un vampiro en la modernidad.",
         precio: 21.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221494", // ISBN inventado
@@ -2720,7 +2902,8 @@ let listaProductos = [
         año_publicacion: 1999,
         sinopsis: "Una intrigante historia de crimen y venganza, donde 100 balas pueden cambiar destinos.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221500", // ISBN inventado
@@ -2736,7 +2919,8 @@ let listaProductos = [
         año_publicacion: 2004,
         sinopsis: "Una narrativa frenética y llena de adrenalina sobre un héroe al borde del colapso.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221517", // ISBN inventado
@@ -2752,7 +2936,8 @@ let listaProductos = [
         año_publicacion: 1990,
         sinopsis: "El mercenario intergaláctico de humor negro y fuerza bruta en cada batalla.",
         precio: 20.99,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221524", // ISBN inventado
@@ -2768,7 +2953,8 @@ let listaProductos = [
         año_publicacion: 2004,
         sinopsis: "La historia de una mujer con un poder extraordinario que lucha por la justicia en un mundo complicado.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221531", // ISBN inventado
@@ -2784,7 +2970,8 @@ let listaProductos = [
         año_publicacion: 2005,
         sinopsis: "Una oscura y retorcida narrativa ambientada en el infame asilo de Arkham.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221548", // ISBN inventado
@@ -2800,7 +2987,8 @@ let listaProductos = [
         año_publicacion: 2008,
         sinopsis: "Una precuela que explora los orígenes y el legado de los icónicos vigilantes.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221555", // ISBN inventado
@@ -2816,7 +3004,8 @@ let listaProductos = [
         año_publicacion: 2011,
         sinopsis: "Una exploración oscura y contemporánea del caballero oscuro en una ciudad perturbada.",
         precio: 22.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     },
     {
         isbn: "9781401221562", // ISBN inventado
@@ -2832,7 +3021,8 @@ let listaProductos = [
         año_publicacion: 2013,
         sinopsis: "Una vibrante reinterpretación del hombre de acero que celebra su dualidad y legado.",
         precio: 21.50,
-        stock: 10
+        stock: 10,
+        paginas: 300
     }
 ];
 
@@ -2925,7 +3115,7 @@ window.addEventListener('DOMContentLoaded', () => {
     console.log(seccion);
 
 
-    contruirGridProductos(listaProductos, containerProductos,seccion);
+    contruirGridProductos(listaProductos, containerProductos, seccion);
 
     const verMas = document.querySelectorAll('.verMas');
 

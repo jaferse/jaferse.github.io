@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comics</title>
+    <title>Kvote Tienda de Comics</title>
     <link rel="icon" type="image/x-icon" href="/img/Kvote.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -62,46 +61,53 @@
             </div>
         </nav>
     </header>
+    <main class="ContainerProducto">
+        <article class="Producto">
+            <div class="Producto__img">
+                <img src="https://m.media-amazon.com/images/I/81+BGUvPiSL._SL1500_.jpg" alt="Portada">
+            </div>
+            <div class="Producto__info">
+                <h2 class="Producto__info__titulo">Título</h2>
+                <h3 class="Producto__info__autor">Autor</h3>
+                <p class="Producto__info__sinopsis">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                    voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
+                    ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                    voluptas nulla pariatur?"</p>
+                <div class="Producto__info__caracteristicas">
+                    <ul>
+                        <li class="Producto__info__caracteristicas__publicacion">11/12/2022</li>
+                        <li class="Producto__info__caracteristicas__paginas">200</li>
+                        <li class="Producto__info__caracteristicas__tipo">Novela</li>
+                        <li class="Producto__info__caracteristicas__subtipo">Thriller Histórico</li>
+                        <li class="Producto__info__caracteristicas__formato">Tapa Blanda</li>
+                        <li class="Producto__info__caracteristicas__editorial">ALFAGUARA</li>
+                    </ul>
+                </div>
+                <div class="Producto__info__precioComprar">
+                    <div class="Producto__info__precioComprar__precio">
+                        <span class="Producto__info__precioComprar__precio__actual">25.50</span>
+                        <span class="Producto__info__precioComprar__precio__descuento">-5%</span>
+                        <!-- <button>Comprar</button> -->
+                        <span class="Producto__info__precioComprar__precio__anterior">30</span>
+                    </div>
+                    <button class="Producto__info__precioComprar__boton">Comprar</button>
+                </div>
 
+            </div>
+        </article>
+
+    </main>
     <nav class="breadcrumb">
         <a class="breadcrumb__home" href="/index.html">
             <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
         </a>
-        <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
-        <a class="breadcrumb__home" href="/html/novela.html">
-            <img src="/img/libroIcon.png" alt="Icono de casa">
-        </a>
     </nav>
-
-    <main class="containerProductos">
-        <!-- <section class="containerProductos__producto">
-            <div class="containerProductos__producto__img">
-                <img src="/img/portadas/1.jpg" alt="">
-            </div>
-            <div class="containerProductos__producto__info">
-                <h2 class="containerProductos__producto__info__titulo">Persépolis</h2>
-                <hr>
-                <p class="containerProductos__producto__info__autor">Marjane Satrapi</p>
-                <p class="containerProductos__producto__info__precio">30,50</p>
-                <button class="verMas">Ver más</button>
-                <div class="containerProductos__producto__info__adicional">
-                    <p class="containerProductos__producto__info__adicional__Formato">
-                        Tapa blanda
-                    </p>
-                    <p class="containerProductos__producto__info__adicional__Tipo">
-                        Novela grafica
-
-                    </p>
-                    <p class="containerProductos__producto__info__adicional__Paginas">
-                        600
-                    </p>
-                    <p class="containerProductos__producto__info__adicional__ISBN">
-                        987-98-10-78945-1
-                    </p>
-                </div>
-            </div>
-        </section> -->
-    </main>
     <footer class="footer">
         <section class="footer__ayuda">
             <h2>Ayuda</h2>
@@ -150,8 +156,7 @@
         </section>
     </footer>
     <script src="/js/animacionLogo.js"></script>
-    <!-- <script src="/js/carrusel.js"></script> -->
-    <script src="/js/productos.js"></script>
+    <script src="/js/carrusel.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,268 @@
+.ContainerProducto {
+    margin: 1rem auto;
+    width: 96vw;
+    // border: 2px solid black;
+    background-color: white;
+    border: 2px solid $rojo_primario;
+    box-shadow: $box_shadow;
+    border-radius: 16px;
+    overflow: hidden;
+
+    .Producto {
+        margin: 1rem auto;
+        // border: 2px solid black;
+        width: 90%;
+        display: flex;
+        gap: 2rem;
+
+        &__img {
+            // width: 25rem;
+            height: 26rem;
+            aspect-ratio: 1/1;
+            border-radius: 6px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        &__info {
+            padding: 0 1rem;
+            // border: 2px solid black;
+            width: 100%;
+
+            &__titulo {
+                font-size: 2rem;
+                margin: 0;
+            }
+
+            &__autor {
+                font-size: 1rem;
+                margin: 0.5rem 0;
+                font-style: italic;
+            }
+
+            &__sinopsis {
+                display: flex;
+                flex-direction: column;
+
+                &::before {
+                    content: "Descripción";
+                    font-weight: 700;
+                }
+            }
+
+            &__caracteristicas {
+                margin: 0;
+
+                ul {
+                    border: 2px solid black;
+                    display: flex;
+                    justify-content: space-around;
+                    list-style: none;
+                    padding: 0;
+
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        // border: 1px solid blue;
+                    }
+                }
+
+                &__publicacion {
+
+
+                    &::before {
+                        content: "Publicación ";
+                        font-weight: 700;
+                        text-align: center;
+
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('/img/fechaIcon.svg');
+                        background-size: cover;
+                        margin: 0 auto;
+
+                    }
+                }
+
+                &__paginas {
+                    &::before {
+                        content: "Páginas ";
+                        font-weight: 700;
+                        text-align: center;
+
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('/img/paginasIcon.svg');
+                        background-size: cover;
+                        margin: 0 auto;
+
+                    }
+                }
+
+                &__tipo {
+                    &::before {
+                        content: "Categoría ";
+                        font-weight: 700;
+                        text-align: center;
+
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('/img/bookIcon.svg');
+                        background-size: cover;
+                        margin: 0 auto;
+
+                    }
+                }
+
+                &__subtipo {
+                    &::before {
+                        content: "Género";
+                        font-weight: 700;
+                        text-align: center;
+
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('/img//generoIcon.svg');
+                        background-size: cover;
+                        margin: 0 auto;
+
+                    }
+                }
+
+                &__formato {
+                    &::before {
+                        content: "Formato ";
+                        font-weight: 700;
+                        text-align: center;
+
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('/img/formatoIcon.svg');
+                        background-size: cover;
+                        margin: 0 auto;
+
+                    }
+                }
+
+                &__editorial {
+                    &::before {
+
+                        content: "Editorial";
+                        font-weight: 700;
+                        text-align: center;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 2rem;
+                        height: 2rem;
+                        background-image: url('/img/editorialIcon.svg');
+                        background-size: cover;
+                        margin: 0 auto;
+                    }
+                }
+            }
+
+            &__precioComprar {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                &__precio {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    &>span {
+                        margin: 0 0.2rem;
+                    }
+
+                    &__actual {
+                        // width: 50%;
+                        font-size: 1.8rem;
+                        font-weight: 600;
+                        color: rgb(0, 0, 0);
+
+                        &::after {
+                            content: "€";
+                            // font-weight: 700;
+                            color: rgb(0, 0, 0);
+                        }
+                    }
+
+                    &__anterior {
+                        font-size: 0.8rem;
+                        // align-self: flex-end;
+                        // font-weight: ;
+                        color: rgb(148, 144, 144);
+                        text-decoration: line-through;
+                        width: 100%;
+                        text-align: center;
+
+                        &::after {
+                            content: "PVP";
+                            // font-weight: 700;
+                            // color: rgb(0, 0, 0);
+                        }
+
+                        &::before {
+                            content: "Precio recomendado: ";
+                            // font-weight: 700;
+                            // color: rgb(0, 0, 0);
+                        }
+                    }
+
+                    &__descuento {
+                        // width: 50%;
+                        color: red;
+                        font-size: 1rem;
+                    }
+                }
+                &__boton{
+                    width: 8rem;
+                    height: 2rem;
+                    background-color: #00b83d;
+                    color: white;
+                    border:  2px solid gray;
+                    border-radius: 6px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}
