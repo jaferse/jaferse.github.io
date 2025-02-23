@@ -160,14 +160,14 @@
   }
 }
 @media screen and (max-width: 992px) {
-  input {
+  .header {
+    width: 100%;
+  }
+  .header input {
     display: none;
     position: absolute;
     right: 5px;
     top: 5rem;
-  }
-  .header {
-    width: 100%;
   }
   .header__logo {
     margin: 0.5rem 0.3rem;
@@ -799,7 +799,7 @@
   align-items: start;
   flex-wrap: wrap;
   margin: 1rem 5rem;
-  min-height: 2rem;
+  min-height: 4rem;
   /*
   Mensajes de validación
   */
@@ -818,7 +818,6 @@
   color: green;
 }
 .registro__formulario__group input, .registro__formulario__group select {
-  height: 2rem;
   border-radius: 6px;
   border-style: solid;
   color: black;
@@ -940,7 +939,8 @@
 .nosotros h2 {
   font-family: "Kotta One", serif;
 }
-.nosotros p, .nosotros li {
+.nosotros p,
+.nosotros li {
   font-size: 1rem;
 }
 .nosotros .welcome {
@@ -995,6 +995,8 @@
   border-radius: 50%;
   overflow: hidden;
   margin: 1rem 4rem;
+  min-width: 375px;
+  min-height: 375px;
 }
 .nosotros__historia__img img, .nosotros__mision__img img, .nosotros__talleres__img img, .nosotros__editorial__img img {
   width: 100%;
@@ -1067,6 +1069,7 @@
   overflow: hidden;
   display: flex;
   justify-content: center;
+  min-width: 220px;
 }
 .nosotros__talleres__colaboradores__img h3 {
   position: absolute;
@@ -1132,6 +1135,117 @@
   }
   100% {
     opacity: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .nosotros__historia, .nosotros__mision, .nosotros__talleres, .nosotros__editorial {
+    width: 90%;
+    flex-direction: column-reverse;
+  }
+  .nosotros__historia__text, .nosotros__mision__text, .nosotros__talleres__text, .nosotros__editorial__text {
+    width: 90%;
+  }
+  .nosotros__talleres {
+    flex-direction: column;
+  }
+  .nosotros__talleres__text ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .nosotros__talleres__text ul li {
+    width: 50%;
+    padding: 1rem;
+  }
+  .nosotros__talleres__colaboradores {
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+  .nosotros__talleres__colaboradores__img {
+    width: 50%;
+  }
+  .nosotros__talleres__colaboradores__img h3 {
+    font-size: 1.5rem;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(2) {
+    margin-top: 2rem;
+    order: 1;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(3) {
+    margin-top: 2rem;
+    order: 2;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(4) {
+    margin-top: 2rem;
+    order: 5;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(5) {
+    margin-top: 2rem;
+    order: 6;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(1) {
+    order: 8;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(2) {
+    order: 3;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(3) {
+    order: 4;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(4) {
+    order: 7;
+  }
+  .nosotros__talleres__colaboradores > h4 {
+    width: 50%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nosotros__editorial__img, .nosotros__mision__img, .nosotros__historia__img {
+    width: 90%;
+    min-height: auto;
+    min-width: 4rem;
+  }
+  .nosotros__talleres__text ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nosotros__talleres__text ul li {
+    width: 100%;
+  }
+  .nosotros__talleres__colaboradores {
+    flex-wrap: wrap;
+  }
+  .nosotros__talleres__colaboradores__img {
+    width: 100%;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(2) {
+    order: 1;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(3) {
+    order: 3;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(4) {
+    order: 5;
+  }
+  .nosotros__talleres__colaboradores__img:nth-child(5) {
+    order: 7;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(1) {
+    order: 8;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(2) {
+    order: 2;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(3) {
+    order: 4;
+  }
+  .nosotros__talleres__colaboradores > h4:nth-of-type(4) {
+    order: 6;
+  }
+  .nosotros__talleres__colaboradores > h4 {
+    width: 100%;
+    margin: 0;
   }
 }
 .breadcrumb {
