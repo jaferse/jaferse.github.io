@@ -260,7 +260,7 @@
         .nav {
             align-items: center;
             justify-content: center;
-
+            
             &__menu {
                 z-index: 5;
                 // display: none;
@@ -291,6 +291,7 @@
 
             &__login {
                 justify-content: space-around;
+                flex: 1;
             }
         }
 
