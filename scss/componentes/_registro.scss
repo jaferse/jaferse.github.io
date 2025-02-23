@@ -1,4 +1,4 @@
-.ContainerGlobal{
+.ContainerGlobal {
     background-image: url('/img/colage.jfif')
 }
 
@@ -9,9 +9,9 @@
     margin: 2em auto;
     font-family: $fuente_secundaria;
     position: relative;
-    
+
     &__contenedor {
-        
+
         margin: 0 auto;
         display: flex;
         flex-direction: row;
@@ -120,12 +120,14 @@
                 color: green;
             }
 
-            input, select {
+            input,
+            select {
                 // height: 2rem;
-                border-radius: 6px;
+                border-radius: 16px;
                 border-style: solid;
                 color: black;
                 width: 100%;
+                padding: 0.6rem 1rem;
             }
 
             input:focus {
@@ -164,6 +166,7 @@
         background-color: white;
         border: 2px solid $rojo_primario;
         box-shadow: $box_shadow;
+
         &__contenedor {
             display: flex;
             flex-direction: row;
@@ -199,4 +202,30 @@
 
     }
 
+}
+
+
+@media screen and (max-width: 992px) {
+    .registro {
+        &__contenedor {
+            width: 80%;
+        }
+    }
+    .registro__formulario__group{
+        margin: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .registro {
+        &__contenedor {
+            width: 100%;
+        }
+    }
+    .registro__formulario__group{
+        margin: 1rem 1rem;
+    }
+    #botonRegistrar{
+        padding: 0;
+    }
 }

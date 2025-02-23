@@ -267,10 +267,27 @@
 
 
 
-
+// @media screen and (min-width: 1200px) {
+//     body{
+//         max-width: 1200px;
+//         margin: 0 auto;
+//         &>*{
+//             max-width: 1200px;
+//             margin: 0 auto;
+//         }
+//     }
+// }
 
 @media screen and (max-width: 992px) {
     .nosotros {
+        .welcome {
+            width: 100%;
+            height: 15rem;
+
+            h1 {
+                font-size: 8rem;
+            }
+        }
 
 
         &__historia,
@@ -364,6 +381,15 @@
 
     .nosotros {
 
+        .welcome {
+            width: 100%;
+            height: 10rem;
+
+            h1 {
+                font-size: 5rem;
+            }
+        }
+
         &__editorial__img,
         &__mision__img,
         &__historia__img {
@@ -431,4 +457,20 @@
         }
     }
 
+}
+
+
+@media screen and (max-width: 350px) {
+
+    .nosotros {
+
+        .welcome {
+            width: 100%;
+            height: 6rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
 }

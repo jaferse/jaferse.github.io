@@ -7,6 +7,7 @@
     box-shadow: $box_shadow;
     border-radius: 16px;
     overflow: hidden;
+    visibility: hidden;
 
     .Producto {
         margin: 1rem auto;
@@ -16,9 +17,9 @@
         gap: 2rem;
 
         &__img {
-            // width: 25rem;
+            width: 25rem;
             height: 26rem;
-            aspect-ratio: 1/1;
+            // aspect-ratio: 1/1;
             border-radius: 6px;
             overflow: hidden;
 
@@ -47,9 +48,10 @@
             &__sinopsis {
                 display: flex;
                 flex-direction: column;
+                min-height: 11rem;
 
                 &::before {
-                    content: "Descripción";
+                    content: "Sinopsis: ";
                     font-weight: 700;
                 }
             }
@@ -68,6 +70,7 @@
                         display: flex;
                         flex-direction: column;
                         text-align: center;
+                        margin: 0.2rem 1rem;
                         // border: 1px solid blue;
                     }
                 }
@@ -198,6 +201,7 @@
                 display: flex;
                 justify-content: space-evenly;
                 align-items: center;
+
                 &__precio {
                     display: flex;
                     flex-wrap: wrap;
@@ -249,20 +253,70 @@
                         font-size: 1rem;
                     }
                 }
-                &__boton{
+
+                &__boton {
                     width: 8rem;
                     height: 2rem;
                     background-color: #00b83d;
                     color: white;
-                    border:  2px solid gray;
+                    border: 2px solid gray;
                     border-radius: 6px;
                     font-weight: bold;
                     cursor: pointer;
-                    &:hover{
+
+                    &:hover {
                         transform: scale(1.1);
                     }
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .Producto {
+        &__info {
+
+
+            &__caracteristicas {
+                width: 100%;
+
+                // background-color: red;
+                ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 1rem;
+
+                }
+            }
+
+        }
+    }
+}
+
+// @media screen and (max-width: 792px) {
+//     .containerProductos{
+//         grid-template-columns: 1fr 1fr ;
+//     }
+// }
+
+@media screen and (max-width: 670px) {
+    .ContainerProducto {
+        .Producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__img {
+                width: 10rem;
+                height: auto;
+            }
+
+            &__info__precioComprar {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
     }
 }

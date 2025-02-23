@@ -40,7 +40,9 @@
                 width: 90%;
 
             }
-
+            p{
+                min-height: 3rem;
+            }
             &__precio{
                 margin: 0.2rem auto;
                 font-weight: bold;
@@ -106,4 +108,22 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 992px) {
+    .containerProductos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 792px) {
+    .containerProductos{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .containerProductos{
+        grid-template-columns: 1fr;
+    }
+    
 }

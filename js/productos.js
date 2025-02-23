@@ -15,6 +15,9 @@ function contruirGridProductos(listaProductos, containerProductos, tipo) {
             //Creamos la imagen de portada
             let portada = document.createElement('img');
             portada.src = producto.portadaImg;
+            portada.classList.add('containerProductos__producto__img__portada');
+            portada.id = producto.isbn;
+            portada.style.cursor = "pointer";
 
             //añadimos la portada a el div y el div a el contendor productos
             containerProductos__producto__img.appendChild(portada);
@@ -103,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (boton.nextElementSibling.style.display == "block") {
                 boton.nextElementSibling.style.display = "none";
                 boton.textContent = "Ver más";
-                e.target.parentNode.parentNode.style.height = "440px";
+                // e.target.parentNode.parentNode.style.height = "440px";
             } else {
                 e.target.parentNode.parentNode.style.height = "auto";
                 boton.nextElementSibling.style.display = "block";
@@ -112,5 +115,15 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+
+    containerProductos.addEventListener('click', (e) => {
+        if (e.target.classList.contains('containerProductos__producto__img__portada')) {
+            console.log(e.target.id);
+            document.cookie=`ISBN=${e.target.id};`;
+            window.location.href = "../html/producto.html";
+        }
+    });
+
 
 });
