@@ -43,19 +43,19 @@
             <div class="nav__menu">
 
                 <a href="#" class="nav__menu__button">
-                    <i>Novedades</i>
+                    <i class="lang" data-lang="primero">Novedades</i>
                 </a>
                 <a href="/html/comic.html" class="nav__menu__button">
-                    <i>Comic</i>
+                    <i class="lang" data-lang="segundo">Comic</i>
                 </a>
                 <a href="/html/novela.html" class="nav__menu__button">
-                    <i> Libros</i>
+                    <i class="lang" data-lang="tercero"> Libros</i>
                 </a>
                 <a href="#" class="nav__menu__button">
-                    <i>Merchandising</i>
+                    <i class="lang" data-lang="cuarto">Editorial</i>
                 </a>
                 <a href="/html/sombreNosotros.html" class="nav__menu__button">
-                    <i>Nosotros</i>
+                    <i class="lang" data-lang="quinto">Nosotros</i>
                 </a>
             </div>
             <div class="nav__login">
@@ -67,10 +67,26 @@
             </div>
         </nav>
     </header>
-    <nav class="breadcrumb">
-        <a class="breadcrumb__home" href="/index.html">
-            <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
-        </a>
+    <nav class="subnavegador">
+        <div class="breadcrumb">
+            <a class="breadcrumb__home" href="/index.html">
+                <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
+            </a>
+        </div>
+        <ul class="translate">
+            <li>
+                <a class="es"><img src="/img/es.svg" alt="Bandera España"></a>
+            </li>
+            <li>
+                <a class="en"><img src="/img/en.svg" alt="Bandera Reino Unido"></a>
+            </li>
+            <li>
+                <a class="ja"><img src="/img/ja.svg" alt="Bandera Japón"></a>
+            </li>
+        </ul>
+        <div class="darkMode">
+            <a class="darkMode__button">Modo oscuro</a>
+        </div>
     </nav>
     <main class="ContainerProducto">
         <article class="Producto">
@@ -78,34 +94,25 @@
                 <img src="/img/portadas/sinPortada.avif" alt="Portada">
             </div>
             <div class="Producto__info">
-                <h2 class="Producto__info__titulo">Título</h2>
-                <h3 class="Producto__info__autor">Autor</h3>
-                <p class="Producto__info__sinopsis">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                    accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-                    aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                    nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-                    velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                    voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-                    ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-                    voluptas nulla pariatur?"</p>
+                <h2 class="Producto__info__titulo"></h2>
+                <h3 class="Producto__info__autor"></h3>
+                <p class="Producto__info__sinopsis"></p>
                 <div class="Producto__info__caracteristicas">
                     <ul>
-                        <li class="Producto__info__caracteristicas__publicacion">11/12/2022</li>
-                        <li class="Producto__info__caracteristicas__paginas">200</li>
-                        <li class="Producto__info__caracteristicas__tipo">Novela</li>
-                        <li class="Producto__info__caracteristicas__subtipo">Thriller Histórico</li>
-                        <li class="Producto__info__caracteristicas__formato">Tapa Blanda</li>
-                        <li class="Producto__info__caracteristicas__editorial">ALFAGUARA</li>
+                        <li class="Producto__info__caracteristicas__publicacion"></li>
+                        <li class="Producto__info__caracteristicas__paginas"></li>
+                        <li class="Producto__info__caracteristicas__tipo"></li>
+                        <li class="Producto__info__caracteristicas__subtipo"></li>
+                        <li class="Producto__info__caracteristicas__formato"></li>
+                        <li class="Producto__info__caracteristicas__editorial"></li>
                     </ul>
                 </div>
                 <div class="Producto__info__precioComprar">
                     <div class="Producto__info__precioComprar__precio">
-                        <span class="Producto__info__precioComprar__precio__actual">25.50</span>
-                        <span class="Producto__info__precioComprar__precio__descuento">-5%</span>
+                        <span class="Producto__info__precioComprar__precio__actual"></span>
+                        <span class="Producto__info__precioComprar__precio__descuento"></span>
                         <!-- <button>Comprar</button> -->
-                        <span class="Producto__info__precioComprar__precio__anterior">30</span>
+                        <span class="Producto__info__precioComprar__precio__anterior"></span>
                     </div>
                     <button class="Producto__info__precioComprar__boton">Comprar</button>
                 </div>
@@ -117,22 +124,22 @@
 
     <footer class="footer">
         <section class="footer__ayuda">
-            <h2>Ayuda</h2>
-            <a href="#">
+            <h2 class="lang" data-lang="title">Ayuda</h2>
+            <a href="#" class="lang" data-lang="first">
                 Localizar Pedido
             </a>
 
-            <a href="#">
+            <a href="#" class="lang" data-lang="second">
                 Devoluciones
             </a>
 
-            <a href="#">
+            <a href="#" class="lang" data-lang="third">
                 Métodos De Pago
             </a>
 
         </section>
         <section class="footer__nosotros">
-            <h2>Contacto</h2>
+            <h2 class="lang" data-lang="title">Contacto</h2>
             <article class="footer__nosotros__contacto">
                 <a class="mail" href="mailto:kvoteshop@gmail.com">kvoteshop@gmail.com</a>
                 <a class="phone" href="tel:+34666666666">666666666</a>
@@ -141,7 +148,7 @@
             </article>
         </section>
         <section class="footer__redes">
-            <h2>Redes Sociales</h2>
+            <h2 class="lang" data-lang="title">Redes Sociales</h2>
             <article class="footer__redes__contenedor">
 
                 <a href="https://www.facebook.com/">
@@ -162,6 +169,8 @@
             </article>
         </section>
     </footer>
+    <script src="/js/lang.js"></script>
+    <script src="/js/darkMode.js"></script>
     <script src="/js/animacionLogo.js"></script>
     <script src="/js/search.js"></script>
     <script src="/js/hamburguer.js"></script>

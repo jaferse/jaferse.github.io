@@ -30,19 +30,19 @@
             <div class="nav__menu">
 
                 <a href="#" class="nav__menu__button">
-                    <i>Novedades</i>
+                    <i class="lang" data-lang="primero">Novedades</i>
                 </a>
                 <a href="/html/comic.html" class="nav__menu__button">
-                    <i>Comic</i>
+                    <i class="lang" data-lang="segundo">Comic</i>
                 </a>
                 <a href="/html/novela.html" class="nav__menu__button">
-                    <i> Libros</i>
+                    <i class="lang" data-lang="tercero"> Libros</i>
                 </a>
-                <a href="#" class="nav__menu__button">
-                    <i>Merchandising</i>
+                <a href="/html/editorial.html" class="nav__menu__button">
+                    <i class="lang" data-lang="cuarto">Editorial</i>
                 </a>
                 <a href="/html/sombreNosotros.html" class="nav__menu__button">
-                    <i>Nosotros</i>
+                    <i class="lang" data-lang="quinto">Nosotros</i>
                 </a>
             </div>
             <div class="nav__login">
@@ -54,25 +54,40 @@
             </div>
         </nav>
     </header>
-    <nav class="breadcrumb">
-        <a class="breadcrumb__home" href="/index.html">
-            <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
-        </a>
-        <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
-        <a class="breadcrumb__home" href="/html/sombreNosotros.html">
-            <img src="/img/nosotros.png" alt="Icono de casa">
-        </a>
-
+    <nav class="subnavegador">
+        <div class="breadcrumb">
+            <a class="breadcrumb__home" href="/index.html">
+                <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
+            </a>
+            <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
+            <a class="breadcrumb__home" href="/html/sombreNosotros.html">
+                <img src="/img/nosotros.png" alt="Icono de casa">
+            </a>
+        </div>
+        <ul class="translate">
+            <li>
+                <a class="es"><img src="/img/es.svg" alt="Bandera España"></a>
+            </li>
+            <li>
+                <a class="en"><img src="/img/en.svg" alt="Bandera Reino Unido"></a>
+            </li>
+            <li>
+                <a class="ja"><img src="/img/ja.svg" alt="Bandera Japón"></a>
+            </li>
+        </ul>
+        <div class="darkMode">
+            <a class="darkMode__button">Modo oscuro</a>
+        </div>
     </nav>
     <main class="nosotros">
         <article class="welcome">
-            <h1>Nosotros</h1>
+            <h1 class="lang" data-lang="title">Nosotros</h1>
 
         </article>
         <article class="nosotros__historia">
             <section class="nosotros__historia__text">
-                <h2>Nuestra Historia</h2>
-                <p>
+                <h2 class="lang" data-lang="title">Nuestra Historia</h2>
+                <p class="lang" data-lang="parrafo1">
                     Todo comenzó en un pequeño rincón de Internet, donde un grupo de apasionados del cómic se reunía en
                     un
                     foro para compartir opiniones, reseñas y consejos sobre tiendas que ofrecían esos ejemplares
@@ -81,14 +96,14 @@
                     diálogo
                     nació Kvote.
                 </p>
-                <p>
+                <p class="lang" data-lang="parrafo2">
                     Con el tiempo, la comunidad creció, y junto a ella surgió la inquietud de transformar ese foro en
                     algo
                     más ambicioso. Javier Fernández, el creador de Kvote, decidió dar el siguiente paso:
                     convertir la web en una tienda especializada que ayudara tanto a los novatos del cómic como a los
                     verdaderos aficionados a conseguir sus ejemplares soñados.
                 </p>
-                <p>
+                <p class="lang" data-lang="parrafo3">
                     Hoy, Kvote es mucho más que una tienda online. Es el resultado de la pasión y el esfuerzo colectivo
                     de
                     una comunidad que vive el cómic en todas sus formas. Hemos recorrido un largo camino desde aquel
@@ -105,15 +120,15 @@
         <article class="nosotros__mision">
             <section class="nosotros__mision__text">
 
-                <h2>Nuestra Mision</h2>
-                <p>
+                <h2 class="lang" data-lang="title">Nuestra Mision</h2>
+                <p class="lang" data-lang="parrafo1"> 
                     En Kvote, nuestra misión es acompañarte en cada etapa de tu aventura en el mundo del cómic,
                     adaptándonos
                     a tus necesidades y gustos. Por ello, ofrecemos una experiencia pensada para cada tipo de lector:
                 </p>
                 <ul>
-                    <li>
-                        <h3>Para los que empiezan:</h3>
+                    <li class="lang" data-lang="subseccion1">
+                        <h3 class="lang" data-lang="subtitulo1">Para los que empiezan:</h3>
                         Queremos ayudarte a dar tus primeros pasos en este apasionante universo. Te ofrecemos
                         recomendaciones
                         personalizadas y asesoramiento para que inicies tu experiencia de lectura con títulos y autores
@@ -121,8 +136,8 @@
                         se
                         adapten a tus intereses, permitiéndote descubrir el cómic de la manera más amena y segura.
                     </li>
-                    <li>
-                        <h3>Para el lector medio:</h3>
+                    <li class="lang" data-lang="subseccion2">
+                        <h3 class="lang" data-lang="subtitulo2">Para el lector medio:</h3>
                         Sabemos que hay quienes disfrutan del cómic de forma habitual sin buscar necesariamente
                         ediciones
                         exclusivas o rarezas. Para ti, Kvote ha seleccionado un catálogo equilibrado que combina los
@@ -131,8 +146,8 @@
                         consumo
                         diario. Así, disfrutarás de una oferta variada que se ajusta a tus expectativas y ritmo.
                     </li>
-                    <li>
-                        <h3>Para los aficionados avanzados:</h3>
+                    <li class="lang" data-lang="subseccion3">
+                        <h3 class="lang" data-lang="subtitulo3">Para los aficionados avanzados:</h3>
                         Reconocemos a aquellos verdaderos conocedores que buscan piezas únicas y difíciles de conseguir.
                         Nos
                         adentramos en el mundo de colecciones privadas e importaciones directas desde los países de
@@ -142,7 +157,7 @@
                         pasión.
                     </li>
                 </ul>
-                <p>
+                <p class="lang" data-lang="parrafo3">
                     Con este compromiso, en Kvote creemos que cada lector, sin importar su nivel de experiencia, merece
                     disfrutar del mejor universo del cómic. ¡Estamos aquí para guiarte, acompañarte y sorprenderte en
                     cada
@@ -156,8 +171,8 @@
         <article class="nosotros__editorial">
 
             <section class="nosotros__editorial__text">
-                <h2>Nuestra Editorial</h2>
-                <p>
+                <h2 class="lang" data-lang="title">Nuestra Editorial</h2>
+                <p class="lang" data-lang="parrafo1">
                     En Kvote creemos en el poder transformador del cómic y en la necesidad de impulsar nuevas voces. Por
                     ello,
                     hemos creado nuestra propia editorial, dedicada a la publicación de cómics locales de Ciudad Real y
@@ -166,31 +181,31 @@
                     otros
                     países.
                 </p>
-                <p>
+                <p class="lang" data-lang="parrafo2">
                     Nuestra misión editorial es clara:
                 </p>
 
                 <ul>
-                    <li>
-                        <h3>Impulsar el talento emergente:</h3>
+                    <li class="lang" data-lang="subseccion1">
+                        <h3 class="lang" data-lang="subtitulo1">Impulsar el talento emergente:</h3>
                         Brindamos una plataforma para que los creadores locales y aquellos que han
                         pasado desapercibidos en el circuito convencional puedan ver sus obras publicadas y llegar a un
                         público más
                         amplio.
                     </li>
-                    <li>
-                        <h3>Calidad en cada detalle:</h3>
+                    <li class="lang" data-lang="subseccion2">
+                        <h3 class="lang" data-lang="subtitulo2">Calidad en cada detalle:</h3>
                         Cuidamos todo el proceso creativo, desde el guion hasta la producción final,
                         asegurándonos de que cada cómic refleje la pasión y el esfuerzo de sus autores.
 
                     </li>
-                    <li>
-                        <h3>Diversidad y originalidad:</h3>
+                    <li class="lang" data-lang="subseccion3">
+                        <h3 class="lang" data-lang="subtitulo3">Diversidad y originalidad:</h3>
                         Fomentamos una propuesta artística diversa, que rompa esquemas y aporte nuevas
                         miradas al universo del cómic.
                     </li>
                 </ul>
-                <p>
+                <p class="lang" data-lang="parrafo4">
                     Trabajamos mano a mano con los creadores, ofreciéndoles asesoramiento personalizado, recursos y el
                     acompañamiento necesario para transformar sus ideas en obras únicas y de alta calidad.</p>
             </section>
@@ -201,8 +216,8 @@
         </article>
         <article class="nosotros__talleres">
             <section class="nosotros__talleres__text">
-                <h2>Talleres y Formación</h2>
-                <p>
+                <h2 class="lang" data-lang="title">Talleres y Formación</h2>
+                <p class="lang" data-lang="parrafo1">
                     En Kvote estamos convencidos de que el futuro del cómic se construye compartiendo conocimientos y
                     experiencias. Por ello, hemos implantado una serie de talleres de aprendizaje diseñados para todos
                     aquellos
@@ -215,23 +230,23 @@
                     <img src="../img/taller.jpg" alt="">
                 </picture>
                 <ul>
-                    <li>
-                        <h3>Creación de Guiones:</h3>
+                    <li class="lang" data-lang="subseccion1">
+                        <h3 class="lang" data-lang="subtitulo1">Creación de Guiones:</h3>
                         Aprende a estructurar y desarrollar historias sólidas que enganchen a tus lectores
                         desde el primer bocadillo.
                     </li>
-                    <li>
-                        <h3>Dibujo e Ilustración:</h3>
+                    <li class="lang" data-lang="subseccion2">
+                        <h3 class="lang" data-lang="subtitulo2">Dibujo e Ilustración:</h3>
                         Mejora tus habilidades para dar vida a personajes y escenarios, dominando
                         tanto el dibujo tradicional como digital.
                     </li>
-                    <li>
-                        <h3>Coloración y Entintado:</h3>
+                    <li class="lang" data-lang="subseccion3">
+                        <h3 class="lang" data-lang="subtitulo3">Coloración y Entintado:</h3>
                         Descubre cómo el uso del color y el entintado pueden transformar tus viñetas,
                         aportando dinamismo y profundidad a tus obras.
                     </li>
-                    <li>
-                        <h3>Talleres de Mercado:</h3>
+                    <li class="lang" data-lang="subseccion4">
+                        <h3 class="lang" data-lang="subtitulo4">Talleres de Mercado:</h3>
                         Conoce las claves para mover el cómic comercialmente. Expertos de grandes editoriales
                         te enseñarán estrategias para posicionar y comercializar tus creaciones en el competitivo mundo
                         del
@@ -241,28 +256,28 @@
 
             </section>
             <section class="nosotros__talleres__colaboradores">
-                <h2>Nuestros Profesores</h2>
+                <h2 class="lang" data-lang="title">Nuestros Profesores</h2>
                 <div class="nosotros__talleres__colaboradores__img">
-                    <h3>Autor de "Arrugas" y "La casa"</h3>
+                    <h3 class="lang" data-lang="subtitulo1">Autor de "Arrugas" y "La casa"</h3>
                     <picture>
                         <img src="../img/pacoRoca.jpg" alt="Imagen de la Casa de Paco Roca">
                     </picture>
                 </div>
                 <div class="nosotros__talleres__colaboradores__img">
-                    <h3>Autora de "Cénit" y "Satori"</h3>
+                    <h3 class="lang" data-lang="subtitulo2">Autora de "Cénit" y "Satori"</h3>
                     <picture>
                         <img src="../img/MariaMedem.jpg" alt="Imagen de Satori de Maria Medem">
                     </picture>
                 </div>
                 <div class="nosotros__talleres__colaboradores__img">
-                    <h3>Ilustradora de "Todo bajo el sol"</h3>
+                    <h3 class="lang" data-lang="subtitulo3">Ilustradora de "Todo bajo el sol"</h3>
 
                     <picture>
                         <img src="../img/AnaPenyas.jpg" alt="Imagen de Todo bajo el sol de Ana Penyas">
                     </picture>
                 </div>
                 <div class="nosotros__talleres__colaboradores__img">
-                    <h3>Dibujante de "Blacksad"</h3>
+                    <h3 class="lang" data-lang="subtitulo4">Dibujante de "Blacksad"</h3>
                     <picture>
                         <img src="../img/juanjoGarrido.jpg" alt="Imagen de Blacksad de Juanjo Garrido">
                     </picture>
@@ -277,22 +292,22 @@
 
     <footer class="footer">
         <section class="footer__ayuda">
-            <h2>Ayuda</h2>
-            <a href="#">
+            <h2 class="lang" data-lang="title">Ayuda</h2>
+            <a href="#" class="lang" data-lang="first">
                 Localizar Pedido
             </a>
 
-            <a href="#">
+            <a href="#" class="lang" data-lang="second">
                 Devoluciones
             </a>
 
-            <a href="#">
+            <a href="#" class="lang" data-lang="third">
                 Métodos De Pago
             </a>
 
         </section>
         <section class="footer__nosotros">
-            <h2>Contacto</h2>
+            <h2 class="lang" data-lang="title">Contacto</h2>
             <article class="footer__nosotros__contacto">
                 <a class="mail" href="mailto:kvoteshop@gmail.com">kvoteshop@gmail.com</a>
                 <a class="phone" href="tel:+34666666666">666666666</a>
@@ -301,7 +316,7 @@
             </article>
         </section>
         <section class="footer__redes">
-            <h2>Redes Sociales</h2>
+            <h2 class="lang" data-lang="title">Redes Sociales</h2>
             <article class="footer__redes__contenedor">
 
                 <a href="https://www.facebook.com/">
@@ -322,6 +337,8 @@
             </article>
         </section>
     </footer>
+    <script src="/js/lang.js"></script>
+    <script src="/js/darkMode.js"></script>
     <script src="../js/animacionLogo.js"></script>
     <script src="/js/search.js"></script>
     <script src="/js/hamburguer.js"></script>

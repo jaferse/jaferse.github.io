@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/css/normalice.css">
     <link rel="stylesheet" href="/css/main.css">
     <!-- Hotjar Tracking Code for Kvote -->
-    <script>
+    <!-- <script>
         (function (h, o, t, j, a, r) {
             h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
             h._hjSettings = { hjid: 5301119, hjsv: 6 };
@@ -25,7 +25,7 @@
             r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
             a.appendChild(r);
         })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-    </script>
+    </script> -->
 </head>
 
 <body>
@@ -43,19 +43,19 @@
             <div class="nav__menu">
 
                 <a href="#" class="nav__menu__button">
-                    <i>Novedades</i>
+                    <i class="lang" data-lang="primero">Novedades</i>
                 </a>
                 <a href="/html/comic.html" class="nav__menu__button">
-                    <i>Comic</i>
+                    <i class="lang" data-lang="segundo">Comic</i>
                 </a>
                 <a href="/html/novela.html" class="nav__menu__button">
-                    <i> Libros</i>
+                    <i class="lang" data-lang="tercero"> Libros</i>
                 </a>
-                <a href="#" class="nav__menu__button">
-                    <i>Merchandising</i>
+                <a href="/html/editorial.html" class="nav__menu__button">
+                    <i class="lang" data-lang="cuarto">Editorial</i>
                 </a>
                 <a href="/html/sombreNosotros.html" class="nav__menu__button">
-                    <i>Nosotros</i>
+                    <i class="lang" data-lang="quinto">Nosotros</i>
                 </a>
             </div>
             <div class="nav__login">
@@ -68,36 +68,52 @@
         </nav>
     </header>
 
-    <nav class="breadcrumb">
-        <a class="breadcrumb__home" href="/index.html">
-            <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
-        </a>
-        <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
-        <a class="breadcrumb__home" href="/html/comic.html">
-            <img src="/img/comicIcon.png" alt="Icono de casa">
-        </a>
+    <nav class="subnavegador">
+        <div class="breadcrumb">
+            <a class="breadcrumb__home" href="/index.html">
+                <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
+            </a>
+            <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
+            <a class="breadcrumb__home" href="/html/comic.html">
+                <img src="/img/comicIcon.png" alt="Icono de casa">
+            </a>
+        </div>
+        <ul class="translate">
+            <li>
+                <a class="es"><img src="/img/es.svg" alt="Bandera España"></a>
+            </li>
+            <li>
+                <a class="en"><img src="/img/en.svg" alt="Bandera Reino Unido"></a>
+            </li>
+            <li>
+                <a class="ja"><img src="/img/ja.svg" alt="Bandera Japón"></a>
+            </li>
+        </ul>
+        <div class="darkMode">
+            <a class="darkMode__button">Modo oscuro</a>
+        </div>
     </nav>
 
     <main class="containerProductos">
     </main>
     <footer class="footer">
         <section class="footer__ayuda">
-            <h2>Ayuda</h2>
-            <a href="#">
+            <h2 class="lang" data-lang="title">Ayuda</h2>
+            <a href="#" class="lang" data-lang="first">
                 Localizar Pedido
             </a>
 
-            <a href="#">
+            <a href="#" class="lang" data-lang="second">
                 Devoluciones
             </a>
 
-            <a href="#">
+            <a href="#" class="lang" data-lang="third">
                 Métodos De Pago
             </a>
 
         </section>
         <section class="footer__nosotros">
-            <h2>Contacto</h2>
+            <h2 class="lang" data-lang="title">Contacto</h2>
             <article class="footer__nosotros__contacto">
                 <a class="mail" href="mailto:kvoteshop@gmail.com">kvoteshop@gmail.com</a>
                 <a class="phone" href="tel:+34666666666">666666666</a>
@@ -106,7 +122,7 @@
             </article>
         </section>
         <section class="footer__redes">
-            <h2>Redes Sociales</h2>
+            <h2 class="lang" data-lang="title">Redes Sociales</h2>
             <article class="footer__redes__contenedor">
 
                 <a href="https://www.facebook.com/">
@@ -127,11 +143,14 @@
             </article>
         </section>
     </footer>
+    <script src="/js/lang.js"></script>
+    <script src="/js/darkMode.js"></script>
     <script src="/js/animacionLogo.js"></script>
     <script src="/js/search.js"></script>
     <script src="/js/hamburguer.js"></script>
     <script type="module" src="/js/listaProductos.js"></script>
     <script type="module" src="/js/productos.js"></script>
+
 </body>
 
 </html>

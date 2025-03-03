@@ -108,6 +108,9 @@
             }
         }
     }
+    .containerProductos__producto--dark{
+        border: 3px solid $fondoOscuro !important;
+    }
 }
 
 @media screen and (max-width: 992px) {

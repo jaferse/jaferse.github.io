@@ -109,23 +109,31 @@
             flex: 1;
 
             .carro {
-                width: 2rem;
-                height: 2rem;
-                background-image: url(('/img/carro.png'));
+                width: 1.5rem;
+                height: 1.5rem;
+                background-image: url(('/img/carro.svg'));
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
 
                 &:hover {
                     transform: scale(1.1);
-                    background-image: url(('/img/carroHover.png'));
+                    // background-image: url(('/img/carroHover.png'));
                 }
+            }
+
+            .carro--dark {
+                // background-color: $fondoOscuroElementos;
+                background-image: url(('/img/carro--dark.svg'));
+                // border-radius: 50%;
             }
 
             .login {
                 width: 2rem;
                 height: 2rem;
                 border-radius: 50%;
+                background-color: white;
+                border: 2px solid rgb(255, 255, 255);
 
                 &:hover {
                     transform: scale(1.1);
@@ -140,6 +148,11 @@
 
             }
 
+            .login--dark {
+                // background-color: $fondoOscuroElementos ;
+                // border: 2px solid $fondoOscuroElementos;
+
+            }
 
             .search {
                 height: 100%;
@@ -151,11 +164,13 @@
                     width: 1.5rem;
                     height: 1.5rem;
                     cursor: pointer;
-                    background-image: url("/img/lupa.png");
+                    background-image: url("/img/lupa.svg");
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
+
                 }
+
 
                 input {
                     background-color: white;
@@ -171,10 +186,31 @@
                     }
                 }
             }
+
+            .search--dark {
+                label {
+                    // background-color: $fondoOscuroElementos ;
+                    // border: 2px solid $fondoOscuroElementos;
+                    background-image: url("/img/lupa--dark.svg");
+
+                }
+            }
         }
     }
 
+
 }
+
+.header--dark {
+    background-color: $fondoOscuro;
+
+    .nav__menu__button {
+        background-color: $fondoOscuro;
+    }
+
+
+}
+
 
 @keyframes slide2 {
     0% {
@@ -202,7 +238,7 @@
 
 
 @media screen and (max-width: 992px) {
-    
+
     .header {
         input {
             display: none;
@@ -210,6 +246,7 @@
             right: 5px;
             top: 5rem;
         }
+
         width: 100%;
 
         &__logo {
@@ -242,6 +279,7 @@
                 // width: 4rem;
                 margin-left: 0.5rem;
                 flex: 0;
+
                 .carro {
                     margin: 0rem 0.5rem;
                 }
@@ -260,7 +298,7 @@
         .nav {
             align-items: center;
             justify-content: center;
-            
+
             &__menu {
                 z-index: 5;
                 // display: none;

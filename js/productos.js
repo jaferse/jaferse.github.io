@@ -55,7 +55,7 @@ function contruirGridProductos(listaProductos, containerProductos, tipo) {
 
             let containerProductos__producto__info__adicional__Formato = document.createElement('p');
             containerProductos__producto__info__adicional__Formato.classList.add('containerProductos__producto__info__adicional__Formato');
-            containerProductos__producto__info__adicional__Formato.innerText = producto.formato;
+            containerProductos__producto__info__adicional__Formato.innerText = " " + producto.formato;
             let containerProductos__producto__info__adicional__Tipo = document.createElement('p');
             containerProductos__producto__info__adicional__Tipo.classList.add('containerProductos__producto__info__adicional__Tipo');
             containerProductos__producto__info__adicional__Tipo.innerText = producto.subtipo;
@@ -87,6 +87,7 @@ function contruirGridProductos(listaProductos, containerProductos, tipo) {
     });
 }
 window.addEventListener('DOMContentLoaded', () => {
+    // let lang = localStorage.getItem("lang");
     const containerProductos = document.querySelector('.containerProductos');
     let seccion = window.location.pathname.substring(6, window.location.pathname.length - 5);
     console.log(seccion);
@@ -96,6 +97,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const verMas = document.querySelectorAll('.verMas');
 
+    
     //Controlar el mostrar info
     verMas.forEach(boton => {
 
@@ -106,6 +108,7 @@ window.addEventListener('DOMContentLoaded', () => {
             if (boton.nextElementSibling.style.display == "block") {
                 boton.nextElementSibling.style.display = "none";
                 boton.textContent = "Ver más";
+
                 // e.target.parentNode.parentNode.style.height = "440px";
             } else {
                 e.target.parentNode.parentNode.style.height = "auto";
@@ -120,7 +123,7 @@ window.addEventListener('DOMContentLoaded', () => {
     containerProductos.addEventListener('click', (e) => {
         if (e.target.classList.contains('containerProductos__producto__img__portada')) {
             console.log(e.target.id);
-            document.cookie=`ISBN=${e.target.id};`;
+            document.cookie = `ISBN=${e.target.id};`;
             window.location.href = "../html/producto.html";
         }
     });

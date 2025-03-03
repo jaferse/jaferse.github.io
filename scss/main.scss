@@ -8,7 +8,7 @@
 @import './componentes/breadcrumb';
 @import './componentes/containerProductos';
 @import './componentes/producto';
-
+@import "./componentes/idiomas";
 * {
     box-sizing: border-box;
 }
@@ -25,7 +25,11 @@ body {
     background-image: url('../img/textura.png');
     overflow-x: hidden;
 }
-
+.body--Dark{
+    // background-image: url('../img/texturaDark.png');
+    background-image: none;
+    background-color: #2babc83c;
+}
 p {
     font-family: $fuente_secundaria;
 }

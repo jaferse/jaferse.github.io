@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kvote Tienda de Comics</title>
+    <title>Comics</title>
     <link rel="icon" type="image/x-icon" href="/img/Kvote.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +15,8 @@
         rel="stylesheet">
     <link rel="stylesheet" href="/css/normalice.css">
     <link rel="stylesheet" href="/css/main.css">
-
 </head>
+
 
 <body>
     <div class="Container">
@@ -33,26 +33,26 @@
             <div class="nav__menu">
 
                 <a href="#" class="nav__menu__button">
-                    <i class="lang" data-lang="primero"></i>
+                    <i class="lang" data-lang="primero">Novedades</i>
                 </a>
                 <a href="/html/comic.html" class="nav__menu__button">
-                    <i class="lang" data-lang="segundo"></i>
+                    <i class="lang" data-lang="segundo">Comic</i>
                 </a>
                 <a href="/html/novela.html" class="nav__menu__button">
-                    <i class="lang" data-lang="tercero"></i>
+                    <i class="lang" data-lang="tercero"> Libros</i>
                 </a>
                 <a href="/html/editorial.html" class="nav__menu__button">
-                    <i class="lang" data-lang="cuarto"></i>
+                    <i class="lang" data-lang="cuarto">Editorial</i>
                 </a>
                 <a href="/html/sombreNosotros.html" class="nav__menu__button">
-                    <i class="lang" data-lang="quinto"></i>
+                    <i class="lang" data-lang="quinto">Nosotros</i>
                 </a>
             </div>
             <div class="nav__login">
                 <a href="/html/sign_in.html" class="login"></a>
                 <a class="carro" href="#"></a>
                 <div class="search">
-                    <label for="buscar"></label><input type="text" id="buscar">
+                    <label for="buscar"></label><input type="text" placeholder="Buscar" id="buscar">
                 </div>
             </div>
         </nav>
@@ -62,6 +62,10 @@
         <div class="breadcrumb">
             <a class="breadcrumb__home" href="/index.html">
                 <img src="/img/homeBreadcrumbs.png" alt="Icono de casa">
+            </a>
+            <img src="/img/arrowRight.png" alt="Flecha hacia la derecha">
+            <a class="breadcrumb__home" href="/html/comic.html">
+                <img src="/img/comicIcon.png" alt="Icono de casa">
             </a>
         </div>
         <ul class="translate">
@@ -76,85 +80,10 @@
             </li>
         </ul>
         <div class="darkMode">
-            <a class="darkMode__button"></a>
+            <a class="darkMode__button">Modo oscuro</a>
         </div>
     </nav>
 
-    <main class="main">
-        <article class="main__sliderFrame">
-            <ul>
-                <li>
-                    <img src="/img/carruselProvidence.jpg" alt="">
-                </li>
-                <li>
-                    <img src="/img/carruselTheWalkingDead.jpg" alt="">
-                </li>
-                <li>
-                    <img src="/img/carruselSpiderman.jpg" alt="">
-                </li>
-                <li>
-                    <img src="/img/carruselbatman.jpg" alt="">
-                </li>
-                <li>
-                    <img src="/img/carruselWonderWoman.jpg" alt="">
-                </li>
-                <li>
-                    <img src="/img/carrruselKilling.png" alt="">
-                </li>
-            </ul>
-        </article>
-
-        <article class="main__bestSellers">
-            <h2 class="main__bestSellers__title lang" data-lang="comicMonth"></h2>
-
-            <section class="main__bestSellers__portadas">
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="/img/PortadaEisner_2019_2.jpg" alt="Imagen de portada de Blackbird">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">Blackbird</a></h3>
-                </div>
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="/img/PortadaEisner_2024_1.jpg" alt="Imagen de portada de  Demon Wars">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">Deamon Wars</a></h3>
-                </div>
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="/img/PortadaEisner_2023_1.jpg" alt="Imagen de portada de Nightwing">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">Nightwing</a></h3>
-                </div>
-            </section>
-        </article>
-        <article class="main__bestSellers">
-            <h2 class="main__bestSellers__title lang" data-lang="bookMonth">Libros de Febrero</h2>
-
-            <section class="main__bestSellers__portadas">
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="/img/portadas/amapola.jpg" alt="Imagen de portada de La guerra de la Amapola">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">La guerra de la Amapola</a></h3>
-                </div>
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="/img/portadas/vientoYverdad.jpg" alt="Imagen de portada de  Viento y Verdad">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">Viento y Verdad</a></h3>
-                </div>
-                <div class="tarjetaProducto">
-                    <a class="tarjetaProducto__portada" href="">
-                        <img src="/img/portadas/trescuerpos.jpg"
-                            alt="Imagen de portada de El problema de los tres cuerpos">
-                    </a>
-                    <h3 class="tarjetaProducto__titulo"><a href="">El problema de los tres cuerpos</a></h3>
-                </div>
-            </section>
-        </article>
-
-    </main>
     <footer class="footer">
         <section class="footer__ayuda">
             <h2 class="lang" data-lang="title">Ayuda</h2>
@@ -207,7 +136,8 @@
     <script src="/js/animacionLogo.js"></script>
     <script src="/js/search.js"></script>
     <script src="/js/hamburguer.js"></script>
-    <script src="/js/carrusel.js"></script>
+    <script type="module" src="/js/listaProductos.js"></script>
+    <script type="module" src="/js/productos.js"></script>
 
 </body>
 
