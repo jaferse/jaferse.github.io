@@ -50,8 +50,6 @@
                 margin: 0.2rem auto;
                 font-weight: bold;
 
-                &::before {}
-
                 &::after {
                     content: "€"
                 }
