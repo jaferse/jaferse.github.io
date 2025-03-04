@@ -360,7 +360,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.footer__nosotros__contacto a.direcion::before {
+.footer__nosotros__contacto a.direccion::before {
   background-image: url("../img/direcionIcon.png");
   background-position: center;
   background-size: cover;

@@ -59,7 +59,7 @@
                 @include cargarImagen("../img/mailIcon.png");
             }
 
-            a.direcion::before {
+            a.direccion::before {
                 @include cargarImagen("../img/direcionIcon.png");
             }
         }
