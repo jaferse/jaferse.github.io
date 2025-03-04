@@ -1,4 +1,6 @@
-.containerProductos{
+@use './variables' as *;
+
+.containerProductos {
     // border: 3px solid black;
     margin: 0 auto;
     display: grid;
@@ -8,98 +10,106 @@
     row-gap: 3rem;
     width: 96vw;
     font-family: $fuente_secundaria;
-    &__producto{
-        border: 3px solid $rojo_primario;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        // height: 440px;
-        border-radius: 16px;
+
+    &__producto {
+        @include dimensiones(80%, auto, 16px, 3px solid $rojo_primario);
+
+        @include flex(column, start, center);
+
         overflow: hidden;
         box-shadow: $box_shadow;
         background-color: white;
-        &__img{
-            // width: 50%;
+
+        &__img {
             margin-top: 1rem;
             width: 80%;
-            img{
+
+            img {
                 aspect-ratio: 3/4;
                 width: 100%;
             }
         }
-        &__info{
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: start;
+
+        &__info {
+            @include flex(column, flex-start, start);
             width: 90%;
-            h2,h3{
+
+            h2,
+            h3 {
                 font-size: 1rem;
                 margin: 0.2rem 1.5rem;
                 width: 90%;
 
             }
-            p{
+
+            p {
                 min-height: 3rem;
             }
-            &__precio{
+
+            &__precio {
                 margin: 0.2rem auto;
                 font-weight: bold;
-                &::before{
-                    
-                }
-                &::after{
+
+                &::before {}
+
+                &::after {
                     content: "€"
                 }
             }
-            .verMas{
+
+            .verMas {
                 background-color: #00b83d;
                 color: white;
-                border:  2px solid gray;
-                border-radius: 6px;
-                margin: 0.5rem auto 2rem;
                 font-weight: bold;
+                margin: 0.5rem auto 2rem;
+                @include dimensiones(auto,auto, 6px,2px solid gray);
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.1);
                 }
             }
-            hr{
+
+            hr {
                 width: 90%;
                 margin: 0.3rem;
             }
-            &__autor{
+
+            &__autor {
                 font-size: 1rem;
                 font-weight: 400;
                 color: gray;
                 margin: 0.5rem 1.8rem;
             }
-            &__adicional{
+
+            &__adicional {
                 display: none;
-                &__Formato{
-                    &::before{
+
+                &__Formato {
+                    &::before {
                         content: "Formato:";
                         font-weight: 600;
                     }
                 }
-                &__Tipo{
-                    &::before{
+
+                &__Tipo {
+                    &::before {
                         content: "Tipo: ";
                         font-weight: 600;
                     }
-                    
+
                 }
-                &__Paginas{
-                    &::before{
+
+                &__Paginas {
+                    &::before {
                         content: "Nº paginas: ";
                         font-weight: 600;
                     }
-                    
+
                 }
-                
-                &__ISBN{
-                    &::before{
+
+                &__ISBN {
+                    &::before {
                         content: "ISBN: ";
                         font-weight: 600;
                     }
@@ -108,25 +118,27 @@
             }
         }
     }
-    .containerProductos__producto--dark{
+
+    .containerProductos__producto--dark {
         border: 3px solid $fondoOscuro !important;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .containerProductos{
+    .containerProductos {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
+
 @media screen and (max-width: 792px) {
-    .containerProductos{
-        grid-template-columns: 1fr 1fr ;
+    .containerProductos {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 540px) {
-    .containerProductos{
+    .containerProductos {
         grid-template-columns: 1fr;
     }
-    
+
 }

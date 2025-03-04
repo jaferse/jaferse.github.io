@@ -18,3 +18,35 @@ $box_shadow: 0.313rem 0.313rem 0.625rem -0.313rem rgb(0, 0, 0);
 
 $fondoOscuro: #005c94;
 $fondoOscuroElementos: #2babc8;
+
+
+@mixin cargarImagen($url, $size: cover){
+    background-image: url($url);
+    background-position: center;
+    background-size: $size;
+    background-repeat: no-repeat;
+}
+
+
+@mixin flex($direction, $justify, $align, $wrap: nowrap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+}
+
+@mixin dimensiones($width, $height, $borderRadius: 0px, $border: none) {
+    width: $width;
+    height: $height;
+    border-radius: $borderRadius;
+    border: $border;
+}
+
+@mixin animacion($name, $timing-function, $duracion, $fill-mode){
+    animation-name: $name;
+    animation-timing-function: $timing-function;
+    animation-duration: $duracion;
+    animation-fill-mode: $fill-mode;
+
+}

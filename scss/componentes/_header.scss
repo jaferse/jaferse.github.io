@@ -1,22 +1,16 @@
 @import './variables';
 
 .header {
-    width: 100%;
-    height: 4rem;
-    display: flex;
-    flex-direction: row;
+    @include dimensiones(100%, 4rem);
+
+    @include flex(row, space-between, stretch);
     margin: auto;
     text-decoration: none;
-    justify-content: space-between;
     background-color: $rojo_primario;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.75);
 
-
-
     &__logo {
-        background-image: url('/img/Kvote.png');
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include cargarImagen('/img/Kvote.png');
         border-radius: 50%;
         aspect-ratio: 1/1;
         margin: 0.5rem 1rem;
@@ -28,24 +22,18 @@
 
     .menuHamburguesa {
         display: none;
-        width: 2rem;
-        height: 2rem;
+        @include dimensiones(2rem, 2rem);
         margin: auto 1rem;
 
         img {
-            width: 100%;
-            height: 100%;
+            @include dimensiones(100%, 100%);
         }
     }
 
     .nav {
-
-        // width: 100%;
-        flex-grow: 1;
-        display: flex;
-        // justify-content: stretch;
-        align-items: stretch;
         font-family: $fuente_general;
+        @include flex(row, stretch, stretch);
+        flex-grow: 1;
         position: relative;
 
         &__menu {
@@ -73,15 +61,10 @@
                 }
 
                 &:hover>i {
-                    animation-name: transicionLetras;
-                    animation-timing-function: linear;
-                    animation-duration: 0.5s;
-                    animation-fill-mode: forwards;
+                    @include animacion(transicionLetras, linear, 0.5s, forwards);
                 }
 
                 &:hover:before {
-                    // background-color: $boton_hover;
-                    // cursor: pointer;
                     animation: slide2 0.5s forwards;
                 }
 
@@ -91,8 +74,7 @@
                     // opacity: 0.3;
                     content: "";
                     position: absolute;
-                    width: 100%;
-                    height: 100%;
+                    @include dimensiones(100%, 100%);
                     left: 0%;
                     top: -100%;
                 }
@@ -101,57 +83,32 @@
 
 
         &__login {
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            align-items: center;
+            @include flex(row, space-evenly, center);
             flex: 1;
 
             .carro {
-                width: 1.5rem;
-                height: 1.5rem;
-                background-image: url(('/img/carro.svg'));
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center;
+                @include dimensiones(1.5rem, 1.5rem);
+
+                @include cargarImagen('/img/carro.svg');
 
                 &:hover {
                     transform: scale(1.1);
-                    // background-image: url(('/img/carroHover.png'));
                 }
             }
 
             .carro--dark {
-                // background-color: $fondoOscuroElementos;
                 background-image: url(('/img/carro--dark.svg'));
-                // border-radius: 50%;
             }
 
             .login {
-                width: 2rem;
-                height: 2rem;
-                border-radius: 50%;
+                @include dimensiones(2rem, 2rem, 50%, 2px solid rgb(255, 255, 255));
                 background-color: white;
-                border: 2px solid rgb(255, 255, 255);
+                @include cargarImagen('/img/batlogin1.png', contain);
 
                 &:hover {
                     transform: scale(1.1);
                     background-image: url(('/img/batlogin2.png'));
                 }
-
-                background-image: url(('/img/batlogin1.png'));
-                background-size: contain;
-                background-repeat: no-repeat;
-                background-position: center;
-
-
-            }
-
-            .login--dark {
-                // background-color: $fondoOscuroElementos ;
-                // border: 2px solid $fondoOscuroElementos;
-
             }
 
             .search {
@@ -161,21 +118,15 @@
 
                 label {
                     display: inline-block;
-                    width: 1.5rem;
-                    height: 1.5rem;
+                    @include dimensiones(1.5rem, 1.5rem);
                     cursor: pointer;
-                    background-image: url("/img/lupa.svg");
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-
+                    @include cargarImagen("/img/lupa.svg");
                 }
 
 
                 input {
                     background-color: white;
                     border-radius: 0.438rem;
-                    // width: 85%;
 
                     &::placeholder {
                         color: black;
@@ -189,8 +140,6 @@
 
             .search--dark {
                 label {
-                    // background-color: $fondoOscuroElementos ;
-                    // border: 2px solid $fondoOscuroElementos;
                     background-image: url("/img/lupa--dark.svg");
 
                 }
@@ -258,12 +207,8 @@
             font-size: 1rem;
 
             &__menu {
-                // width: 100%;
-                // flex-grow: 1;
-                display: flex;
-                justify-content: space-between;
-                // justify-content: stretch;
-                align-items: stretch;
+
+                @include flex(row, space-between, stretch);
 
                 &__button {
                     padding: 0.3% 1.5%;
@@ -273,10 +218,7 @@
             }
 
             &__login {
-                // flex-grow: 1;
-                // flex-shrink: 1;
                 justify-content: space-evenly;
-                // width: 4rem;
                 margin-left: 0.5rem;
                 flex: 0;
 
@@ -301,22 +243,18 @@
 
             &__menu {
                 z-index: 5;
-                // display: none;
                 width: 50%;
                 position: absolute;
                 flex-direction: column;
                 top: 4.2rem;
-                // height: 4rem;
                 left: -400px;
                 border-radius: 16px;
                 overflow: hidden;
-                // animation-name: ;
 
                 &__button {
                     padding: 2rem;
 
                     &:hover {
-                        // animation-name: none;
                         background-color: $nav_hover;
 
                     }

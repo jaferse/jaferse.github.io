@@ -1,7 +1,8 @@
+@use './variables' as *;
+
 .ContainerProducto {
     margin: 1rem auto;
     width: 96vw;
-    // border: 2px solid black;
     background-color: white;
     border: 2px solid $rojo_primario;
     box-shadow: $box_shadow;
@@ -11,28 +12,25 @@
 
     .Producto {
         margin: 1rem auto;
-        // border: 2px solid black;
         width: 90%;
         display: flex;
         gap: 2rem;
 
         &__img {
-            width: 25rem;
-            height: 26rem;
-            // aspect-ratio: 1/1;
-            border-radius: 6px;
+            @include dimensiones(25rem, auto, 6px);
+            min-width: 10rem;
+            min-height: auto;
             overflow: hidden;
 
             img {
-                width: 100%;
-                height: 100%;
+                @include dimensiones(100%, 100%);
             }
         }
 
         &__info {
             padding: 0 1rem;
-            // border: 2px solid black;
             width: 100%;
+            flex-grow: 1;
 
             &__titulo {
                 font-size: 2rem;
@@ -46,8 +44,7 @@
             }
 
             &__sinopsis {
-                display: flex;
-                flex-direction: column;
+                @include flex(column, start, start);
                 min-height: 11rem;
 
                 &::before {
@@ -61,17 +58,14 @@
 
                 ul {
                     border: 2px solid black;
-                    display: flex;
-                    justify-content: space-around;
                     list-style: none;
                     padding: 0;
+                    @include flex(row, space-around, center);
 
                     li {
-                        display: flex;
-                        flex-direction: column;
+                        @include flex(column, space-around, center);
                         text-align: center;
                         margin: 0.2rem 1rem;
-                        // border: 1px solid blue;
                     }
                 }
 
@@ -88,10 +82,8 @@
                     &::after {
                         content: "";
                         display: block;
-                        width: 2rem;
-                        height: 2rem;
-                        background-image: url('/img/fechaIcon.svg');
-                        background-size: cover;
+                        @include dimensiones(2rem, 2rem);
+                        @include cargarImagen('/img/fechaIcon.svg');
                         margin: 0 auto;
 
                     }
@@ -108,10 +100,8 @@
                     &::after {
                         content: "";
                         display: block;
-                        width: 2rem;
-                        height: 2rem;
-                        background-image: url('/img/paginasIcon.svg');
-                        background-size: cover;
+                        @include dimensiones(2rem, 2rem);
+                        @include cargarImagen('/img/paginasIcon.svg');
                         margin: 0 auto;
 
                     }
@@ -128,10 +118,8 @@
                     &::after {
                         content: "";
                         display: block;
-                        width: 2rem;
-                        height: 2rem;
-                        background-image: url('/img/bookIcon.svg');
-                        background-size: cover;
+                        @include dimensiones(2rem, 2rem);
+                        @include cargarImagen('/img/bookIcon.svg');
                         margin: 0 auto;
 
                     }
@@ -148,10 +136,8 @@
                     &::after {
                         content: "";
                         display: block;
-                        width: 2rem;
-                        height: 2rem;
-                        background-image: url('/img//generoIcon.svg');
-                        background-size: cover;
+                        @include dimensiones(2rem, 2rem);
+                        @include cargarImagen('/img/generoIcon.svg');
                         margin: 0 auto;
 
                     }
@@ -168,10 +154,8 @@
                     &::after {
                         content: "";
                         display: block;
-                        width: 2rem;
-                        height: 2rem;
-                        background-image: url('/img/formatoIcon.svg');
-                        background-size: cover;
+                        @include dimensiones(2rem, 2rem);
+                        @include cargarImagen('/img/formatoIcon.svg');
                         margin: 0 auto;
 
                     }
@@ -188,25 +172,18 @@
                     &::after {
                         content: "";
                         display: block;
-                        width: 2rem;
-                        height: 2rem;
-                        background-image: url('/img/editorialIcon.svg');
-                        background-size: cover;
+                        @include dimensiones(2rem, 2rem);
+                        @include cargarImagen('/img/editorialIcon.svg');
                         margin: 0 auto;
                     }
                 }
             }
 
             &__precioComprar {
-                display: flex;
-                justify-content: space-evenly;
-                align-items: center;
+                @include flex(row, space-evenly, center);
 
                 &__precio {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
+                    @include flex(row, center, center, wrap);
 
                     &>span {
                         margin: 0 0.2rem;
@@ -220,15 +197,12 @@
 
                         &::after {
                             content: "€";
-                            // font-weight: 700;
                             color: rgb(0, 0, 0);
                         }
                     }
 
                     &__anterior {
                         font-size: 0.8rem;
-                        // align-self: flex-end;
-                        // font-weight: ;
                         color: rgb(148, 144, 144);
                         text-decoration: line-through;
                         width: 100%;
@@ -236,31 +210,24 @@
 
                         &::after {
                             content: "PVP";
-                            // font-weight: 700;
-                            // color: rgb(0, 0, 0);
                         }
 
                         &::before {
                             content: "Precio recomendado: ";
-                            // font-weight: 700;
-                            // color: rgb(0, 0, 0);
                         }
                     }
 
                     &__descuento {
-                        // width: 50%;
                         color: red;
                         font-size: 1rem;
                     }
                 }
 
                 &__boton {
-                    width: 8rem;
-                    height: 2rem;
+                    @include dimensiones(8rem, 2rem, 6px, 2px solid gray);
+
                     background-color: #00b83d;
                     color: white;
-                    border: 2px solid gray;
-                    border-radius: 6px;
                     font-weight: bold;
                     cursor: pointer;
 
@@ -274,38 +241,40 @@
 }
 
 @media screen and (max-width: 1080px) {
-    .Producto {
-        &__info {
+    .ContainerProducto {
 
-
-            &__caracteristicas {
-                width: 100%;
-
-                // background-color: red;
-                ul {
-                    display: flex;
-                    flex-wrap: wrap;
-                    gap: 1rem;
-
-                }
+        .Producto {
+            align-items: center;
+            &__img {
+                width: 15rem;
+                height: 15rem;
+                aspect-ratio: 1/1;
             }
 
+            &__info {
+                
+
+                &__caracteristicas {
+                    width: 100%;
+
+                    // background-color: red;
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1rem;
+
+                    }
+                }
+
+            }
         }
     }
 }
 
-// @media screen and (max-width: 792px) {
-//     .containerProductos{
-//         grid-template-columns: 1fr 1fr ;
-//     }
-// }
-
 @media screen and (max-width: 670px) {
     .ContainerProducto {
         .Producto {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column, center, center);
 
             &__img {
                 width: 10rem;

@@ -3,19 +3,11 @@
 .footer {
     background-color: $fondo_footer;
     color: $blanco_letra;
-    width: 96vw;
-    // height: 40vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include dimensiones(96vw, auto, 0.313rem);
+    @include flex(row, space-between, center);
     padding: 0rem 3rem 0rem 3rem;
 
-    // margin-top: 1.875rem;
     margin: 1.875rem auto;
-    // padding-bottom: 1.875rem;
-    // border: ;
-    border-radius: 0.313rem;
-
 
     h2 {
         text-align: center;
@@ -36,19 +28,12 @@
     }
 
     &__nosotros {
-        width: 50%;
-        // height: 3.75rem;
         width: 65%;
-        display: flex;
-        flex-direction: column;
-        // justify-content: center;
-        align-items: center;
+
+        @include flex(column, flex-start, center);
 
         &__contacto {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-
+            @include flex(column, space-around, flex-start);
             height: 100%;
 
             a {
@@ -57,13 +42,8 @@
 
                 &::before {
                     display: block;
-                    // background-image: url(var(--imagen)) ;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size: cover;
                     content: "";
-                    width: 1.3rem;
-                    height: 1.3rem;
+                    @include dimensiones(1.3rem, 1.3rem);
                 }
 
                 &:hover {
@@ -72,25 +52,22 @@
             }
 
             a.phone::before {
-                background-image: url("../img/phoneIcon.png");
-
+                @include cargarImagen("../img/phoneIcon.png");
             }
 
             a.mail::before {
-                background-image: url("../img/mailIcon.png");
+                @include cargarImagen("../img/mailIcon.png");
             }
 
             a.direcion::before {
-                background-image: url("../img/direcionIcon.png");
-
+                @include cargarImagen("../img/direcionIcon.png");
             }
         }
     }
 
     &__ayuda {
         width: 20%;
-        display: flex;
-        flex-direction: column;
+        @include flex(column, flex-start, flex-start);
 
         a {
             padding: 0.5rem 0;
@@ -106,26 +83,15 @@
         width: 30%;
 
         &__contenedor {
-            display: flex;
-            flex-direction: row;
-            // width: 100%;
-            justify-content: space-around;
+            @include flex(row, space-around, center);
 
             a {
                 text-decoration: none;
-                width: 2.3rem;
-                height: 2.3rem;
-                border-radius: 14px;
-                /* background-color: hsla(209 20% 70% / 20%); */
-                /* For dark theme */
-                // background-color: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include dimensiones(2.3rem, 2.3rem, 14px);
+                @include flex(row, center, center);
+
                 overflow: hidden;
                 position: relative;
-                // box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-                //     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
                 margin: 0 0.5rem;
             }
 
@@ -133,12 +99,11 @@
                 background: var(--color);
                 content: "";
                 position: absolute;
-                width: 130%;
-                height: 130%;
+
                 left: -110%;
                 top: 80%;
                 transform: rotate(45deg);
-                border-radius: 50%;
+                @include dimensiones(130%, 130%, 50%);
             }
 
             a:hover:before {
@@ -148,7 +113,6 @@
             img {
                 width: 100%;
                 z-index: 1;
-
             }
 
 
@@ -178,10 +142,11 @@
 
 }
 
-.footer--dark{
+.footer--dark {
     background-color: #092337;
     border: 2px solid white;
 }
+
 /**
  * Animacion redes para escritorio
  */
@@ -221,20 +186,17 @@
                 flex-wrap: wrap;
 
                 a {
-                    width: 2.3rem;
-                    height: 2.3rem;
+                    @include dimensiones(2.3rem, 2.3rem);
                 }
 
                 a:before {
                     background: var(--color);
                     content: "";
                     position: absolute;
-                    width: 3rem;
-                    height: 3rem;
+                    @include dimensiones(3rem, 3rem, 50%);
                     left: 80px;
                     top: 80px;
                     transform: rotate(45deg);
-                    border-radius: 50%;
                 }
 
                 a:hover:before {
@@ -269,15 +231,15 @@
         &__ayuda {
 
             width: 100%;
-            h2{
+
+            h2 {
                 width: 100%;
-                
+
             }
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-around;
-            flex-direction: row;
-            a{
+
+            @include flex(row, center, space-around, wrap);
+
+            a {
                 margin: 0 1rem;
             }
         }

@@ -1,14 +1,15 @@
-@import './componentes/header';
-@import './componentes/footer';
-@import './componentes/carrusel';
-@import './componentes/main.scss';
-@import './componentes/registro';
-@import './componentes/spinner';
-@import './componentes/sobreNosotros';
-@import './componentes/breadcrumb';
-@import './componentes/containerProductos';
-@import './componentes/producto';
-@import "./componentes/idiomas";
+@use './componentes/header';
+@use './componentes/footer';
+@use './componentes/carrusel';
+@use './componentes/main.scss';
+@use './componentes/registro';
+@use './componentes/spinner';
+@use './componentes/sobreNosotros';
+@use './componentes/breadcrumb';
+@use './componentes/containerProductos';
+@use './componentes/producto';
+@use "./componentes/idiomas";
+@use './componentes/variables' as *;
 * {
     box-sizing: border-box;
 }

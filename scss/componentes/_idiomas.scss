@@ -33,3 +33,18 @@
     }
 
 }
+
+@media screen and (max-width: 500px) {
+    .translate{
+        gap: 0.5rem;
+        margin: 1rem 0;
+        li {
+            a {
+                img{
+                    box-shadow:none;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

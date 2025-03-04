@@ -16,61 +16,46 @@
         height: 100%;
         grid-row: 2;
         grid-column: 1;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
+
+        @include flex(row, center, start, wrap);
+
         overflow: hidden;
         // background-color: gainsboro;
         border: $border_main;
         box-shadow: $box_shadow;
 
         border-radius: 0.4rem;
-        // height: 80vh;
-        
+
         &__title {
             text-align: center;
             background-color: $rojo_primario;
             font-family: $fuente_secundaria;
-            // height: 100%;
-            width: 100%;
-            height: 4.1rem;
-            margin: 0 0 2rem 0;
-            // padding: 1em;
+            @include dimensiones(100%, 4.1rem);
+            padding: 1rem 0;
+            margin: 0 0 1rem 0;
             color: $blanco_letra;
         }
-        .title--dark{
+
+        .title--dark {
             background-color: $fondoOscuro;
         }
 
         &__portadas {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            // height: 100%;
+            @include flex (row, space-evenly, flex-start, wrap);
 
             .tarjetaProducto {
-                // background-color: aqua;
-                width: 30%;
+                @include dimensiones(30%, auto);
+
                 min-width: 150px;
-                height: auto;
                 aspect-ratio: 3/6;
-                // height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-evenly;
+                
+                @include flex(column, center, center);
 
                 &__portada {
-                    width: 90%;
-                    height: 75%;
+                    @include dimensiones(90%, 75%,0.5rem);
                     margin: 0;
-                    border-radius: 0.5rem;
-
                     img {
-                        border-radius: 0.5rem;
-                        width: 100%;
-                        height: 100%;
+                        @include dimensiones(100%, 100%,0.5rem);
                     }
 
                     &:hover {
@@ -85,10 +70,8 @@
                     font-size: 1.2rem;
                     font-family: $fuente_secundaria;
                     min-height: 4rem;
-                    // white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    max-height: 2.5rem;
                     max-width: 90%;
 
                     a {
@@ -100,13 +83,16 @@
             }
         }
     }
-    .bestSellers--dark{
+
+    .bestSellers--dark {
         border: $border_main--dark;
         background-color: #2babc8;
-        a{
+
+        a {
             color: #005c94;
         }
     }
+
     &__bestSellers:nth-of-type(1) {
         grid-row: 2;
         grid-column: 1;
@@ -117,66 +103,7 @@
         grid-column: 2;
     }
 
-    &__news {
-        grid-row: 2;
-        grid-column: 2;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        // background-color: gainsboro;
-        border: $border_main;
-        box-shadow: $box_shadow;
-        overflow: hidden;
-        border-radius: 0.4rem;
-        background-color: white;
-        height: 100%;
-
-        &__title {
-            font-family: $fuente_secundaria;
-            text-align: center;
-            background-color: $rojo_primario;
-            // height: 100%;
-            width: 100%;
-            height: 4.1rem;
-            margin: 0;
-            // padding: 1em;
-            color: $blanco_letra;
-
-        }
-
-        &__img {
-            margin: auto 1rem;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // height: 100%;
-            width: 40%;
-
-            img {
-                width: 90%;
-                height: auto;
-                border-radius: 0.5rem;
-
-            }
-        }
-
-        &__text {
-            flex: 1;
-            display: flex;
-            align-items: center;
-
-            p {
-                margin: 0 0.8rem;
-                font-size: 0.9rem;
-
-                span {
-                    color: blue;
-                    font-weight: 600;
-                }
-            }
-
-        }
-    }
+ 
 }
 
 // height: 19rem;
@@ -196,7 +123,6 @@
         }
 
         .tarjetaProducto {
-            // width: 70%;
             justify-content: center;
 
             &__titulo {
