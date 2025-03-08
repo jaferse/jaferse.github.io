@@ -56,16 +56,7 @@
             }
 
             .verMas {
-                background-color: #00b83d;
-                color: white;
-                font-weight: bold;
-                margin: 0.5rem auto 2rem;
-                @include dimensiones(auto,auto, 6px,2px solid gray);
-                cursor: pointer;
-
-                &:hover {
-                    transform: scale(1.1);
-                }
+                @include button-style(#00b83d, white);
             }
 
             hr {

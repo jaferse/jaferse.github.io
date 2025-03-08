@@ -224,16 +224,8 @@
                 }
 
                 &__boton {
-                    @include dimensiones(8rem, 2rem, 6px, 2px solid gray);
-
-                    background-color: #00b83d;
-                    color: white;
-                    font-weight: bold;
-                    cursor: pointer;
-
-                    &:hover {
-                        transform: scale(1.1);
-                    }
+                    @include button-style(#00b83d, white, 8rem, 2rem, 6px);
+                    margin: auto;
                 }
             }
         }

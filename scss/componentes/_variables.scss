@@ -20,7 +20,7 @@ $fondoOscuro: #005c94;
 $fondoOscuroElementos: #2babc8;
 
 
-@mixin cargarImagen($url, $size: cover){
+@mixin cargarImagen($url, $size: cover) {
     background-image: url($url);
     background-position: center;
     background-size: $size;
@@ -43,10 +43,23 @@ $fondoOscuroElementos: #2babc8;
     border: $border;
 }
 
-@mixin animacion($name, $timing-function, $duracion, $fill-mode){
+@mixin animacion($name, $timing-function, $duracion, $fill-mode) {
     animation-name: $name;
     animation-timing-function: $timing-function;
     animation-duration: $duracion;
     animation-fill-mode: $fill-mode;
 
+}
+
+@mixin button-style($bg-color, $text-color, $width: auto, $height: auto, $border-radius: 5px) {
+    background-color: $bg-color;
+    color: $text-color;
+    font-weight: bold;
+    margin: 0.5rem auto 2rem;
+    @include dimensiones($width, $height, $border-radius, 2px solid gray);
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }

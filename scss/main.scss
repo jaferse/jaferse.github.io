@@ -10,6 +10,7 @@
 @use './componentes/producto';
 @use "./componentes/idiomas";
 @use './componentes/variables' as *;
+@use './componentes/editorial';
 * {
     box-sizing: border-box;
 }
